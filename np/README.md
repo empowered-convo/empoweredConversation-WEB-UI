@@ -8,7 +8,7 @@
 - [ ]  Your marketing website must be hosted on a hosting platform like "Netlify" or "Github Pages".
 - [ ]  For this Marketing site's home page you need to have content and copy that relates to the product that your team is workinfg on.
 - [ ]  Descriptions about the product and about the features it provides would be key.
-- [ ]  For a second page, you could do an about us section that includes images of the members of your team, and links to one another's socials/Github. 
+- [ ]  For a second page, you could do an about us section that includes images of the members of your team, and links to one another's socials/Github.
 
 ## Your Grading Rubric Here:
 
