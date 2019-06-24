@@ -35,16 +35,33 @@ body {
 }
 .container .landing-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
   padding: 0 20px;
-  margin: 50px 20px;
+  margin: 50px 50px;
 }
 .container .landing-content img {
+  max-width: 600px;
   width: 50%;
   transform: scaleX(-1);
 }
 .container .landing-content .landing-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 20px;
+  margin-left: 30px;
+}
+.container .landing-content .landing-text h1 {
+  text-align: center;
+}
+.container .landing-content .landing-text p {
+  max-width: 400px;
+}
+.container .middle-content {
+  background-color: #d3f0ed;
+  padding: 50 50px;
+  margin: 50px 0;
 }

@@ -1,16 +1,30 @@
 .container {
     border: 1px red solid;
     .landing-content {
-        .flex(space-between, center);
+        .flex(space-around, center);
         padding: 0 20px;
-        margin: 50px 20px;
+        margin: 50px 50px;
         img {
+            max-width: 600px;
             width: 50%;
             transform: scaleX(-1);
         }
         .landing-text {
-            .flex(space-between, center);
+            .flex(center, center, column);
             padding: 20px;
+            margin-left: 30px;
+            h1 {
+                text-align: center;
+            }
+            p {
+                max-width: 400px;
+            }
         }
+    }
+
+    .middle-content {
+        .background-teal();
+        padding: 50 50px;
+        margin: 50px 0;
     }
 }
