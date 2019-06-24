@@ -1,0 +1,58 @@
+.container {
+    border: 1px red solid;
+    .landing-content {
+        .flex(space-around, center);
+        padding: 0 20px;
+        margin: 50px 50px;
+        img {
+            max-width: 600px;
+            width: 50%;
+            transform: scaleX(-1);
+        }
+        .landing-text {
+            .flex(center, center, column);
+            padding: 20px;
+            margin-left: 30px;
+            h1 {
+                text-align: center;
+            }
+            p {
+                max-width: 400px;
+                text-align: center;
+            }
+            button {
+                font-size: 1.2rem;
+                padding: 8px 15px;
+                border-radius: 6px;
+                font-family: "HelveticaNeue-Light";
+                background-color: @orange;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .middle-content {
+        .background-teal();
+        padding: 50 50px;
+        margin: 50px 0;
+        
+
+        .testi {
+        .flex(center, center, row);
+            .testimonial {
+                margin: 0 auto;
+                border: solid 1px @dark-gray;
+                display: flex;
+                padding: 20px;
+            }
+        }
+    }
+
+    .bg-content {
+        .background-teal();
+        padding: 50 50px;
+        margin: 50px 0;
+
+    }
+}
