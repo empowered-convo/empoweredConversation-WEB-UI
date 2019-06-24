@@ -4,25 +4,47 @@
 .background-teal {
   background-color: #d3f0ed;
 }
-.header {
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: column;
+}
+.container .header {
+  padding: 20px;
+  margin-right: 20px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  position: fixed;
-  z-index: 1000;
-  padding: 20px;
 }
-.header img {
-  width: 25%;
+.container .header img {
+  width: 100px;
 }
-.header nav a {
+.container .header nav a {
   padding: 0 30px;
   text-decoration: none;
   color: black;
 }
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
+  border: 1px red solid;
+}
+.container .landing-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0 20px;
+  margin: 50px 20px;
+}
+.container .landing-content img {
+  width: 50%;
+  transform: scaleX(-1);
+}
+.container .landing-content .landing-text {
+  padding: 20px;
 }

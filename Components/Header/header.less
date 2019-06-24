@@ -1,28 +1,30 @@
-.header{
-    .width-100();
-
-    .flex(space-evenly, center);
+.container{
     
-    position: fixed;
-    z-index: 1000;
-    //background-color:red;
-    padding: 20px;
+    .flex(center, none, column);
 
-    img{
-        width: 25%;
-    }
+    .header {
+        padding: 20px;
+        margin-right: 20px;
+        .width-100();
+        .flex(space-around, center, row);
 
-    nav {
-        a {
-            padding: 0 30px;
-            text-decoration: none;
-            color: black;
+        img{
+            width: 100px;
+        }
+    
+        nav {
+            
+            a {
+                padding: 0 30px;
+                text-decoration: none;
+                color: black;
+
+            }
+            // .contact-bar {
+            //     color: white;
+            //     background-color: rgb(213, 62, 35);
+            // }
         }
     }
 
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
 }
