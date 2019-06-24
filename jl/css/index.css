@@ -1,3 +1,7 @@
+.text-section {
+  border-bottom: 1px solid #24b4a5;
+  height: 100vh;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -154,8 +158,71 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
+.wrapper {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+a {
+  cursor: pointer;
+  color: #24b4a5;
+  text-decoration: none;
+  border-bottom: 1px solid #e3e3e3;
+  box-shadow: inset 0 -3px 0 #e3e3e3;
+  transition: background 0.4s ease-out;
+}
+header {
+  transition: transform 1s ease;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.how {
+  border-bottom: 1px solid #24b4a5;
+  height: 100vh;
+}
+.approach {
+  border-bottom: 1px solid #24b4a5;
+  height: 100vh;
+}
+.testimonials {
+  border-bottom: 1px solid #24b4a5;
+  height: 100vh;
+}
+footer {
+  color: #8fedc2;
+  background: #24b4a5;
+  padding: 1.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .left-button,
+.carousel .right-button {
+  color: #5603AD;
+  background-color: #8fedc2;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: ;
+  background-color: #8fedc2;
+  border: 2px solid #8fedc2;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
 }
