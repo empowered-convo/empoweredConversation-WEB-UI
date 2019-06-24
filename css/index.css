@@ -65,11 +65,29 @@ body {
   font-size: 1.2rem;
   padding: 8px 15px;
   border-radius: 6px;
+  font-family: "HelveticaNeue-Light";
   background-color: #dc6153;
   color: white;
-  pointer: cursor;
+  cursor: pointer;
 }
 .container .middle-content {
+  background-color: #d3f0ed;
+  padding: 50 50px;
+  margin: 50px 0;
+}
+.container .middle-content .testi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.container .middle-content .testi .testimonial {
+  margin: 0 auto;
+  border: solid 1px #969597;
+  display: flex;
+  padding: 20px;
+}
+.container .bg-content {
   background-color: #d3f0ed;
   padding: 50 50px;
   margin: 50px 0;
