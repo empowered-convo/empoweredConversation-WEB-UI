@@ -7,43 +7,104 @@
   }
 
   body {
-    background: #e3e3e3;
-    background-image: linear-gradient(90deg ,#d3f0ed, #e3e3e3,#8fedc2);
+    background: @light-gray;
+    background-image: linear-gradient(90deg, #e3e3e3,#d3f0ed,#8fedc2,);
   }
+
+h1, h2, h3, h4, p {
+    color: @accent3;
+}
 
   h1 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 4rem;
+    font-size: 10rem;
     font-weight: 800;
   }
   
   h2 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 3.2rem;
+    font-size: 4rem;
+    color: @accent2;
+    margin-bottom: 5rem;
   }
   
   h3 {
     font-family: 'Work Sans', sans-serif;
     font-size: 2.8rem;
-  }
-  
-  p {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.4;
-  }
-  
-  .wrapper {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;  
+    margin-bottom: 3rem;
   }
 
-  a {
+  h4 {
+    font-family: 'Work Sans', sans-serif;
+    font-style: italic;
+    font-size: 2.8rem;
+    color: @dark-teal;
+  }
+  
+  p, input, span {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper {
+    margin: 0;
+    padding: 0 9rem;
+
+    @media @tablet {
+      margin: 0;
+      padding: 0;
+    }
+
+    @media @mobile {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  a, span {
     cursor: pointer;
-    color: #24b4a5;
     text-decoration: none;
-    border-bottom: 1px solid #e3e3e3;
-    box-shadow: inset 0 -3px 0 #e3e3e3;
-    transition: background 0.4s ease-out;
+    color: @accent3;
+    border-bottom: 1px solid @accent1;
+
+  }
+
+  a:hover {
+    color: @accent1;
+  }
+
+  button {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.6rem;
+		margin-top: 3rem;
+		color: @light-blue;
+    background-color: @dark-teal;
+    padding: 8px 25px;
+    border: 2px solid @dark-teal;
+    border-radius: 5px;
+    margin-right: 1rem;
+  }
+
+  aside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 9rem;
+
+    @media @tablet {
+      padding: 0 5rem;
+    }
+
+    @media @mobile {
+      padding: 0 3rem;
+    }
   }

@@ -1,0 +1,51 @@
+.carousel {
+  width: 100%;
+  height: 20rem;
+  background: @light-teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 3rem;
+
+  @media @tablet{ 
+    height: 50vh;
+    padding: 0 5rem;
+  } 
+  @media @mobile {
+    height: 50vh;
+    padding: 0 3rem;
+  }
+
+  .left-button, .right-button {
+    position: absolute;
+    color: @accent1;
+    background-color: @dark-teal;
+    font-size: 4rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    &:hover {
+      color: @light-blue;
+      background-color: @light-teal;
+      border: 1px solid @accent1;
+    }
+  }
+  .left-button {
+    top: 50%; 
+    left: 25px;
+    transform: translate(0, -50%);
+  }
+  .right-button {
+    top: 50%; 
+    right: 25px;
+    transform: translate(0, -50%);
+  }
+
+  .card {
+    width: 50%;
+    height: 9rem;
+    display: none;
+  }
+}
