@@ -60,6 +60,35 @@
         }
     }
 
+    .sm-form {
+        display: none;
+        @media @tablet {
+            .flex(center, center);
+            input {
+                vertical-align: middle;
+                margin: 5px 10px 5px 0;
+                padding: 8px;
+                width: 300px;
+                font-size: 0.8rem;
+            }
+            button {
+                font-size: 1rem;
+                padding: 8px 25px;
+                border-radius: 6px;
+                font-family: "HelveticaNeue-Light";
+                background-color: @orange;
+                color: white;
+                cursor: pointer;
+                box-shadow: 0 4px 6px hsla(0,0%,0%,.1);
+    
+                &:hover {
+                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                }
+            }
+        }
+        
+    }
+
     .middle-content {
         .background-teal();
         padding: 50px 50px;
