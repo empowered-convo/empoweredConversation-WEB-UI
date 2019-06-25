@@ -33,7 +33,7 @@ nav .menu a {
   padding: 1.5rem;
 }
 nav .menu a:hover {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   color: white;
 }
 header {
@@ -85,13 +85,21 @@ header .CTA button {
   border: 1px solid #8fedc2;
   border-radius: 2rem;
 }
+header .CTA button:hover {
+  background-color: #24b4a5;
+  color: white;
+}
+header .CTA button:focus {
+  outline: 0;
+}
 html {
   font-size: 62.5%;
 }
 body {
   margin: 0;
   padding: 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  color: #333;
   font-family: 'Open Sans', sans-serif;
 }
 h1,
