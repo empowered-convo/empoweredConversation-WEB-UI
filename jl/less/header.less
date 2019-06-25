@@ -14,14 +14,15 @@
     height: 8rem;
 
     @media @mobile {
-        position: absolute;
+        position: relative;
         padding: 3rem;
         flex-direction: column;
         justify-content: center;
         }
    
     img {
-    height: 4rem;
+    height: 6rem;
+    width: auto;
     }
 
     ul {
@@ -42,6 +43,7 @@
                 width: 100%;
             }
         }
+
         li:last-of-type {
             padding-right: 0;
         }
@@ -61,12 +63,19 @@
     justify-content: center;
     height: 100vh;
 
-    @media @mobile {
-        width: 100%;
-        padding: 3rem;
+    @media @tablet, @mobile {
+        padding: 9rem 3rem;
+        flex-direction: column;
+        height: auto;
       }
 
     .cta-left, .cta-right {
+        width: 50%;
+        border: 1px solid red;
+       
+        @media @tablet, @mobile {
+            width: 100%;
+          }
     }
     
     p {
@@ -76,13 +85,19 @@
     
     h1 {
         @media @tablet {
-            font-size: 2.8rem;
+            font-size: 3.6rem;
         }
         @media @mobile {
-            font-size: 2.8rem;
+            font-size: 3.6rem;
         };
     }
     h4 {
         color: @dark-teal;
     }
+
+    button {
+        @media @tablet, @mobile {
+        width: 100%;
+    }
+}
   }

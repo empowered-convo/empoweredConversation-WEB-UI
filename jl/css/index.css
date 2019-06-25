@@ -227,14 +227,15 @@ button {
 }
 @media (max-width: 500px) {
   .nav {
-    position: absolute;
+    position: relative;
     padding: 3rem;
     flex-direction: column;
     justify-content: center;
   }
 }
 .nav img {
-  height: 4rem;
+  height: 6rem;
+  width: auto;
 }
 .nav ul {
   display: flex;
@@ -271,10 +272,22 @@ button {
   justify-content: center;
   height: 100vh;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .cta {
+    padding: 9rem 3rem;
+    flex-direction: column;
+    height: auto;
+  }
+}
+.cta .cta-left,
+.cta .cta-right {
+  width: 50%;
+  border: 1px solid red;
+}
+@media (max-width: 800px), (max-width: 500px) {
+  .cta .cta-left,
+  .cta .cta-right {
     width: 100%;
-    padding: 3rem;
   }
 }
 .cta p {
@@ -283,16 +296,21 @@ button {
 }
 @media (max-width: 800px) {
   .cta h1 {
-    font-size: 2.8rem;
+    font-size: 3.6rem;
   }
 }
 @media (max-width: 500px) {
   .cta h1 {
-    font-size: 2.8rem;
+    font-size: 3.6rem;
   }
 }
 .cta h4 {
   color: #24b4a5;
+}
+@media (max-width: 800px), (max-width: 500px) {
+  .cta button {
+    width: 100%;
+  }
 }
 .how {
   background-color: #022B3A;
@@ -451,7 +469,7 @@ button {
   margin-bottom: 3rem;
   width: 16rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .contact .contact-content button {
     width: 100%;
   }
@@ -468,6 +486,11 @@ button {
   margin-bottom: 2rem;
   border-radius: 5px;
 }
+@media (max-width: 800px) {
+  .contact .contact-content input {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
   .contact .contact-content input {
     width: 100%;
@@ -476,7 +499,7 @@ button {
 .contact .contact-content input[type=email] {
   width: 35rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   .contact .contact-content input[type=email] {
     width: 100%;
   }

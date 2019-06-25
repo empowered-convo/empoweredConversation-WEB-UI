@@ -164,7 +164,7 @@
       margin-bottom: 3rem;
       width: 16rem;
       
-      @media @mobile {
+      @media @mobile, @tablet {
         width: 100%;
         }
     }
@@ -181,6 +181,10 @@
       margin-bottom: 2rem;
       border-radius: 5px;
 
+      @media @tablet {
+        width: 100%;
+        }
+
       @media @mobile {
         width: 100%;
         }
@@ -189,7 +193,7 @@
    input[type=email] {
      width: 35rem;
 
-      @media @mobile {
+      @media @tablet, @mobile {
         width: 100%;
       }
    }
