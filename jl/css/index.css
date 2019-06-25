@@ -325,7 +325,6 @@ button {
 }
 .how .how-content .step {
   width: 30%;
-  border: 1px solid red;
 }
 @media (max-width: 800px) {
   .how .how-content .step {
@@ -393,7 +392,7 @@ button {
 .zig-zag .approach img {
   width: 100%;
   height: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 .zig-zag .approach .approach-img-right,
 .zig-zag .approach .for-recipient {
@@ -437,6 +436,10 @@ button {
   .contact {
     padding: 3rem;
   }
+}
+.contact .contact-content input {
+  padding: 8px;
+  color: #d3f0ed;
 }
 footer {
   background: #24b4a5;
