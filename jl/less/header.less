@@ -11,6 +11,13 @@
     justify-content: space-between;
     align-items: center;
     height: 8rem;
+
+    @media @mobile {
+        position: absolute;
+        padding: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        }
    
     img {
     height: 4rem;
@@ -18,12 +25,21 @@
 
     ul {
     display: flex;
-
     justify-content: space-between;
-        li { 
-            padding: 0 3rem;
+
+         @media @mobile {
+            flex-direction: column;
+            display: none;
         }
 
+        li { 
+            padding: 0 3rem;
+            @media @mobile {
+                padding: 3rem;
+                border-bottom: 1px solid @dark-teal;
+                width: 100%;
+            }
+        }
     }
     
     a {
