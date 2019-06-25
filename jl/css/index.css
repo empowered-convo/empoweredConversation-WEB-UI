@@ -163,7 +163,8 @@ h4 {
   font-style: italic;
   font-size: 2.8rem;
 }
-p {
+p,
+li {
   font-family: 'Work Sans', sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -207,20 +208,32 @@ button {
   border: 2px solid #24b4a5;
 }
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  height: 8rem;
   width: 100%;
   z-index: 800;
+  padding: 1rem 9rem;
   background-color: #8fedc2;
   border: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 8rem;
 }
 .nav img {
-  height: 100%;
+  height: 4rem;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+.nav ul li {
+  padding: 0 3rem;
+}
+.nav a {
+  border: none;
+  box-shadow: none;
 }
 .cta {
   padding: 9rem;
