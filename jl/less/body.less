@@ -62,6 +62,13 @@
 
 .zig-zag {
   padding: 9rem;
+
+  @media @tablet {
+    padding: 5rem;
+    }
+  @media @mobile {
+    padding: 3rem;
+    }
   
   .approach {
     display: flex;
@@ -69,21 +76,33 @@
     justify-content: space-between;
     align-content: center;
     align-items: center;
+
+    @media @mobile {
+      flex-direction: column;
+    }
   
     .approach-img-right, .approach-img-left {
       width: 50%;
-      height: auto;
       border: 1px solid red;
+      @media @mobile {
+        width: 100%;
+      }
     }
 
     .for-survivor {
       width: 50%;
-      border: 1px solid blue;
+      @media @mobile {
+        width: 100%;
+      }
     }
     .for-recipient {
       border: 1px solid blue;
-      width: 50%;
+      @media @mobile {
+        width: 100%;
+      }
     }
+
+    
 }
 
 }
@@ -93,9 +112,17 @@
 }
 
 .contact {
+
   background-color: @accent3;
   padding: 9rem;
 
+  @media @tablet {
+    padding: 5rem;
+    }
+  @media @mobile {
+    padding: 3rem;
+    }
+    
   .contact-title {
   }
   .contact-content {
