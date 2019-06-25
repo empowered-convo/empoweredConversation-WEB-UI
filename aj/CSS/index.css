@@ -15,8 +15,6 @@ body {
 }
 .container .header {
   padding: 20px;
-  margin-right: 20px;
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -75,6 +73,19 @@ body {
   padding: 50 50px;
   margin: 50px 0;
 }
+.container .middle-content .small-logo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.container .middle-content .small-logo-section img {
+  max-width: 50px;
+  padding-right: 20px;
+}
+.container .middle-content .small-logo-section h3 {
+  text-align: center;
+}
 .container .middle-content .testi {
   display: flex;
   justify-content: center;
@@ -82,10 +93,21 @@ body {
   flex-direction: row;
 }
 .container .middle-content .testi .testimonial {
-  margin: 0 auto;
-  border: solid 1px #969597;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px 30px;
+  border: solid 1px #AAAEBD;
+  border-radius: 6px;
   display: flex;
   padding: 20px;
+  background-color: white;
+  max-width: 300px;
+  height: 250px;
+}
+.container .middle-content .testi .testimonial img {
+  max-width: 30px;
+  padding-right: 10px;
 }
 .container .bg-content {
   background-color: #d3f0ed;
@@ -213,4 +235,17 @@ body {
   color: black;
   background-color: #d3f0ed;
   margin-left: 55%;
+}
+.container footer {
+  padding: 50px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.container footer nav a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
 }

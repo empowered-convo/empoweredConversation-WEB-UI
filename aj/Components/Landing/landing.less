@@ -36,15 +36,36 @@
         .background-teal();
         padding: 50 50px;
         margin: 50px 0;
-        
+
+        .small-logo-section{
+            .flex(center, center, row);
+            img {
+                max-width: 50px;
+                padding-right: 20px;
+            }
+            
+            h3 {
+                text-align: center;
+            }
+        }
 
         .testi {
-        .flex(center, center, row);
+            .flex(center, center, row);
             .testimonial {
-                margin: 0 auto;
-                border: solid 1px @dark-gray;
+                .flex(none, center, column);
+                margin: 20px 30px;
+                border: solid 1px @gray;
+                border-radius: 6px;
                 display: flex;
                 padding: 20px;
+                background-color: white;
+                max-width: 300px;
+                height: 250px;
+
+                img {
+                    max-width: 30px;
+                    padding-right: 10px;
+                }
             }
         }
     }
