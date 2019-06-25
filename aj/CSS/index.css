@@ -294,6 +294,24 @@ body {
   text-align: center;
   font-weight: normal;
 }
+.bg-content .diffrent-approach {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+}
+.bg-content .diffrent-approach .survivor-approach {
+  border: 1px solid #AAAEBD;
+}
+.bg-content .diffrent-approach .survivor-approach img {
+  max-width: 150px;
+}
+.bg-content .diffrent-approach .ff-approach {
+  border: 1px solid #AAAEBD;
+}
+.bg-content .diffrent-approach .ff-approach img {
+  max-width: 150px;
+}
 .container footer {
   padding: 50px;
   margin-right: 20px;
