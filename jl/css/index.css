@@ -313,6 +313,7 @@ button {
 .how .how-content {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -325,10 +326,16 @@ button {
   width: 30%;
   border: 1px solid red;
 }
-@media (max-width: 800px), (max-width: 500px) {
+@media (max-width: 800px) {
   .how .how-content .step {
-    flex-direction: column;
+    min-width: 50%;
+    padding: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .how .how-content .step {
     width: 100%;
+    padding: 3rem;
   }
 }
 .how .how-content .step .dot {
@@ -337,6 +344,13 @@ button {
   border-radius: 50%;
   background-color: #d3f0ed;
   margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.how .how-content .step .dot-image {
+  height: 40px;
+  opacity: 0.5;
 }
 .how .how-content .step1 {
   transition-delay: 0s;
@@ -381,6 +395,7 @@ button {
   .zig-zag .approach .approach-img-right,
   .zig-zag .approach .approach-img-left {
     width: 100%;
+    margin: 3rem 0;
   }
 }
 .zig-zag .approach .for-survivor {
@@ -389,14 +404,17 @@ button {
 @media (max-width: 500px) {
   .zig-zag .approach .for-survivor {
     width: 100%;
+    margin: 3rem 0;
   }
 }
 .zig-zag .approach .for-recipient {
+  width: 50%;
   border: 1px solid blue;
 }
 @media (max-width: 500px) {
   .zig-zag .approach .for-recipient {
     width: 100%;
+    margin: 3rem 0;
   }
 }
 .contact {
