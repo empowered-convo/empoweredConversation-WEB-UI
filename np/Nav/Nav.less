@@ -1,6 +1,6 @@
 nav {
   width: 100vw;
-  background-color: #8fedc2;
+  .gradient();
   .menu {
     width: @container-width;
     margin: auto;
@@ -8,8 +8,12 @@ nav {
     justify-content: flex-end;
     a {
       text-decoration: none;
-      font-size: 1.7rem;
+      .style-text(1.8rem, #333;
+      
       padding: 1.5rem;
+      &:hover {
+        .style-text(1.9rem, white);
+      }
     }
   }
 }
