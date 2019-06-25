@@ -4,18 +4,30 @@
         .flex(space-around, center);
         padding: 0 20px;
         margin: 50px 50px;
+        @media @tablet {
+            .flex(space-evenly, center);
+            margin: 50px 0;
+        }
+        
         img {
             max-width: 600px;
             width: 50%;
             transform: scaleX(-1);
+            @media @tablet {
+                max-width: 400px;
+                width: 50%;
+            }
         }
         .landing-text {
             .flex(center, center, column);
             width: 400px;
             text-align: center;
+            @media @tablet {
+                width: 250px;
+            }
             h1 {
                 font-size: 1.8rem;
-                
+                font-weight: normal;
             }
             h3 {
                 margin: 0;
@@ -24,6 +36,9 @@
             p {
                 max-width: 400px;
                 line-height: 1.25;
+                @media @tablet {
+                    display: none;
+                }
             }
             button {
                 font-size: 1rem;
@@ -37,6 +52,9 @@
 
                 &:hover {
                     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+                }
+                @media @tablet {
+                    display: none;
                 }
             }
         }
