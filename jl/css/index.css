@@ -157,6 +157,7 @@ h2 {
 h3 {
   font-family: 'Work Sans', sans-serif;
   font-size: 2.8rem;
+  margin-bottom: 3rem;
 }
 h4 {
   font-family: 'Work Sans', sans-serif;
@@ -378,44 +379,44 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 @media (max-width: 500px) {
   .zig-zag .approach {
     flex-direction: column;
   }
 }
+.zig-zag .approach p {
+  margin-bottom: 3rem;
+}
+.zig-zag .approach img {
+  width: 100%;
+  height: auto;
+}
 .zig-zag .approach .approach-img-right,
-.zig-zag .approach .approach-img-left {
+.zig-zag .approach .approach-img-left,
+.zig-zag .approach .for-survivor,
+.zig-zag .approach .for-recipient {
   width: 50%;
-  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .zig-zag .approach .approach-img-right,
-  .zig-zag .approach .approach-img-left {
-    width: 100%;
-    margin: 3rem 0;
-  }
-}
-.zig-zag .approach .for-survivor {
-  width: 50%;
-}
-@media (max-width: 500px) {
-  .zig-zag .approach .for-survivor {
-    width: 100%;
-    margin: 3rem 0;
-  }
-}
-.zig-zag .approach .for-recipient {
-  width: 50%;
-  border: 1px solid blue;
-}
-@media (max-width: 500px) {
+  .zig-zag .approach .approach-img-left,
+  .zig-zag .approach .for-survivor,
   .zig-zag .approach .for-recipient {
     width: 100%;
     margin: 3rem 0;
+    padding: 0;
   }
+}
+.zig-zag .approach .approach-img-right,
+.zig-zag .approach .for-recipient {
+  padding-left: 1.5rem;
+}
+.zig-zag .approach .approach-img-left,
+.zig-zag .approach .for-survivor {
+  padding-right: 1.5rem;
 }
 .contact {
   background-color: #0D0221;

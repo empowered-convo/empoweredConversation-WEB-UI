@@ -88,45 +88,45 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
-    align-items: center;
+    align-content: flex-start;
+    align-items: flex-start;
 
     @media @mobile {
       flex-direction: column;
     }
-  
-    .approach-img-right, .approach-img-left {
+    
+    p {
+      margin-bottom: 3rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .approach-img-right, .approach-img-left, .for-survivor, .for-recipient {
       width: 50%;
-      border: 1px solid red;
       
       @media @mobile {
         width: 100%;
         margin: 3rem 0;
+        padding: 0;
       }
     }
 
-    .for-survivor {
-      width: 50%;
-
-      @media @mobile {
-        width: 100%;
-        margin: 3rem 0;
-      }
-    }
-    .for-recipient {
-      width: 50%;
-      border: 1px solid blue;
-
-      @media @mobile {
-        width: 100%;
-        margin: 3rem 0;
-      }
+    .approach-img-right,.for-recipient {
+      padding-left: 1.5rem;
     }
 
+    .approach-img-left, .for-survivor {
+      padding-right: 1.5rem;
+    }
+
+  }
     
 }
 
-}
+
 
 .testimonials {
 
