@@ -32,4 +32,3 @@ class Carousel {
 let carousel = document.querySelectorAll(".carousel")
 carousel.forEach(carousel => new Carousel(carousel))
 
-*/

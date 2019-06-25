@@ -518,7 +518,6 @@ footer {
   position: absolute;
   right: 9rem;
   z-index: 5;
-  border: 1px solid red;
 }
 @media (max-width: 500px) {
   .dropdown {
@@ -535,7 +534,6 @@ footer {
   font-family: 'Work Sans', sans-serif;
 }
 .dropdown .dropdown-content {
-  border: 1px solid red;
   right: 0;
   position: absolute;
   display: flex;
