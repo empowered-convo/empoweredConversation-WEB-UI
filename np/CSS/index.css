@@ -3,13 +3,13 @@ img {
   justify-content: center;
 }
 .container {
-  width: 88rem;
+  width: 90rem;
   margin: auto;
 }
 html {
   font-size: 62.5%;
 }
 body {
-  margin: 0;
-  padding: 0;
+  font-size: 1.6rem;
 }
+
