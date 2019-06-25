@@ -44,7 +44,12 @@
     justify-content: center;
     height: 100vh;
 
-    @media @tablet, @mobile {
+    @media @tablet {
+        padding: 9rem 5rem;
+        flex-direction: column;
+      }
+
+    @media @mobile {
         padding: 9rem 3rem;
         flex-direction: column;
       }
@@ -70,9 +75,6 @@
         @media @mobile {
             font-size: 3.6rem;
         };
-    }
-    h4 {
-        color: @dark-teal;
     }
 
     button {

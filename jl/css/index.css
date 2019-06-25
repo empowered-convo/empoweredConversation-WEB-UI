@@ -163,6 +163,7 @@ h4 {
   font-family: 'Work Sans', sans-serif;
   font-style: italic;
   font-size: 2.8rem;
+  color: #24b4a5;
 }
 p,
 input,
@@ -214,6 +215,23 @@ button {
   border-radius: 5px;
   margin-right: 1rem;
 }
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 9rem;
+}
+@media (max-width: 800px) {
+  aside {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  aside {
+    padding: 0 3rem;
+  }
+}
 .nav {
   position: fixed;
   top: 0;
@@ -253,7 +271,13 @@ button {
   justify-content: center;
   height: 100vh;
 }
-@media (max-width: 800px), (max-width: 500px) {
+@media (max-width: 800px) {
+  .cta {
+    padding: 9rem 5rem;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
   .cta {
     padding: 9rem 3rem;
     flex-direction: column;
@@ -283,9 +307,6 @@ button {
   .cta h1 {
     font-size: 3.6rem;
   }
-}
-.cta h4 {
-  color: #24b4a5;
 }
 @media (max-width: 800px), (max-width: 500px) {
   .cta button {
@@ -389,10 +410,12 @@ button {
 .zig-zag .approach p {
   margin-bottom: 3rem;
 }
+.zig-zag .approach p:last-of-type {
+  margin-bottom: 0;
+}
 .zig-zag .approach img {
   width: 100%;
   height: auto;
-  margin-bottom: 6rem;
 }
 .zig-zag .approach .approach-img-right,
 .zig-zag .approach .for-recipient {
@@ -401,6 +424,9 @@ button {
 .zig-zag .approach .approach-img-left,
 .zig-zag .approach .for-survivor {
   padding-right: 1.5rem;
+}
+.zig-zag .approach .for-survivor {
+  margin-bottom: 5rem;
 }
 .zig-zag .approach .approach-img-right,
 .zig-zag .approach .approach-img-left,
@@ -415,13 +441,22 @@ button {
   .zig-zag .approach .for-recipient {
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 3rem 0;
   }
 }
 @media (max-width: 500px) {
   .zig-zag .approach .approach-img-left {
     order: 99;
   }
+}
+.testimonials {
+  background: #8fedc2;
+  padding-top: 3rem;
+  border: 1px solid red;
+}
+.pullquote img {
+  width: 100%;
+  height: auto;
 }
 .contact {
   background-color: #24b4a5;
@@ -494,10 +529,33 @@ footer {
     margin-top: 0;
   }
 }
+.carousel {
+  width: 100%;
+  height: 20rem;
+  background: #8fedc2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-bottom: 3rem;
+}
+@media (max-width: 800px) {
+  .carousel {
+    height: 50vh;
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .carousel {
+    height: 50vh;
+    padding: 0 3rem;
+  }
+}
 .carousel .left-button,
 .carousel .right-button {
+  position: absolute;
   color: #5603AD;
-  background-color: #8fedc2;
+  background-color: #24b4a5;
   font-size: 4rem;
   border-radius: 50%;
   width: 50px;
@@ -506,9 +564,9 @@ footer {
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
-  color: #5603AD;
-  background-color: #24b4a5;
-  border: 2px solid #24b4a5;
+  color: #d3f0ed;
+  background-color: #8fedc2;
+  border: 1px solid #5603AD;
 }
 .carousel .left-button {
   top: 50%;
@@ -519,6 +577,11 @@ footer {
   top: 50%;
   right: 25px;
   transform: translate(0, -50%);
+}
+.carousel .card {
+  width: 50%;
+  height: 9rem;
+  display: none;
 }
 .dropdown {
   position: absolute;

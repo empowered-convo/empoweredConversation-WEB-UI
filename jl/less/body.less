@@ -97,10 +97,13 @@
       margin-bottom: 3rem;
     }
 
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
     img {
       width: 100%;
       height: auto;
-      margin-bottom: 6rem;
     }
 
     .approach-img-right,.for-recipient {
@@ -111,13 +114,17 @@
       padding-right: 1.5rem;
     }
 
+    .for-survivor {
+      margin-bottom: 5rem;
+    }
+
     .approach-img-right, .approach-img-left, .for-survivor, .for-recipient {
       width: 50%;
       
       @media @mobile {
         width: 100%;
         margin: 0;
-        padding: 0;
+        padding: 3rem 0;
       }
     }
 
@@ -130,10 +137,17 @@
     
 }
 
-
-
 .testimonials {
+  background: @light-teal;
+  padding-top: 3rem;
+  border: 1px solid red;
+}
 
+.pullquote {
+  img {
+    width:100%;
+    height: auto;
+  }
 }
 
 .contact {
