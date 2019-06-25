@@ -306,6 +306,11 @@ body {
   border: 1px solid #AAAEBD;
   padding: 20px;
   margin: 0 20px;
+  max-width: 550px;
+}
+.bg-content .diffrent-approach .survivor-approach h3 {
+  font-weight: normal;
+  text-align: center;
 }
 .bg-content .diffrent-approach .survivor-approach .float-left {
   max-width: 200px;
@@ -316,10 +321,31 @@ body {
   border: 1px solid #AAAEBD;
   padding: 20px;
   margin: 0 20px;
+  max-width: 500px;
+}
+.bg-content .diffrent-approach .ff-approach h3 {
+  font-weight: normal;
+  text-align: center;
 }
 .bg-content .diffrent-approach .ff-approach .float-right {
   max-width: 200px;
   float: right;
+}
+.small-logo-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.small-logo-section .dot-logo {
+  width: 50px;
+  padding-right: 10px;
+}
+.small-logo-section h3 {
+  padding: 0;
+  text-align: center;
+  font-weight: normal;
 }
 .container footer {
   padding: 50px;
