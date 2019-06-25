@@ -17,8 +17,8 @@
 }
 
 .conversation {
-        max-width: 800px;
-        margin: 50px auto;
+        max-width: 700px;
+        margin: 30px auto;
         border: solid 1px #EEE;
         .flex(none, none, column);
         padding: 20px;
@@ -77,24 +77,24 @@
   
     @-webkit-keyframes blink {
         50% {
-        opacity: 1;
+            opacity: 1;
         }
     }
     @keyframes blink {
         50% {
-        opacity: 1;
+            opacity: 1;
         }
     }
     @-webkit-keyframes bulge {
         50% {
-        -webkit-transform: scale(1.05);
-                transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
         }
     }
     @keyframes bulge {
         50% {
-        -webkit-transform: scale(1.05);
-                transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
         }
     }
 
@@ -163,4 +163,38 @@
     //     background: white;
     //     border-bottom-left-radius: 10px;
     // }
+
+    .animation-element {
+        position: relative;
+        width: 30%;
+        margin: 0% 1.33 2.66% 1.33%;
+        float: left;
+    }
+
+    .bounce-up {
+        opacity: 0;
+        -moz-transition: all 700ms ease-out;
+        -webkit-transition: all 700ms ease-out;
+        -o-transition: all 700ms ease-out;
+        transition: all 700ms ease-out;
+        -moz-transform: translate3d(0px, 200px, 0px);
+        -webkit-transform: translate3d(0px, 200px, 0px);
+        -o-transform: translate(0px, 200px);
+        -ms-transform: translate(0px, 200px);
+        transform: translate3d(0px, 200, 0px);
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        backface-visibility: hidden;
+      }
+      
+    .bounce-up.in-view {
+        opacity: 1;
+        -moz-transform: translate3d(0px, 0px, 0px);
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        -o-transform: translate(0px, 0px);
+        -ms-transform: translate(0px, 0px);
+        transform: translate3d(0px, 0px, 0px);
+      }
+      
+
 }
