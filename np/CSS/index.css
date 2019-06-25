@@ -46,15 +46,15 @@ header h1 {
 }
 header .header-img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 2rem;
-  border-radius: 0.5rem;
-  width: 45%;
+  margin: 4rem;
+  padding: 2rem;
+  border-radius: 1rem;
 }
 header .header-img img {
   max-width: 90%;
   height: auto;
   margin: auto;
-  padding: 2rem;
+  padding: 3rem;
 }
 header .header-img h2 {
   text-align: center;
@@ -69,8 +69,18 @@ header .CTA .logo {
   height: 7rem;
 }
 header .CTA p {
-  width: 90%;
-  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+  margin: 0 3rem;
+}
+header .CTA button {
+  font-size: 3rem;
+  color: #24b4a5;
+  background-color: white;
+  padding: 2rem;
+  margin: 2rem;
+  border: 1px solid #8fedc2;
+  border-radius: 2rem;
 }
 html {
   font-size: 62.5%;

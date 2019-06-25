@@ -8,14 +8,14 @@ header {
   }
   .header-img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 2rem;
-    border-radius: 0.5rem;
-    width: 45%;
+    margin: 4rem;
+    padding: 2rem;
+    border-radius: 1rem;
     img {
       max-width: 90%;
       height: auto;
       margin: auto;
-      padding: 2rem;
+      padding: 3rem;
     }
     h2 {
       text-align: center;
@@ -30,8 +30,18 @@ header {
       height: 7rem;
     }
     p {
-      width: 90%;
-      margin: 0 auto;
+      text-align: center;
+      width: 80%;
+      margin: 0 3rem;
+    }
+    button {
+      .style-text(3rem, @darkTeal);
+      background-color: white;
+      padding: 2rem;
+      margin: 2rem;
+      border: 1px solid @lightTeal;
+      border-radius: 2rem;
+
     }
   }
 }
