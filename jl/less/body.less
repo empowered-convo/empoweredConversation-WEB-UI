@@ -102,16 +102,7 @@
     img {
       width: 100%;
       height: auto;
-    }
-
-    .approach-img-right, .approach-img-left, .for-survivor, .for-recipient {
-      width: 50%;
-      
-      @media @mobile {
-        width: 100%;
-        margin: 3rem 0;
-        padding: 0;
-      }
+      margin-bottom: 3rem;
     }
 
     .approach-img-right,.for-recipient {
@@ -122,6 +113,21 @@
       padding-right: 1.5rem;
     }
 
+    .approach-img-right, .approach-img-left, .for-survivor, .for-recipient {
+      width: 50%;
+      
+      @media @mobile {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    .approach-img-left {
+      @media @mobile {
+        order: 99;
+      }
+    }
   }
     
 }

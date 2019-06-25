@@ -393,6 +393,15 @@ button {
 .zig-zag .approach img {
   width: 100%;
   height: auto;
+  margin-bottom: 3rem;
+}
+.zig-zag .approach .approach-img-right,
+.zig-zag .approach .for-recipient {
+  padding-left: 1.5rem;
+}
+.zig-zag .approach .approach-img-left,
+.zig-zag .approach .for-survivor {
+  padding-right: 1.5rem;
 }
 .zig-zag .approach .approach-img-right,
 .zig-zag .approach .approach-img-left,
@@ -406,17 +415,14 @@ button {
   .zig-zag .approach .for-survivor,
   .zig-zag .approach .for-recipient {
     width: 100%;
-    margin: 3rem 0;
+    margin: 0;
     padding: 0;
   }
 }
-.zig-zag .approach .approach-img-right,
-.zig-zag .approach .for-recipient {
-  padding-left: 1.5rem;
-}
-.zig-zag .approach .approach-img-left,
-.zig-zag .approach .for-survivor {
-  padding-right: 1.5rem;
+@media (max-width: 500px) {
+  .zig-zag .approach .approach-img-left {
+    order: 99;
+  }
 }
 .contact {
   background-color: #0D0221;
