@@ -219,6 +219,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   height: 8rem;
 }
 @media (max-width: 500px) {
@@ -252,20 +253,40 @@ button {
     width: 100%;
   }
 }
+.nav ul li:last-of-type {
+  padding-right: 0;
+}
 .nav a {
   border: none;
   box-shadow: none;
 }
 .cta {
   padding: 9rem;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
 }
+@media (max-width: 500px) {
+  .cta {
+    width: 100%;
+    padding: 3rem;
+  }
+}
 .cta p {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
+}
+@media (max-width: 800px) {
+  .cta h1 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .cta h1 {
+    font-size: 2.8rem;
+  }
 }
 .cta h4 {
   color: #24b4a5;

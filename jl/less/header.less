@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     height: 8rem;
 
     @media @mobile {
@@ -33,12 +34,16 @@
         }
 
         li { 
-            padding: 0 3rem;
+            padding: 0 3rem; 
+
             @media @mobile {
                 padding: 3rem;
                 border-bottom: 1px solid @dark-teal;
                 width: 100%;
             }
+        }
+        li:last-of-type {
+            padding-right: 0;
         }
     }
     
@@ -50,10 +55,16 @@
 
 .cta {
     padding: 9rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
+
+    @media @mobile {
+        width: 100%;
+        padding: 3rem;
+      }
 
     .cta-left, .cta-right {
     }
@@ -62,7 +73,15 @@
         font-family: 'Libre Baskerville', serif;
         font-style: italic
     }
-
+    
+    h1 {
+        @media @tablet {
+            font-size: 2.8rem;
+        }
+        @media @mobile {
+            font-size: 2.8rem;
+        };
+    }
     h4 {
         color: @dark-teal;
     }
