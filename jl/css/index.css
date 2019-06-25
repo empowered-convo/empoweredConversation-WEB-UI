@@ -175,11 +175,19 @@ p {
   flex-direction: column;
 }
 .wrapper {
-  margin: 0 9rem;
+  margin: 0;
+  padding: 0 9rem;
+}
+@media (max-width: 800px) {
+  .wrapper {
+    margin: 0;
+    padding: 0;
+  }
 }
 @media (max-width: 500px) {
   .wrapper {
     margin: 0;
+    padding: 0;
   }
 }
 a {
@@ -205,7 +213,7 @@ button {
   height: 8rem;
   width: 100%;
   z-index: 800;
-  color: #8fedc2;
+  background-color: #8fedc2;
   border: none;
   display: flex;
   justify-content: space-between;
@@ -215,38 +223,58 @@ button {
   height: 100%;
 }
 .cta {
-  padding: 0 9rem;
+  padding: 9rem;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-}
-.cta .cta-left,
-.cta .cta-right {
-  width: 70%;
 }
 .cta p {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
 }
 .cta h4 {
-  color: #5603AD;
+  color: #24b4a5;
 }
 .how {
   background-color: #022B3A;
   padding: 9rem;
+  width: 100%;
 }
-.how .how-title h2 {
+@media (max-width: 800px) {
+  .how {
+    padding: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .how {
+    padding: 3rem;
+  }
+}
+.how h2,
+.how p {
   color: #d3f0ed;
 }
 .how .how-content {
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .how .how-content {
+    flex-direction: column;
+  }
+}
 .how .how-content .step {
   width: 30%;
   border: 1px solid red;
+}
+@media (max-width: 800px), (max-width: 500px) {
+  .how .how-content .step {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 .how .how-content .step .dot {
   width: 100px;

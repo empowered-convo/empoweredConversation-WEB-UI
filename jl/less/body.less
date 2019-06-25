@@ -3,22 +3,39 @@
 .how {
   background-color: @accent2;
   padding: 9rem;
+  width: 100%;
 
-  .how-title {
+  @media @tablet {
+    padding: 5rem;
+    }
+  @media @mobile {
+    padding: 3rem;
+    }
 
-    h2 {
+  h2, p {
       color: @light-blue;
     }
-  }
+
 
   .how-content {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     .step {
       width: 30%;
       border: 1px solid red;
+
+      @media @tablet, @mobile {
+        flex-direction: column;
+        width: 100%;
+      }
+
       .dot {
         width: 100px;
         height: 100px;

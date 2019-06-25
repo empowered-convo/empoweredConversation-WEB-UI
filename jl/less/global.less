@@ -53,9 +53,17 @@ h1, h2, h3, h4, p {
   }
 
   .wrapper {
-    margin: 0 9rem;
+    margin: 0;
+    padding: 0 9rem;
+
+    @media @tablet {
+      margin: 0;
+      padding: 0;
+    }
+
     @media @mobile {
       margin: 0;
+      padding: 0;
     }
   }
 
