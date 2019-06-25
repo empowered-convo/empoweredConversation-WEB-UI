@@ -1,15 +1,26 @@
 
+.wrapper {
+  margin: 0 9rem;
+  border: 1px solid red;
+}
+
 .how {
-  padding: 0 9rem;
-  
+  background-color: @accent2;
+  padding: 9rem;
+
+  .how-title {
+    margin-bottom: 5rem;
+    h2 {
+      color: @light-blue;
+    }
+  }
+
   .how-content {
-    margin: 9rem 0;
-    padding: 0 9rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid red;
-   .step {
+
+    .step {
     .steps();
     
     p {
@@ -24,12 +35,10 @@
     .step3 {
       transition-delay: 0s;
     }
-
-  }
   }
   
+  }
 
-  
 }
 
 .zig-zag {
@@ -40,15 +49,20 @@
     padding: 0 9rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
   
-    .for-survivor {
-      margin-top: 3rem;
+    .img {
       width: 50%;
-   border: 1px solid red;
+    }
+
+    .for-survivor {
+      width: 50%;
+      border: 1px solid blue;
     }
     .for-recipient {
-      margin-top: 3rem;
-      border: 1px solid red;
+      border: 1px solid blue;
       width: 50%;
     }
 }
@@ -58,10 +72,18 @@
 }
 
 .testimonials {
-  .text-section();
 }
 
 .contact {
-  .text-section();
-  border: none;
+  background-color: @accent3;
+  padding: 9rem;
+  margin: 9rem 0;
+
+  .contact-title {
+    
+  }
+  .contact-content {
+   }
+    
+
 }
