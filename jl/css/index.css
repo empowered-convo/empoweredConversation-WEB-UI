@@ -165,7 +165,6 @@ h4 {
   font-size: 2.8rem;
 }
 p,
-li,
 input,
 span {
   font-family: 'Work Sans', sans-serif;
@@ -197,8 +196,12 @@ span {
 a,
 span {
   cursor: pointer;
-  color: #24b4a5;
   text-decoration: none;
+  color: #0D0221;
+  border-bottom: 1px solid #5603AD;
+}
+a:hover {
+  color: #5603AD;
 }
 button {
   font-family: 'Work Sans', sans-serif;
@@ -217,7 +220,6 @@ button {
   left: 0;
   width: 100%;
   z-index: 2;
-  padding: 1rem 9rem;
   background-color: #8fedc2;
   border: none;
   height: 8rem;
@@ -225,14 +227,23 @@ button {
   justify-content: space-between;
   align-items: center;
 }
+.nav img {
+  height: 6rem;
+  width: auto;
+  margin-left: 9rem;
+}
+@media (max-width: 500px) {
+  .nav img {
+    margin-left: 0;
+  }
+}
 @media (max-width: 500px) {
   .nav {
     padding: 0 3rem;
   }
 }
-.nav img {
-  height: 6rem;
-  width: auto;
+.nav a {
+  border: none;
 }
 .cta {
   padding: 9rem;
@@ -246,7 +257,6 @@ button {
   .cta {
     padding: 9rem 3rem;
     flex-direction: column;
-    height: auto;
   }
 }
 .cta .cta-left,
@@ -427,10 +437,6 @@ button {
     padding: 3rem;
   }
 }
-.contact .contact-content a {
-  color: #0D0221;
-  border-bottom: 1px solid #5603AD;
-}
 .contact .contact-content p {
   margin-bottom: 3rem;
 }
@@ -532,6 +538,7 @@ footer {
 .dropdown span,
 .dropdown .dropdown-link {
   font-family: 'Work Sans', sans-serif;
+  border: none;
 }
 .dropdown .dropdown-content {
   right: 0;
@@ -544,10 +551,15 @@ footer {
 .dropdown .dropdown-link {
   text-align: center;
   font-size: 2.8rem;
+  height: auto;
+  line-height: 3;
+}
+.dropdown .dropdown-link a {
   padding: 3rem;
+  margin: 3rem;
 }
 .dropdown .dropdown-link:hover {
-  color: #022B3A;
+  color: #5603AD;
   background-color: #d3f0ed;
 }
 .dropdown .dropdown-hidden {

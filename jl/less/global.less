@@ -40,7 +40,7 @@ h1, h2, h3, h4, p {
     font-size: 2.8rem;
   }
   
-  p, li, input, span {
+  p, input, span {
     font-family: 'Work Sans', sans-serif;
     font-size: 1.6rem;
     line-height: 1.5;
@@ -70,9 +70,14 @@ h1, h2, h3, h4, p {
 
   a, span {
     cursor: pointer;
-    color: @dark-teal;
     text-decoration: none;
+    color: @accent3;
+    border-bottom: 1px solid @accent1;
 
+  }
+
+  a:hover {
+    color: @accent1;
   }
 
   button {
