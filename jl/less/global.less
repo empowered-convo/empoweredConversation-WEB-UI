@@ -25,6 +25,7 @@ h1, h2, h3, h4, p {
     font-family: 'Libre Baskerville', serif;
     font-size: 4rem;
     color: @accent2;
+    margin-bottom: 5rem;
   }
   
   h3 {
@@ -45,15 +46,18 @@ h1, h2, h3, h4, p {
   }
   
   .container {
-    
-
-  background-color: 1px solid green;
     width: 100%;
     margin: 0 auto;  
     display: flex;
     flex-direction: column;
   }
 
+  .wrapper {
+    margin: 0 9rem;
+    @media @mobile {
+      margin: 0;
+    }
+  }
 
   a {
     cursor: pointer;
@@ -69,7 +73,7 @@ h1, h2, h3, h4, p {
     font-size: 1.6rem;
 		margin-top: 5rem;
 		color: @light-blue;
-			background-color: @dark-teal;
-			padding: 8px 25px;
-			border: 2px solid @dark-teal;
+    background-color: @dark-teal;
+    padding: 8px 25px;
+    border: 2px solid @dark-teal;
   }

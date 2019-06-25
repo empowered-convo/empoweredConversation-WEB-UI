@@ -1,13 +1,3 @@
-.steps {
-  width: 330px;
-  height: 330px;
-  padding: 4rem;
-  border-radius: 50%;
-  background-color: #d3f0ed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -162,6 +152,7 @@ h2 {
   font-family: 'Libre Baskerville', serif;
   font-size: 4rem;
   color: #022B3A;
+  margin-bottom: 5rem;
 }
 h3 {
   font-family: 'Work Sans', sans-serif;
@@ -178,11 +169,18 @@ p {
   line-height: 1.5;
 }
 .container {
-  background-color: 1px solid green;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+.wrapper {
+  margin: 0 9rem;
+}
+@media (max-width: 500px) {
+  .wrapper {
+    margin: 0;
+  }
 }
 a {
   cursor: pointer;
@@ -219,67 +217,68 @@ button {
 .cta {
   padding: 0 9rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
+}
+.cta .cta-left,
+.cta .cta-right {
+  width: 70%;
 }
 .cta p {
   font-family: 'Libre Baskerville', serif;
   font-style: italic;
 }
-.wrapper {
-  margin: 0 9rem;
-  border: 1px solid red;
+.cta h4 {
+  color: #5603AD;
 }
 .how {
   background-color: #022B3A;
   padding: 9rem;
-}
-.how .how-title {
-  margin-bottom: 5rem;
 }
 .how .how-title h2 {
   color: #d3f0ed;
 }
 .how .how-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .how .how-content .step {
-  width: 330px;
-  height: 330px;
-  padding: 4rem;
+  width: 30%;
+  border: 1px solid red;
+}
+.how .how-content .step .dot {
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background-color: #d3f0ed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-bottom: 1.6rem;
 }
-.how .how-content .step p {
-  font-size: 1.4rem;
-}
-.how .how-content .step .step1 {
+.how .how-content .step1 {
   transition-delay: 0s;
 }
-.how .how-content .step .step2 {
+.how .how-content .step2 {
   transition-delay: 0s;
 }
-.how .how-content .step .step3 {
+.how .how-content .step3 {
   transition-delay: 0s;
 }
 .zig-zag {
-  padding: 0 9rem;
+  padding: 9rem;
 }
 .zig-zag .approach {
-  margin: 9rem 0;
-  padding: 0 9rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   align-items: center;
 }
-.zig-zag .approach .img {
+.zig-zag .approach .approach-img-right,
+.zig-zag .approach .approach-img-left {
   width: 50%;
+  height: auto;
+  border: 1px solid red;
 }
 .zig-zag .approach .for-survivor {
   width: 50%;
@@ -292,7 +291,6 @@ button {
 .contact {
   background-color: #0D0221;
   padding: 9rem;
-  margin: 9rem 0;
 }
 footer {
   background: #24b4a5;
@@ -301,6 +299,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 9rem;
 }
 footer p {
   color: #8fedc2;
