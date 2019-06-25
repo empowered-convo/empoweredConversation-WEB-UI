@@ -3,56 +3,20 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 800;
+    z-index: 2;
     padding: 1rem 9rem;
     background-color: @light-teal;
     border: none;
+    height: 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    height: 8rem;
-
-    @media @mobile {
-        position: relative;
-        padding: 3rem;
-        flex-direction: column;
-        justify-content: center;
-        }
    
     img {
     height: 6rem;
     width: auto;
     }
-
-    ul {
-    display: flex;
-    justify-content: space-between;
-
-         @media @mobile {
-            flex-direction: column;
-            display: none;
-        }
-
-        li { 
-            padding: 0 3rem; 
-
-            @media @mobile {
-                padding: 3rem;
-                border-bottom: 1px solid @dark-teal;
-                width: 100%;
-            }
-        }
-
-        li:last-of-type {
-            padding-right: 0;
-        }
-    }
     
-    a {
-    border: none;
-    box-shadow: none;
-    }
 }
 
 .cta {

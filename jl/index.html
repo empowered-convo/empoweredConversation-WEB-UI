@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/index.css" />
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,400i,800|Libre+Baskerville:400,400i&display=swap" rel="stylesheet">
   <script src="components/Carousel/Carousel.js" async></script>
+  <script src="components/Dropdown/Dropdown.js" async></script>
 </head>
 
 <body>
@@ -16,11 +17,13 @@
 <header>
 <div class="nav">
   <a href=""><img src="assets/EmpoweredConversation-Logo-Md.png" alt="Empowered Conversation logo"></a>
-    <ul>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Resources</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+    <div class="dropdown">
+      <div class="dropdown-button"><span>Menu</span></div>
+      <div class="dropdown-content dropdown-hidden"><ul>
+          <li><a class="dropdown-link"href="#">About</a></li>
+          <li><a class="dropdown-link"href="#">Resources</a></li>
+          <li><a class="dropdown-link"href="#">Contact</a></li>
+        </ul></div></div>
 </div>
 
 <div class="cta">

@@ -1,3 +1,4 @@
+/*
 class Carousel {
     constructor(element) {
         this.element = element;
@@ -30,3 +31,5 @@ class Carousel {
 
 let carousel = document.querySelectorAll(".carousel")
 carousel.forEach(carousel => new Carousel(carousel))
+
+*/
