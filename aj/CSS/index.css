@@ -188,6 +188,14 @@ body {
   flex-direction: row;
   padding-bottom: 20px;
 }
+@media (max-width: 880px) {
+  .container .middle-content .testi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .container .middle-content .testi .testimonial {
   justify-content: none;
   align-items: center;
@@ -205,12 +213,55 @@ body {
 .container .middle-content .testi .testimonial:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.container .middle-content .testi .testimonial .dot-logo {
+.container .middle-content .testi .testimonial .top-testimonial {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid #AAAEBD;
+}
+.container .middle-content .testi .testimonial .top-testimonial .dot-logo {
   max-width: 50px;
   margin-top: 20px;
 }
+@media (max-width: 880px) {
+  .container .middle-content .testi .testimonial .top-testimonial .dot-logo {
+    max-width: 40px;
+  }
+}
+.container .middle-content .testi .testimonial .top-testimonial h3 {
+  font-weight: normal;
+  margin: 10px 0;
+}
+@media (max-width: 880px) {
+  .container .middle-content .testi .testimonial .top-testimonial {
+    padding-right: 20px;
+    border-bottom: none;
+    border-right: 1px solid #AAAEBD;
+  }
+}
 .container .middle-content .testi .testimonial p {
   line-height: 1.25;
+}
+@media (max-width: 880px) {
+  .container .middle-content .testi .testimonial p {
+    padding-left: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container .middle-content .testi .testimonial {
+    margin: 10px 10px;
+  }
+}
+@media (max-width: 880px) {
+  .container .middle-content .testi .testimonial {
+    display: flex;
+    justify-content: flex-start;
+    align-items: none;
+    flex-direction: row;
+    max-width: 580px;
+    height: 100px;
+  }
 }
 .convo-content .small-logo-section {
   display: flex;
@@ -425,6 +476,12 @@ body {
 .bg-content .diffrent-approach .survivor-approach .float-left {
   max-width: 200px;
   float: left;
+  padding: 0 10px 10px 0;
+}
+@media (max-width: 880px) {
+  .bg-content .diffrent-approach .survivor-approach {
+    margin-bottom: 20px;
+  }
 }
 .bg-content .diffrent-approach .ff-approach {
   background-color: white;
@@ -440,6 +497,16 @@ body {
 .bg-content .diffrent-approach .ff-approach .float-right {
   max-width: 200px;
   float: right;
+  padding: 0 0 10px 10px;
+}
+@media (max-width: 880px) {
+  .bg-content .diffrent-approach {
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    flex-direction: column;
+    max-width: 580px;
+  }
 }
 .small-logo-section {
   display: flex;
@@ -459,7 +526,6 @@ body {
 }
 .container footer {
   padding: 50px;
-  margin-right: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;

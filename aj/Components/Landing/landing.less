@@ -113,6 +113,9 @@
         .testi {
             .flex(center, center, row);
             padding-bottom: 20px;
+            @media @tablet {
+                .flex(center, center, column);
+            }
             .testimonial {
                 .flex(none, center, column);
                 margin: 10px 30px;
@@ -132,14 +135,40 @@
                 &:hover {
                     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
                 }
-
-                .dot-logo {
-                    max-width: 50px;
-                    margin-top: 20px;
+                .top-testimonial{
+                    .flex(none, center, column);
+                    border-bottom: 1px solid @gray;
+                    .dot-logo {
+                        max-width: 50px;
+                        margin-top: 20px;
+                        @media @tablet {
+                            max-width: 40px;
+                        }
+                    }
+                    h3 {
+                        font-weight: normal;
+                        margin: 10px 0;
+                    }
+                    @media @tablet {
+                        padding-right: 20px;
+                        border-bottom: none;
+                        border-right: 1px solid @gray;
+                    }
                 }
                 p {
                     line-height: 1.25;
+                    @media @tablet {
+                        padding-left: 20px;
+                    }
                 }
+                @media screen and (max-width: 1000px) {
+                    margin: 10px 10px;
+                }
+                @media @tablet {
+                    .flex(flex-start, none, row);
+                    max-width: 580px;
+                    height: 100px;
+                }          
             }
         }
     }

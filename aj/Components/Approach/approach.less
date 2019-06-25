@@ -35,7 +35,11 @@
             .float-left {
                 max-width: 200px;
                 float: left;
+                padding: 0 10px 10px 0; 
             }
+            @media @tablet {
+                margin-bottom: 20px;
+            }    
 
         }
         .ff-approach {
@@ -52,8 +56,13 @@
             .float-right {
                 max-width: 200px;
                 float: right;
+                padding: 0 0 10px 10px;
             }
         }
+        @media @tablet {
+            .flex(center, none, column);
+            max-width: 580px;
+        }  
         
     }
 }
