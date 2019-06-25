@@ -10,7 +10,7 @@
   background-color: #d3f0ed;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -182,15 +182,11 @@ p {
   line-height: 1.5;
 }
 .container {
-  max-width: 1000px;
+  background-color: 1px solid green;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
-.extra-wide-container {
-  width: 100%;
-  margin: 0 auto;
 }
 a {
   cursor: pointer;
@@ -209,20 +205,23 @@ button {
   border: 2px solid #24b4a5;
 }
 .nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  width: 100%;
+  z-index: 800;
   color: #8fedc2;
-  background: #8fedc2;
-  padding: 1rem 3rem;
   border: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
 }
 .nav img {
   height: 100%;
 }
 .cta {
-  padding: 5rem 0;
+  padding: 0 9rem;
   display: flex;
   height: 100vh;
 }
@@ -231,13 +230,17 @@ button {
   font-style: italic;
 }
 .how {
-  border-bottom: 1px solid #24b4a5;
-  padding: 3rem 0;
+  padding: 0 9rem;
+}
+.how .how-content {
+  margin: 9rem 0;
+  padding: 0 9rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  border: 1px solid red;
 }
-.how .step {
+.how .how-content .step {
   width: 330px;
   height: 330px;
   padding: 4rem;
@@ -245,32 +248,35 @@ button {
   background-color: #d3f0ed;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
-.how .step p {
+.how .how-content .step p {
   font-size: 1.4rem;
 }
-.how .step .step1 {
+.how .how-content .step .step1 {
   transition-delay: 0s;
 }
-.how .step .step2 {
+.how .how-content .step .step2 {
   transition-delay: 0s;
 }
-.how .step .step3 {
+.how .how-content .step .step3 {
   transition-delay: 0s;
 }
-.approach {
-  border-bottom: 1px solid #24b4a5;
-  padding: 3rem 0;
+.zig-zag {
+  padding: 0 9rem;
+}
+.zig-zag .approach {
+  margin: 9rem 0;
+  padding: 0 9rem;
   display: flex;
   flex-wrap: wrap;
 }
-.approach .for-survivor {
+.zig-zag .approach .for-survivor {
   margin-top: 3rem;
   width: 50%;
   border: 1px solid red;
 }
-.approach .for-recipient {
+.zig-zag .approach .for-recipient {
   margin-top: 3rem;
   border: 1px solid red;
   width: 50%;
