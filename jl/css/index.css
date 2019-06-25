@@ -1,6 +1,12 @@
 .text-section {
   border-bottom: 1px solid #24b4a5;
-  height: 100vh;
+  padding: 3rem 0;
+}
+.steps {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #d3f0ed;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -138,7 +144,14 @@ html {
 }
 body {
   background: #e3e3e3;
-  background-image: linear-gradient(90deg, #d3f0ed, #e3e3e3, #8fedc2);
+  background-image: linear-gradient(90deg, #e3e3e3, #d3f0ed, #8fedc2);
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  color: #250149;
 }
 h1 {
   font-family: 'Work Sans', sans-serif;
@@ -153,13 +166,18 @@ h3 {
   font-family: 'Work Sans', sans-serif;
   font-size: 2.8rem;
 }
+h4 {
+  font-family: 'Work Sans', sans-serif;
+  font-style: italic;
+  font-size: 2.8rem;
+}
 p {
   font-family: 'Work Sans', sans-serif;
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.4rem;
 }
 .wrapper {
-  max-width: 800px;
+  max-width: 1000px;
   width: 100%;
   margin: 0 auto;
 }
@@ -167,12 +185,37 @@ a {
   cursor: pointer;
   color: #24b4a5;
   text-decoration: none;
-  border-bottom: 1px solid #e3e3e3;
-  box-shadow: inset 0 -3px 0 #e3e3e3;
-  transition: background 0.4s ease-out;
+  border-bottom: 1px solid #24b4a5;
+  box-shadow: inset 0 -3px 0 #24b4a5;
+  transition: border 0.4s ease-out;
 }
-header {
-  transition: transform 1s ease;
+button {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  margin-top: 5rem;
+  color: #24b4a5;
+  background-color: #8fedc2;
+  padding: 8px 25px;
+  border: 2px solid #24b4a5;
+}
+.nav {
+  color: #8fedc2;
+  background: #8fedc2;
+  padding: 1.5rem 3rem;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.nav img {
+  height: 100%;
+}
+.cta {
+  border-bottom: 1px solid #24b4a5;
+  padding: 3rem 0;
+  display: flex;
+  height: 100vh;
 }
 .container {
   display: flex;
@@ -180,18 +223,40 @@ header {
 }
 .how {
   border-bottom: 1px solid #24b4a5;
-  height: 100vh;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.how .step {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #d3f0ed;
+}
+.how .step1 {
+  transition-delay: 0s;
+}
+.how .step2 {
+  transition-delay: 0s;
+}
+.how .step3 {
+  transition-delay: 0s;
 }
 .approach {
   border-bottom: 1px solid #24b4a5;
-  height: 100vh;
+  padding: 3rem 0;
 }
 .testimonials {
   border-bottom: 1px solid #24b4a5;
-  height: 100vh;
+  padding: 3rem 0;
+}
+.contact {
+  border-bottom: 1px solid #24b4a5;
+  padding: 3rem 0;
+  border: none;
 }
 footer {
-  color: #8fedc2;
   background: #24b4a5;
   padding: 1.5rem;
   border: none;
@@ -199,22 +264,24 @@ footer {
   justify-content: center;
   align-items: center;
 }
+footer p {
+  color: #8fedc2;
+}
 .carousel .left-button,
 .carousel .right-button {
   color: #5603AD;
   background-color: #8fedc2;
-  font-size: 40px;
+  font-size: 4rem;
   border-radius: 50%;
-  position: absolute;
   width: 50px;
   height: 50px;
   cursor: pointer;
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
-  color: ;
-  background-color: #8fedc2;
-  border: 2px solid #8fedc2;
+  color: #5603AD;
+  background-color: #24b4a5;
+  border: 2px solid #24b4a5;
 }
 .carousel .left-button {
   top: 50%;
