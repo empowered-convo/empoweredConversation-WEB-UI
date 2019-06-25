@@ -1,32 +1,46 @@
-.container {
-  display: flex;
-  flex-direction: column;
-}
-
 
 .how {
   .text-section();
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   .step {
     .steps();
-  }
+    
+    p {
+      font-size: 1.4rem;
+    }
+    .step1 {
+      transition-delay: 0s;
+    }
+    .step2 {
+      transition-delay: 0s;
+    }
+    .step3 {
+      transition-delay: 0s;
+    }
 
-  .step1 {
-    transition-delay: 0s;
-  }
-  .step2 {
-    transition-delay: 0s;
-  }
-  .step3 {
-    transition-delay: 0s;
+  
   }
 }
 
 .approach {
   .text-section();
+  display: flex;
+  flex-wrap: wrap;
+
+  .for-survivor {
+    margin-top: 3rem;
+    width: 50%;
+ border: 1px solid red;
+  }
+  .for-recipient {
+    margin-top: 3rem;
+    border: 1px solid red;
+    width: 50%;
+  }
+
 }
 
 .testimonials {
