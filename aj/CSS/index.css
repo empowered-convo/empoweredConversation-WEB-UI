@@ -354,8 +354,20 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  background-color: #d3f0ed;
+}
+.container footer nav {
+  padding: 20px 0;
 }
 .container footer nav a {
+  padding: 10px 30px;
+  text-decoration: none;
+  color: black;
+}
+.container footer .social-media {
+  padding: 20px 0;
+}
+.container footer .social-media a {
   padding: 10px 30px;
   text-decoration: none;
   color: black;
