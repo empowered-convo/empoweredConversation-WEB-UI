@@ -302,11 +302,17 @@ video {
   height: 105vh;
   overflow: hidden;
 }
-.cta .cta-content {
-  width: 100%;
+.cta-flex {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  padding: 9rem;
+  width: 100%;
   display: flex;
+  z-index: 9;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .how {
   background-color: #022B3A;
@@ -316,13 +322,13 @@ video {
 }
 @media (max-width: 800px) {
   .how {
-    margin-top: 5rem;
+    margin-top: 0;
     padding: 5rem;
   }
 }
 @media (max-width: 500px) {
   .how {
-    margin-top: 3rem;
+    margin-top: 0;
     padding: 3rem;
   }
 }
