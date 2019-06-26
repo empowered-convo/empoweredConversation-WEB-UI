@@ -4,6 +4,9 @@ header {
   height: 90vh;
   width: 100%;
   .gradient;
+  @media @phone {
+    height: auto;
+  }
 
   .header-container {
     display: flex;
@@ -13,6 +16,12 @@ header {
     width: 80%;
     height: 70%;
     margin: auto;
+    @media @phone {
+      flex-direction: column;
+      height: auto;
+      margin: 2rem auto;
+
+    }
 
     .CTA {
       display: flex;
@@ -21,6 +30,12 @@ header {
       margin: auto;
       padding: 3rem 0 1.5rem;
       width: 50%;
+
+      @media @phone {
+        margin: auto;
+        width: 80%;
+
+      }
       h1 {
         font-size: 4rem;
         text-align: center;
@@ -32,6 +47,9 @@ header {
         text-align: center;
         margin: 0 1rem;
         width: 75%;
+        @media @phone {
+          width: 100%;
+        }
       }
       button {
         .style-text(3rem, @darkTeal);
@@ -49,6 +67,10 @@ header {
         &:focus {
           outline: 0;
         }
+        @media @phone {
+          .style-text(2rem, @darkTeal);
+
+        }
       }
     }
     .header-img {
@@ -56,6 +78,9 @@ header {
       margin: auto;
       border-radius: 1rem;
       max-width: 45%;
+      @media @phone {
+        max-width: 100%;
+      }
       img {
         max-width: 100%;
         height: auto;
