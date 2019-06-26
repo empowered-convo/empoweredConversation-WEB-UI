@@ -122,9 +122,8 @@ body {
   .container .landing-content .landing-text h1 {
     position: absolute;
     background-color: #f4f4f4;
-    font-size: 1.6rem;
     top: 230px;
-    right: 45px;
+    right: 40px;
     padding: 4px;
     border-radius: 2px;
   }
@@ -184,25 +183,7 @@ body {
     flex-direction: column;
   }
 }
-.container .sm-form .sm-form-top {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-.container .sm-form .sm-form-top input {
-  vertical-align: middle;
-  margin: 5px 10px 5px 0;
-  padding: 8px;
-  width: 300px;
-  font-size: 0.8rem;
-  outline: none;
-}
-.container .sm-form .sm-form-top .fa {
-  margin: auto -40px;
-  color: #455159;
-}
-.container .sm-form .sm-form-top button {
+.container .sm-form button {
   font-size: 1.2rem;
   padding: 10px 35px;
   border-radius: 8px;
@@ -213,8 +194,13 @@ body {
   box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
   outline: none;
 }
-.container .sm-form .sm-form-top button:hover {
+.container .sm-form button:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+@media (max-width: 880px) {
+  .container .sm-form button {
+    margin: 10px 0;
+  }
 }
 .container .sm-form .hidden {
   display: none;
@@ -228,7 +214,13 @@ body {
 .middle-content {
   background-color: #d3f0ed;
   padding: 50px 50px;
-  margin: 50px 0;
+  margin: 60px 0 50px 0;
+}
+@media (max-width: 580px) {
+  .middle-content {
+    padding: 20px;
+    margin: 20px 0;
+  }
 }
 .middle-content .small-logo-section {
   display: flex;
@@ -244,6 +236,11 @@ body {
 .middle-content .small-logo-section h3 {
   text-align: center;
   font-weight: normal;
+}
+@media screen and (max-width: 660px) {
+  .middle-content .small-logo-section h3 {
+    width: 250px;
+  }
 }
 .middle-content .testi {
   display: flex;
@@ -279,10 +276,11 @@ body {
 }
 .middle-content .testi .testimonial .top-testimonial {
   display: flex;
-  justify-content: none;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   border-bottom: 1px solid #AAAEBD;
+  min-width: 143px;
 }
 .middle-content .testi .testimonial .top-testimonial .dot-logo {
   max-width: 50px;
@@ -290,7 +288,8 @@ body {
 }
 @media (max-width: 880px) {
   .middle-content .testi .testimonial .top-testimonial .dot-logo {
-    max-width: 40px;
+    max-width: 35px;
+    margin-top: 0;
   }
 }
 .middle-content .testi .testimonial .top-testimonial h3 {
@@ -302,6 +301,7 @@ body {
     padding-right: 20px;
     border-bottom: none;
     border-right: 1px solid #AAAEBD;
+    min-width: 80px;
   }
 }
 .middle-content .testi .testimonial p {
@@ -325,6 +325,7 @@ body {
     flex-direction: row;
     max-width: 580px;
     height: 100px;
+    margin: 20px 0;
   }
 }
 .small-logo-section {
@@ -357,7 +358,12 @@ body {
 }
 @media (max-width: 880px) {
   .conversation {
-    max-width: 500px;
+    max-width: 450px;
+  }
+}
+@media (max-width: 580px) {
+  .conversation {
+    max-width: 400px;
   }
 }
 .conversation .date-split {
@@ -527,6 +533,12 @@ body {
   padding: 50px 50px 70px 50px;
   margin: 50px 0;
 }
+@media (max-width: 880px) {
+  .bg-content {
+    padding: 10px 20px 50px 20px;
+    margin: 20px 0;
+  }
+}
 .bg-content .small-logo-section {
   display: flex;
   justify-content: space-between;
@@ -549,12 +561,22 @@ body {
   align-items: none;
   flex-direction: row;
 }
+@media (max-width: 880px) {
+  .bg-content .diffrent-approach {
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    flex-direction: column;
+    max-width: 600px;
+  }
+}
 .bg-content .diffrent-approach .survivor-approach {
   background-color: white;
   border: 1px solid #AAAEBD;
   padding: 20px;
   margin: 0 20px;
   max-width: 550px;
+  border-radius: 6px;
 }
 .bg-content .diffrent-approach .survivor-approach h3 {
   font-weight: normal;
@@ -564,6 +586,16 @@ body {
   max-width: 200px;
   float: left;
   padding: 0 10px 10px 0;
+}
+@media screen and (max-width: 950px) {
+  .bg-content .diffrent-approach .survivor-approach .float-left {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.bg-content .diffrent-approach .survivor-approach:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 @media (max-width: 880px) {
   .bg-content .diffrent-approach .survivor-approach {
@@ -575,7 +607,8 @@ body {
   border: 1px solid #AAAEBD;
   padding: 20px;
   margin: 0 20px;
-  max-width: 500px;
+  max-width: 550px;
+  border-radius: 6px;
 }
 .bg-content .diffrent-approach .ff-approach h3 {
   font-weight: normal;
@@ -586,14 +619,15 @@ body {
   float: right;
   padding: 0 0 10px 10px;
 }
-@media (max-width: 880px) {
-  .bg-content .diffrent-approach {
-    display: flex;
-    justify-content: center;
-    align-items: none;
-    flex-direction: column;
-    max-width: 580px;
+@media screen and (max-width: 950px) {
+  .bg-content .diffrent-approach .ff-approach .float-right {
+    float: none;
+    display: block;
+    margin: 0 auto;
   }
+}
+.bg-content .diffrent-approach .ff-approach:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .small-logo-section {
   display: flex;
@@ -611,6 +645,33 @@ body {
   text-align: center;
   font-weight: normal;
 }
+.small-logo-section input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 8px;
+  width: 300px;
+  font-size: 0.8rem;
+  outline: none;
+}
+.small-logo-section .fa {
+  margin: auto -40px;
+  color: #455159;
+}
+.small-logo-section button {
+  font-size: 1.2rem;
+  padding: 10px 35px;
+  margin: 30px 0;
+  border-radius: 8px;
+  font-family: "HelveticaNeue-Light";
+  background-color: #dc6153;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.1);
+  outline: none;
+}
+.small-logo-section button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
 .container footer {
   padding: 50px;
   display: flex;
@@ -619,13 +680,29 @@ body {
   flex-direction: column;
   background-color: #d3f0ed;
 }
+@media (max-width: 880px) {
+  .container footer {
+    padding: 50px 25px;
+  }
+}
 .container footer nav {
   padding: 20px 0;
+}
+@media (max-width: 880px) {
+  .container footer nav {
+    padding-left: 0;
+    padding-top: 30px;
+  }
 }
 .container footer nav a {
   padding: 10px 30px;
   text-decoration: none;
   color: black;
+}
+@media (max-width: 580px) {
+  .container footer nav a {
+    padding: 0 15px;
+  }
 }
 .container footer .social-media {
   padding: 20px 0;
