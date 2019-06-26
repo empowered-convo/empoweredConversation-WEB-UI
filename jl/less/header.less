@@ -26,7 +26,6 @@
     }
 
     }
-    
 
     a {
         border: none;
@@ -52,15 +51,6 @@
         flex-direction: column;
       }
 
-    .cta-left, .cta-right {
-        width: 50%;
-        border: 1px solid red;
-       
-        @media @tablet, @mobile {
-            width: 100%;
-          }
-    }
-    
     p {
         font-family: 'Libre Baskerville', serif;
         font-style: italic
@@ -75,9 +65,27 @@
         };
     }
 
-    button {
+    .cta-left, .cta-right {
+        width: 50%;
+        border: 1px solid red;
+       
         @media @tablet, @mobile {
-        width: 100%;
-    }
+            width: 100%;
+          }
+        }
+
+    .cta-content {
+        button {
+
+            @media @tablet, @mobile {
+                width: 100%;
+                }
+         }
+         .secondary { 
+            color: @dark-teal;
+            background-color: transparent;
+            border: 2px solid @dark-teal;
+            }  
+
+        }
 }
-  }
