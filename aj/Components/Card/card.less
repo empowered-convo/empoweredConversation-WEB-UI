@@ -1,12 +1,31 @@
+.introduce-team {
+    .flex(center, center, column);
+    margin: 50px;
+    padding: 20px;
+}
+
 .team-tabs {
+    .background-teal();
     .topics {
         .flex(center, center, row);
         max-width: 800px;
         padding: 50px;
-        margin: 0 auto;
+        margin: 0 auto; 
 
         .tab {
-            padding: 0 20px;
+            margin: 0 5px;
+            padding: 10px 20px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .active-tab {
+            background-color: @dark-teal;
+            color: white;
+            border: 2px solid @dark-gray;
         }
     }
 }
@@ -14,7 +33,6 @@
 .team-card {
     .flex(center);
     flex-wrap: wrap;
-    .background-teal();
     padding: 50px;
 
     .team-member {
