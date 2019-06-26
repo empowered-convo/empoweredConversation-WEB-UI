@@ -287,31 +287,60 @@ body {
     height: 100px;
   }
 }
-.convo-content .small-logo-section {
+.small-logo-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   padding: 20px 0;
 }
-.convo-content .small-logo-section .dot-logo {
+.small-logo-section .dot-logo {
   max-width: 50px;
   padding-right: 10px;
 }
-.convo-content .small-logo-section h3 {
+.small-logo-section h3 {
   text-align: center;
   font-weight: normal;
 }
 .conversation {
-  max-width: 700px;
+  max-width: 600px;
+  height: 600px;
   margin: 30px auto;
   border: solid 1px #EEE;
   display: flex;
-  justify-content: none;
+  justify-content: space-between;
   align-items: none;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
+  background-color: #f4f4f4;
   /* animate dots */
+}
+@media (max-width: 880px) {
+  .conversation {
+    max-width: 500px;
+  }
+}
+.conversation .date-split {
+  text-align: center;
+  color: #afafaf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+.conversation .date-split:before,
+.conversation .date-split:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100px;
+  background-color: #c4c3c3;
+}
+.conversation .date-split:before {
+  margin-right: 20px;
+}
+.conversation .date-split:after {
+  margin-left: 20px;
 }
 .conversation .bubble {
   background-color: #E6E7ED;
@@ -417,7 +446,7 @@ body {
   left: -10px;
   width: 10px;
   height: 20px;
-  background: white;
+  background: #f4f4f4;
   border-bottom-right-radius: 10px;
 }
 .conversation .me {
@@ -425,6 +454,29 @@ body {
   color: black;
   background-color: #d3f0ed;
   margin-left: 55%;
+}
+.conversation .bottom-bar {
+  background-color: #ffffff;
+  margin-top: 20px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.conversation .bottom-bar .msg-input {
+  width: calc(100% - 160px);
+  margin: 30px;
+  height: 40px;
+  border-radius: 30px;
+  border: 0px;
+  background-color: #ececec;
+  padding: 10px 15px 0px 15px;
+  font-size: 18px;
+  outline: none;
+}
+.conversation .bottom-bar .msg-input::placeholder {
+  color: #c5c5c5;
 }
 .bg-content {
   background-color: #d3f0ed;
