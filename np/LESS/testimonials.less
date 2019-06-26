@@ -1,6 +1,5 @@
 .testimonials {
-  margin:auto;
-  height: 80vh;
+
   display: flex;
   flex-direction: column;
   align-items: flex-end;  
@@ -9,7 +8,7 @@
     .background-color;
     .border-radius;
     .style-text(1.8rem);
-    margin: 2rem;
+    margin: 2rem 0;
     padding: 1rem;
 
     i {
@@ -45,16 +44,14 @@
       border-radius: 3rem;
       margin: 2rem auto;
       height: 50%;
-      border: 5px solid white;
+      border: 5px solid fade(white, 50%);
     
     }
     h3 {
+      color: @darkerColor;
       margin: 2rem;
       text-align: center;
     }
-    
-    
-
   }
   blockquote {
     margin: 3rem;

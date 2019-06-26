@@ -9,16 +9,19 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   .font-family('Nunito');
+  color: @darkTeal;
 }
 h2 {
   .style-text(3rem, @darkTeal)
 }
 .container {
-  width: @container-width;
+  max-width: @container-width;
   margin: 2rem auto;
 }
 section {
   padding: 3rem;
+  margin:auto;
+  height: 80vh;
 }
 .full-banner {
   .full-banner();
