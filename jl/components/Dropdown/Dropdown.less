@@ -3,14 +3,23 @@
   right: 9rem;
   z-index: 5;
 
-  @media @mobile {
-    right: 3rem;
+  @media @tablet, @mobile {
+    right: 0;
   }
 
   .dropdown-button {
     padding: 8px 25px;
     border: 2px solid @dark-teal;
     border-radius: 5px;
+
+    @media @tablet {
+      margin-right: 5rem;
+    }
+
+    @media @mobile {
+      margin-right: 3rem;
+    }
+  
   }
     span, .dropdown-link  {
     font-family: 'Work Sans', sans-serif;
@@ -29,8 +38,7 @@
   .dropdown-link {
     text-align: center;
     font-size: 2.8rem;
-    height: auto;
-    line-height: 3;
+    line-height: 3.5;
 
     a {
       padding: 3rem;

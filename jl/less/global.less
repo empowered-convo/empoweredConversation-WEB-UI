@@ -58,14 +58,22 @@ h1, h2, h3, h4, p {
     margin: 0;
     padding: 0 9rem;
 
-    @media @tablet {
-      margin: 0;
+    @media @tablet, @mobile {
       padding: 0;
+    }
+  }
+
+  .wrapper-xl {
+    margin: 0;
+    padding: 9rem 0;
+    background: @light-teal;
+
+    @media @tablet {
+      padding: 5rem 0;
     }
 
     @media @mobile {
-      margin: 0;
-      padding: 0;
+      padding: 3rem 0;
     }
   }
 
@@ -93,6 +101,10 @@ h1, h2, h3, h4, p {
     margin-right: 1rem;
   }
 
+  button:focus { 
+    outline: thin dotted; 
+  }
+
   aside {
     display: flex;
     align-items: center;
@@ -101,10 +113,10 @@ h1, h2, h3, h4, p {
     padding: 9rem;
 
     @media @tablet {
-      padding: 0 5rem;
+      padding: 5rem;
     }
 
     @media @mobile {
-      padding: 0 3rem;
+      padding: 3rem;
     }
   }

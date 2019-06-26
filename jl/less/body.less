@@ -1,5 +1,3 @@
-
-
 .how {
   background-color: @accent2;
   padding: 9rem;
@@ -67,9 +65,6 @@
       transition-delay: 0s;
     }
   }
-  
-  
-
 }
 
 .zig-zag {
@@ -105,17 +100,16 @@
       width: 100%;
       height: auto;
     }
-
+    
+    .approach-img-left, .for-survivor {
+      padding-right: 1.5rem;
+    }
     .approach-img-right,.for-recipient {
       padding-left: 1.5rem;
     }
 
-    .approach-img-left, .for-survivor {
-      padding-right: 1.5rem;
-    }
-
-    .for-survivor {
-      margin-bottom: 5rem;
+    .approach-img-right, .for-survivor {
+      margin-bottom: 9rem;
     }
 
     .approach-img-right, .approach-img-left, .for-survivor, .for-recipient {
@@ -137,11 +131,22 @@
     
 }
 
-.testimonials {
-  background: @light-teal;
-  padding-top: 3rem;
-  border: 1px solid red;
+.testimonials-title {
+  text-align: center;
 }
+.testimonials {
+  margin: 0 9rem;
+  
+  @media @tablet {
+    margin: 0 5rem;
+  }
+
+  @media @mobile {
+    margin: 0 3rem;
+  }
+}
+
+
 
 .pullquote {
   img {
@@ -151,7 +156,6 @@
 }
 
 .contact {
-
   background-color: @dark-teal;
   padding: 9rem;
 
@@ -189,6 +193,7 @@
       margin-right: 2rem;
       margin-bottom: 2rem;
       border-radius: 5px;
+      outline: none;
 
       @media @tablet {
         width: 100%;
