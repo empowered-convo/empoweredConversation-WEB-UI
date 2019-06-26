@@ -25,18 +25,21 @@
 
   .left-button, .right-button {
     position: absolute;
-    color: @accent1;
+    color: @light-teal;
     background-color: @dark-teal;
-    font-size: 4rem;
+    font-size: 3rem;
     border-radius: 50%;
     width: 50px;
     height: 50px;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     &:hover {
       color: @light-teal;
       background-color: @light-blue;
-      border: 1px solid @light-blue;
+      border: 1px solid @light-gray;
     }
   }
   .left-button {
