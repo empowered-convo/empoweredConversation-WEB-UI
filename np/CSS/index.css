@@ -115,9 +115,16 @@ h5,
 h6 {
   font-family: 'Nunito', sans-serif;
 }
+.full-banner {
+  text-align: center;
+  background: linear-gradient(145deg, #24b4a5 0%, #8fedc2 100%);
+  margin: 0;
+  width: 100%;
+  padding: 2rem 0;
+}
 .testimonials {
   margin: auto;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
 }
