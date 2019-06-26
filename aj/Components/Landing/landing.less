@@ -61,15 +61,23 @@
     }
 
     .sm-form {
-        display: none;
+        .flex(center, center);
         @media @tablet {
-            .flex(center, center);
+            .flex(center, center, column);
+        }
+        .sm-form-top {
+            .flex(center, center, row);
             input {
                 vertical-align: middle;
                 margin: 5px 10px 5px 0;
                 padding: 8px;
                 width: 300px;
                 font-size: 0.8rem;
+                outline: none;
+            }
+            .fa {
+                margin: auto -40px;
+                color: @darkest-teal;
             }
             button {
                 font-size: 1rem;
@@ -80,10 +88,19 @@
                 color: white;
                 cursor: pointer;
                 box-shadow: 0 4px 6px hsla(0,0%,0%,.1);
+                outline: none;
     
                 &:hover {
                     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
                 }
+            }
+        }
+        
+        .hidden {
+            display: none;
+            text-align: center;
+            @media @tablet {
+                display: block;
             }
         }
         
