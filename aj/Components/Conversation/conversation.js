@@ -35,9 +35,14 @@ $window.trigger('scroll');
 
 $(document).ready(function() {
 
-    console.log('he')
     ScrollReveal().reveal('.msg', {
         delay: 500,
+        duration: 1500,
+        reset: true,
+    });
+
+    ScrollReveal().reveal('.msg-1', {
+        delay: 600,
         duration: 1500,
         reset: true,
     });

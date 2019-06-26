@@ -738,7 +738,7 @@ body {
 }
 .team-tabs .topics .tab {
   margin: 0 5px;
-  padding: 10px 20px;
+  padding: 5px 14px;
   letter-spacing: 2px;
   cursor: pointer;
 }
@@ -746,7 +746,7 @@ body {
   text-decoration: underline;
 }
 .team-tabs .topics .active-tab {
-  background-color: #24b4a5;
+  background-color: black;
   color: white;
   border: 2px solid #969597;
 }

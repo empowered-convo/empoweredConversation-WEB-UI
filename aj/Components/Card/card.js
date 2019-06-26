@@ -14,14 +14,12 @@ class TabLink {
     }
   
     selectTab(){
-        console.log('works?');
         const tabs = document.querySelectorAll('.tab');
         tabs.forEach( function(rmv) {
             rmv.className = rmv.className.replace(' active-tab', '');
     })
   
     const cards = document.querySelectorAll('.team-member');
-    console.log(cards);
     cards.forEach( function(card) {
         card.style.display = "none";
     })
@@ -29,21 +27,18 @@ class TabLink {
     this.tabElement.className += ' active-tab';
     this.cards.forEach(card => card.selectCard());
     }
-  }
+}
   
 class TabCard {
     constructor(cardElement){
         this.cardElement = cardElement;
-        console.log('connected?');
     }
     selectCard(){
         this.cardElement.style.display = "flex";
     }
-  }
+}
   
-
   
 let tabs = document.querySelectorAll('.tab');
 tabs.forEach( (tab) => new TabLink(tab));
 
-console.log(tabs);
