@@ -1,3 +1,31 @@
+@media (max-width: 500px) {
+  .mobileFlex {
+    flex-direction: column;
+  }
+}
+@media (max-width: 800px) {
+  .mediaWidth {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .mediaWidth {
+    width: 100%;
+  }
+}
+.mediaPad {
+  padding: 9rem;
+}
+@media (max-width: 800px) {
+  .mediaPad {
+    padding: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .mediaPad {
+    padding: 3rem;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -257,15 +285,11 @@ aside {
 }
 video {
   width: 100%;
+  min-height: 100%;
   opacity: 0.5;
+  object-fit: fill;
 }
-@media (max-width: 800px) {
-  video {
-    height: 100%;
-    object-fit: cover;
-  }
-}
-@media (max-width: 500px) {
+@media (max-width: 800px), (max-width: 500px) {
   video {
     height: 100%;
     object-fit: cover;
@@ -307,7 +331,7 @@ video {
 }
 .cta-flex {
   position: absolute;
-  top: 0;
+  top: 3rem;
   left: 0;
   min-height: 100%;
   width: 100%;
@@ -378,18 +402,26 @@ video {
 .how {
   background-color: #022B3A;
   margin-top: 9rem;
-  padding: 9rem;
   width: 100%;
+  padding: 9rem;
 }
 @media (max-width: 800px) {
   .how {
-    margin-top: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .how {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .how {
     padding: 5rem;
   }
 }
 @media (max-width: 500px) {
   .how {
-    margin-top: 0;
     padding: 3rem;
   }
 }
@@ -428,8 +460,8 @@ video {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #d3f0ed;
   margin-bottom: 1.6rem;
+  background-color: #d3f0ed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -437,15 +469,6 @@ video {
 .how .how-content .step .dot-image {
   height: 40px;
   opacity: 0.5;
-}
-.how .how-content .step1 {
-  transition-delay: 0s;
-}
-.how .how-content .step2 {
-  transition-delay: 0s;
-}
-.how .how-content .step3 {
-  transition-delay: 0s;
 }
 .zig-zag {
   padding: 9rem;
@@ -482,36 +505,26 @@ video {
   width: 100%;
   height: auto;
 }
-.zig-zag .approach .approach-img-left,
-.zig-zag .approach .for-survivor {
+.zig-zag .approach .zig-left {
   padding-right: 1.5rem;
 }
-.zig-zag .approach .approach-img-right,
-.zig-zag .approach .for-recipient {
+.zig-zag .approach .zig-right {
   padding-left: 1.5rem;
 }
-.zig-zag .approach .approach-img-right,
-.zig-zag .approach .for-survivor {
-  margin-bottom: 9rem;
-}
-.zig-zag .approach .approach-img-right,
-.zig-zag .approach .approach-img-left,
-.zig-zag .approach .for-survivor,
-.zig-zag .approach .for-recipient {
+.zig-zag .approach .zig-left,
+.zig-zag .approach .zig-right {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .zig-zag .approach .approach-img-right,
-  .zig-zag .approach .approach-img-left,
-  .zig-zag .approach .for-survivor,
-  .zig-zag .approach .for-recipient {
+  .zig-zag .approach .zig-left,
+  .zig-zag .approach .zig-right {
     width: 100%;
     margin: 0;
     padding: 3rem 0;
   }
 }
 @media (max-width: 500px) {
-  .zig-zag .approach .approach-img-left {
+  .zig-zag .approach .zig-left:last-of-type {
     order: 99;
   }
 }
@@ -759,15 +772,15 @@ footer {
   align-content: center;
   align-items: center;
 }
-.roster .roster-title {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 3rem;
-}
 @media (max-width: 500px) {
   .roster {
     flex-direction: column;
   }
+}
+.roster .roster-title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 3rem;
 }
 .roster img {
   width: 100%;

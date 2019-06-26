@@ -1,17 +1,9 @@
 .how {
   background-color: @accent2;
   margin-top: 9rem;
-  padding: 9rem;
   width: 100%;
-
-  @media @tablet {
-    margin-top: 0;
-    padding: 5rem;
-    }
-  @media @mobile {
-    margin-top: 0;
-    padding: 3rem;
-    }
+  .mediaWidth();
+  .mediaPad();
 
   h2, p {
       color: @light-blue;
@@ -23,10 +15,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-
-    @media @mobile {
-      flex-direction: column;
-    }
+    .mobileFlex();
 
     .step {
       width: 30%;
@@ -45,8 +34,8 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        background-color: @light-blue;
         margin-bottom: 1.6rem;
+        background-color: @light-blue;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -57,28 +46,11 @@
         opacity: 0.5;
       }
     }
-    
-    .step1 {
-      transition-delay: 0s;
-    }
-    .step2 {
-      transition-delay: 0s;
-    }
-    .step3 {
-      transition-delay: 0s;
-    }
   }
 }
 
 .zig-zag {
-  padding: 9rem;
-
-  @media @tablet {
-    padding: 5rem;
-    }
-  @media @mobile {
-    padding: 3rem;
-    }
+  .mediaPad();
   
   .approach {
     display: flex;
@@ -86,15 +58,11 @@
     justify-content: space-between;
     align-content: flex-start;
     align-items: flex-start;
-
-    @media @mobile {
-      flex-direction: column;
-    }
+    .mobileFlex();
     
     p {
       margin-bottom: 3rem;
     }
-
     p:last-of-type {
       margin-bottom: 0;
     }
@@ -104,20 +72,15 @@
       height: auto;
     }
     
-    .approach-img-left, .for-survivor {
+    .zig-left {
       padding-right: 1.5rem;
     }
-    .approach-img-right,.for-recipient {
+    .zig-right {
       padding-left: 1.5rem;
     }
 
-    .approach-img-right, .for-survivor {
-      margin-bottom: 9rem;
-    }
-
-    .approach-img-right, .approach-img-left, .for-survivor, .for-recipient {
+    .zig-left, .zig-right {
       width: 50%;
-      
       @media @mobile {
         width: 100%;
         margin: 0;
@@ -125,7 +88,7 @@
       }
     }
 
-    .approach-img-left {
+    .zig-left:last-of-type {
       @media @mobile {
         order: 99;
       }
@@ -143,13 +106,10 @@
   @media @tablet {
     margin: 0 5rem;
   }
-
   @media @mobile {
     margin: 0 3rem;
   }
 }
-
-
 
 .pullquote {
   img {
@@ -160,14 +120,7 @@
 
 .contact {
   background-color: @dark-teal;
-  padding: 9rem;
-
-  @media @tablet {
-    padding: 5rem;
-    }
-  @media @mobile {
-    padding: 3rem;
-    }
+  .mediaPad();
 
   .contact-content {
 
@@ -201,14 +154,7 @@
       margin-bottom: 2rem;
       border-radius: 5px;
       outline: none;
-
-      @media @tablet {
-        width: 100%;
-        }
-
-      @media @mobile {
-        width: 100%;
-        }
+      .mediaWidth();
    }
 
    input[type=email] {

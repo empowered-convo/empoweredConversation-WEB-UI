@@ -136,14 +136,11 @@ h1, h2, h3, h4, p {
 
   video {
     width: 100%;
+    min-height:100%;
     opacity: .5;
+    object-fit: fill;
 
-    @media @tablet {
-      height: 100%;
-      object-fit: cover;
-    }
-
-    @media @mobile {
+    @media @tablet, @mobile {
       height: 100%;
       object-fit: cover;
     }
