@@ -2,6 +2,48 @@
   background-color: transparent;
 }
 
+.roster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  .roster-title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
+
+  @media @mobile {
+    flex-direction: column;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .roster-left {
+    padding-right: 1.5rem;
+  }
+  .roster-right {
+    padding-left: 1.5rem;
+  }
+
+  .roster-left, .roster-right  {
+    width: 50%;
+    text-align: center;
+    
+    @media @mobile {
+      width: 100%;
+      margin: 0;
+      padding: 3rem 0;
+    }
+  }
+
+}
+
 .ui {
   background-color: @dark-teal;
   padding: 9rem;
@@ -70,75 +112,4 @@
 
       
       }
-}
-
-
-#teamvid {
-  object-fit: cover;
-  opacity: .5;
-}
-
-.team-overlay {
-  position: absolute;
-  right: 10%;
-  bottom: 40%;
-  z-index: 3;
-}
-
-.team-overlay-img {
-  position: absolute;
-  left: 10%;
-  bottom: 15%;
-
-  img {
-    border-radius: 50%;
-  }
-  
-}
-.roster {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-
-  .roster-title {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 3rem;
-  }
-
-  @media @mobile {
-    flex-direction: column;
-  }
-  
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .roster-left {
-    padding-right: 1.5rem;
-  }
-  .roster-right {
-    padding-left: 1.5rem;
-  }
-
-  .roster-left, .roster-right  {
-    width: 50%;
-    text-align: center;
-    
-    @media @mobile {
-      width: 100%;
-      margin: 0;
-      padding: 3rem 0;
-    }
-  }
-
-  .approach-img-left {
-    @media @mobile {
-      order: 99;
-    }
-  }
 }

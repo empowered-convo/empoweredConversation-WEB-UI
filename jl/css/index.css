@@ -145,7 +145,7 @@ p {
 }
 h1 {
   font-family: 'Work Sans', sans-serif;
-  font-size: 10rem;
+  font-size: 8rem;
   font-weight: 800;
 }
 h2 {
@@ -162,8 +162,10 @@ h3 {
 h4 {
   font-family: 'Work Sans', sans-serif;
   font-style: italic;
-  font-size: 2.8rem;
-  color: #24b4a5;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  line-height: 1.3;
+  color: #022B3A;
 }
 p,
 input,
@@ -215,7 +217,6 @@ a:hover {
 button {
   font-family: 'Work Sans', sans-serif;
   font-size: 1.6rem;
-  margin-top: 3rem;
   color: #d3f0ed;
   background-color: #24b4a5;
   padding: 8px 25px;
@@ -247,6 +248,22 @@ aside {
   -webkit-box-shadow: 4px 4px 6px 0px rgba(2, 43, 58, 0.2);
   -moz-box-shadow: 4px 4px 6px 0px rgba(2, 43, 58, 0.2);
   box-shadow: 4px 4px 6px 0px rgba(2, 43, 58, 0.2);
+}
+video {
+  width: 100%;
+  opacity: 0.5;
+}
+@media (max-width: 800px) {
+  video {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 500px) {
+  video {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 .nav {
   position: fixed;
@@ -280,76 +297,32 @@ aside {
   border: none;
 }
 .cta {
-  padding: 9rem;
+  padding: 0;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  height: 105vh;
   overflow: hidden;
 }
-@media (max-width: 800px) {
-  .cta {
-    padding: 9rem 5rem;
-    flex-direction: column;
-  }
-}
-@media (max-width: 500px) {
-  .cta {
-    padding: 9rem 3rem;
-    flex-direction: column;
-  }
-}
-.cta p {
-  font-family: 'Libre Baskerville', serif;
-  font-style: italic;
-}
-@media (max-width: 800px) {
-  .cta h1 {
-    font-size: 3.6rem;
-  }
-}
-@media (max-width: 500px) {
-  .cta h1 {
-    font-size: 3.6rem;
-  }
-}
-.cta .cta-left,
-.cta .cta-right {
-  width: 50%;
-  border: 1px solid red;
-}
-@media (max-width: 800px), (max-width: 500px) {
-  .cta .cta-left,
-  .cta .cta-right {
-    width: 100%;
-  }
-}
-.cta .cta-content a {
-  border: none;
-}
-@media (max-width: 800px), (max-width: 500px) {
-  .cta .cta-content button {
-    width: 100%;
-  }
-}
-.cta .cta-content .secondary {
-  color: #24b4a5;
-  background-color: transparent;
-  border: 2px solid #24b4a5;
+.cta .cta-content {
+  width: 100%;
+  height: 100%;
+  padding: 9rem;
+  display: flex;
 }
 .how {
   background-color: #022B3A;
+  margin-top: 9rem;
   padding: 9rem;
   width: 100%;
 }
 @media (max-width: 800px) {
   .how {
+    margin-top: 5rem;
     padding: 5rem;
   }
 }
 @media (max-width: 500px) {
   .how {
+    margin-top: 3rem;
     padding: 3rem;
   }
 }
@@ -622,7 +595,6 @@ footer {
   width: 70%;
   height: 30vh;
   display: none;
-  border: 2px solid #8fedc2;
   padding: 5rem 9rem;
   background-color: #d3f0ed;
   border-radius: 15px;
@@ -707,6 +679,46 @@ footer {
 .wrap-team {
   background-color: transparent;
 }
+.roster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.roster .roster-title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  .roster {
+    flex-direction: column;
+  }
+}
+.roster img {
+  width: 100%;
+  height: auto;
+}
+.roster .roster-left {
+  padding-right: 1.5rem;
+}
+.roster .roster-right {
+  padding-left: 1.5rem;
+}
+.roster .roster-left,
+.roster .roster-right {
+  width: 50%;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .roster .roster-left,
+  .roster .roster-right {
+    width: 100%;
+    margin: 0;
+    padding: 3rem 0;
+  }
+}
 .ui {
   background-color: #24b4a5;
   padding: 9rem;
@@ -771,67 +783,4 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-#teamvid {
-  object-fit: cover;
-  opacity: 0.5;
-}
-.team-overlay {
-  position: absolute;
-  right: 10%;
-  bottom: 40%;
-  z-index: 3;
-}
-.team-overlay-img {
-  position: absolute;
-  left: 10%;
-  bottom: 15%;
-}
-.team-overlay-img img {
-  border-radius: 50%;
-}
-.roster {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-.roster .roster-title {
-  width: 100%;
-  text-align: left;
-  margin-bottom: 3rem;
-}
-@media (max-width: 500px) {
-  .roster {
-    flex-direction: column;
-  }
-}
-.roster img {
-  width: 100%;
-  height: auto;
-}
-.roster .roster-left {
-  padding-right: 1.5rem;
-}
-.roster .roster-right {
-  padding-left: 1.5rem;
-}
-.roster .roster-left,
-.roster .roster-right {
-  width: 50%;
-  text-align: center;
-}
-@media (max-width: 500px) {
-  .roster .roster-left,
-  .roster .roster-right {
-    width: 100%;
-    margin: 0;
-    padding: 3rem 0;
-  }
-}
-@media (max-width: 500px) {
-  .roster .approach-img-left {
-    order: 99;
-  }
 }

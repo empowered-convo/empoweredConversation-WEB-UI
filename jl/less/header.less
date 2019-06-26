@@ -34,61 +34,16 @@
 }
 
 .cta {
-    padding: 9rem;
+    padding: 0;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    height: 105vh;
     overflow: hidden;
 
-    @media @tablet {
-        padding: 9rem 5rem;
-        flex-direction: column;
-      }
-
-    @media @mobile {
-        padding: 9rem 3rem;
-        flex-direction: column;
-      }
-
-    p {
-        font-family: 'Libre Baskerville', serif;
-        font-style: italic
-    }
-    
-    h1 {
-        @media @tablet {
-            font-size: 3.6rem;
-        }
-        @media @mobile {
-            font-size: 3.6rem;
-        };
-    }
-
-    .cta-left, .cta-right {
-        width: 50%;
-        border: 1px solid red;
-       
-        @media @tablet, @mobile {
-            width: 100%;
-          }
-        }
-
     .cta-content {
-        a {
-            border: none;
-        }
-        button {
-            @media @tablet, @mobile {
-                width: 100%;
-                }
-         }
-         .secondary { 
-            color: @dark-teal;
-            background-color: transparent;
-            border: 2px solid @dark-teal;
-            }  
+        width: 100%;
+        height: 100%;
+        padding: 9rem;
+        display: flex;
 
-        }
+}
 }
