@@ -1,7 +1,35 @@
 .introduce-team {
     .flex(center, center, column);
-    margin: 50px;
+    margin: 30px 0 70px 0;
     padding: 20px;
+
+    h1 {
+        font-weight: normal;
+        font-size: 1.8rem;
+    }
+
+    .intro-container {
+        .flex(center, center, row);
+        padding: 20px;
+        margin: 20px;
+        max-width: 650px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        img {
+            max-width: 100px;
+            margin: 0 20px;
+        }
+        .intro-text {
+            h3 {
+                font-weight: normal;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
 }
 
 .team-tabs {
@@ -11,10 +39,13 @@
         max-width: 800px;
         padding: 50px;
         margin: 0 auto; 
+        .title {
+            padding-right: 20px;
+        }
 
         .tab {
             margin: 0 5px;
-            padding: 5px 14px;
+            padding: 8px 14px;
             letter-spacing: 2px;
             cursor: pointer;
             &:hover {
@@ -25,7 +56,6 @@
         .active-tab {
             background-color: black;
             color: white;
-            border: 2px solid @dark-gray;
         }
     }
 }
@@ -56,6 +86,9 @@
             .flex(center, none, column);
             border-left: 1px solid @dark-gray;
             padding-left: 10px;
+            .name {
+                font-size: 1.5rem;
+            }
         }
     }
 }
