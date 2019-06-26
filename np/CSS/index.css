@@ -4398,7 +4398,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.8rem;
-  color: #333;
+  color: #135f57;
   font-family: 'Open Sans', sans-serif;
 }
 h1,
@@ -4408,6 +4408,10 @@ h4,
 h5,
 h6 {
   font-family: 'Nunito', sans-serif;
+}
+h2 {
+  font-size: 3rem;
+  color: #24b4a5;
 }
 .container {
   width: 110rem;
@@ -4422,6 +4426,9 @@ section {
   margin: 0;
   width: 100%;
   padding: 2rem 0;
+}
+.full-banner h2 {
+  color: #135f57;
 }
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
@@ -4444,6 +4451,10 @@ section {
   outline: none;
   /* Remove outline */
   background-color: red;
+}
+button {
+  outline: none;
+  cursor: pointer;
 }
 nav {
   width: 100%;
@@ -4539,11 +4550,31 @@ header .header-container .header-img h2 {
 .testimonials {
   margin: auto;
   height: 80vh;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.testimonials .next-button {
+  background-color: white;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  color: #135f57;
+  margin: 2rem;
+  padding: 1rem;
+}
+.testimonials .next-button i {
+  padding-left: 0.5rem;
+}
+.testimonials .next-button:hover {
+  background-color: #24b4a5;
+  color: white;
+}
+.testimonials .show {
+  display: flex;
 }
 .testimonial {
-  margin: auto;
-  display: flex;
+  margin: 2rem auto;
+  display: none;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
@@ -4554,7 +4585,7 @@ header .header-container .header-img h2 {
   flex-direction: column;
   justify-content: space-around;
   width: 30%;
-  background-color: #8fedc2;
+  background: linear-gradient(145deg, #24b4a5 0%, #8fedc2 100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
   border-radius: 1rem;
 }
@@ -4564,17 +4595,14 @@ header .header-container .header-img h2 {
   height: 50%;
   border: 5px solid white;
 }
-.testimonial h3 {
+.testimonial div h3 {
   margin: 2rem;
   text-align: center;
 }
-.hide {
-  display: none;
-}
-blockquote {
-  margin: 2rem;
+.testimonial blockquote {
+  margin: 3rem;
   font-size: 2.5rem;
-  color: #333;
+  color: #135f57;
   width: 70%;
 }
 .twitter {

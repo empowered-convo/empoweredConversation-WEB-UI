@@ -4,11 +4,14 @@ html {
 body {
   margin: 0;
   padding: 0;
-  .style-text(1.8rem, #333);
+  .style-text(1.8rem, @darkerColor);
   .font-family('Open Sans');
 }
 h1, h2, h3, h4, h5, h6 {
   .font-family('Nunito');
+}
+h2 {
+  .style-text(3rem, @darkTeal)
 }
 .container {
   width: @container-width;
@@ -31,4 +34,8 @@ section {
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: red;
+}
+button {
+  outline: none;
+  cursor: pointer;
 }
