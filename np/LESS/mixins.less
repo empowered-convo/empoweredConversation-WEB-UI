@@ -3,15 +3,19 @@
   color: @color;
 }
 .gradient() {
-  background: linear-gradient(145deg, rgba(36,180,165,1) 0%, rgba(143,237,194,1) 100%);
+  background: linear-gradient(
+    145deg,
+    rgba(36, 180, 165, 1) 0%,
+    rgba(143, 237, 194, 1) 100%
+  );
 }
-.font-family(@family-name:'Nunito') {
+.font-family(@family-name:"Nunito") {
   font-family: @family-name, sans-serif;
 }
-.border(){
-  border: 1px solid @darkTeal; 
+.border() {
+  border: 1px solid @darkTeal;
 }
-.box-shadow(){
+.box-shadow() {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
 }
 .border-radius(@radius: 1rem;) {
@@ -23,4 +27,13 @@
   margin: 0;
   width: 100%;
   padding: 2rem 0;
+}
+
+.font-awesome(@icon-var) {
+  .fa-icon;
+  .fab;
+
+  &:before {
+    content: @icon-var;
+  }
 }
