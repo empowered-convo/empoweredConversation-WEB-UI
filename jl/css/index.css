@@ -782,7 +782,6 @@ footer {
 }
 .roster .roster-left {
   padding-right: 1.5rem;
-  text-align: right;
 }
 .roster .roster-right {
   padding-left: 1.5rem;
@@ -790,6 +789,7 @@ footer {
 .roster .roster-left,
 .roster .roster-right {
   width: 50%;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .roster .roster-left,
@@ -803,7 +803,4 @@ footer {
   .roster .approach-img-left {
     order: 99;
   }
-}
-.roster {
-  border: 1px solid red;
 }
