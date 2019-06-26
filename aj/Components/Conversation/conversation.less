@@ -1,11 +1,50 @@
+.small-logo-section{
+    .flex(center, center, row);
+    padding: 20px 0;
+    .dot-logo {
+        max-width: 50px;
+        padding-right: 10px;
+    }
+    h3 {
+        text-align: center;
+        font-weight: normal;
+    }
+}
+
+
 .conversation {
-        max-width: 800px;
-        margin: 0 auto;
-        border: solid 1px #EEE;
+    max-width: 600px;
+    height: 600px;
+    margin: 30px auto;
+    border: solid 1px #EEE;
+    .flex(space-between, none, column);
+    padding: 30px;
+    background-color: @light-gray;
+
+    @media @tablet {
+        max-width: 500px;
+    }
+    .date-split {
+        text-align: center;
+        color: #afafaf;
         display: flex;
-        flex-direction: column;
-        padding: 20px;
-  
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+        &:before, &:after {
+            content: '';
+            display: block;
+            height: 1px;
+            width: 100px;
+            background-color: #c4c3c3;
+        }
+        &:before {
+            margin-right: 20px;
+        }
+        &:after {
+            margin-left: 20px;
+        }
+    }  
     .bubble {
         background-color: #E6E7ED;
         will-change: transform;
@@ -60,24 +99,24 @@
   
     @-webkit-keyframes blink {
         50% {
-        opacity: 1;
+            opacity: 1;
         }
     }
     @keyframes blink {
         50% {
-        opacity: 1;
+            opacity: 1;
         }
     }
     @-webkit-keyframes bulge {
         50% {
-        -webkit-transform: scale(1.05);
-                transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
         }
     }
     @keyframes bulge {
         50% {
-        -webkit-transform: scale(1.05);
-                transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+                    transform: scale(1.05);
         }
     }
 
@@ -115,7 +154,7 @@
         left: -10px;
         width: 10px;
         height: 20px;
-        background: white;
+        background: @light-gray;
         border-bottom-right-radius: 10px;
     }
   
@@ -146,4 +185,25 @@
     //     background: white;
     //     border-bottom-left-radius: 10px;
     // }
+      
+    .bottom-bar {
+        background-color: #ffffff;
+        margin-top: 20px;
+        height: 80px;
+        .flex(space-between, center);
+        .msg-input {
+            width: calc(100% - 160px);
+            margin: 30px;
+            height: 40px;
+            border-radius: 30px;
+            border: 0px;
+            background-color: #ececec;
+            padding: 10px 15px 0px 15px;
+            font-size: 18px;
+            outline: none;
+            &::placeholder {
+                color: rgb(197, 197, 197);  
+            }   
+        }
+    }
 }

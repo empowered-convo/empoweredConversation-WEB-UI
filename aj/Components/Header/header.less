@@ -3,16 +3,26 @@
     .flex(center, none, column);
 
     .header {
-        padding: 20px;
-        margin-right: 20px;
-        .width-100();
+        padding: 30px;
         .flex(space-around, center, row);
+        @media @tablet {
+            .flex(space-around, center, column);
+        }
 
         img{
             width: 100px;
+            padding-left: 50px;
+            @media @tablet {
+                padding-left: 0;
+            }
         }
     
         nav {
+            padding-left: 100px;
+            @media @tablet {
+                padding-left: 0;
+                padding-top: 30px;
+            }
             
             a {
                 padding: 0 30px;
@@ -24,6 +34,7 @@
             //     color: white;
             //     background-color: rgb(213, 62, 35);
             // }
+            
         }
     }
 

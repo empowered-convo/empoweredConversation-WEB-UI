@@ -3,7 +3,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script src="./Components/Conversation/conversation.js"></script>
     <title>Empowered Conversation</title>
 </head>
 <body>
@@ -22,50 +28,103 @@
         <div class="landing-content">
             <img src="assests/illust-night-call.svg">
             <div class="landing-text">
-                <h1>Empowered<br>Conversation</h1>
+                <h1>Empowered <br/> Conversation</h1>
+                
                 <h3>When words matter most</h3>
                 <p>A survivor-activated tool that educates and <br> prepares the person they will disclose to <br> before the conversation takes place.</p>
-                <button>Sign me up</button>
             </div>
+        </div>
+        <div class="sm-form">
+            <div class="sm-form-top">
+                <div class="icon"><input type="text" id="your-input" placeholder="Enter email" name="email" /><i class="fa fa-envelope-o"></i></div>
+                <button>Sign up</button>
+            </div>
+            
+            <p class="hidden">A survivor-activated tool that educates and  prepares the person <br> they will disclose to before the conversation takes place.</p>
         </div>
 
         <div class="middle-content">
-            <h3>What are people saying about Empowered Conversation?</h3>
+            <div class="small-logo-section">
+                <img class="dot-logo" src="assests/dotLogo.svg" alt="three-dots-logo">
+                <h3>What are people saying about Empowered Conversation?</h3>
+            </div>
             <div class="testi">
-                <div class="testimonial">University stduent</div>
-                <div class="testimonial">Survivor</div>
-                <div class="testimonial">Friend</div>
+                <div class="testimonial">
+                    <div class="top-testimonial">
+                        <img class="dot-logo" src="assests/dotLogo.svg" alt="three-dots-logo">
+                        <h3>University stduent</h3>
+                    </div>
+                    <p>"The person being disclosed to not only will have time processing before talking with the survivor, but they will have tools to better facilitate a comfortable conversation."</p>
+                </div>
+                <div class="testimonial">
+                    <div class="top-testimonial">
+                        <img class="dot-logo" src="assests/dotLogo.svg" alt="three-dots-logo">
+                        <h3>Survivor</h3>
+                    </div>
+                    <p>"I love the way the tool acts as a mediator between the involved parties. It takes so much pressure off of the survivor."</p>
+                </div>
+                <div class="testimonial">
+                    <div class="top-testimonial">
+                        <img class="dot-logo" src="assests/dotLogo.svg" alt="three-dots-logo">
+                        <h3>Friend</h3>
+                    </div>
+                    <p>"There is probably nothing more powerful than this moment of initial disclosure and more ripe for change in shifting the conversation around sexual assault more broadly."</p>
+                </div>
             </div>
         </div>
 
-        <div class="conversation">
-            <div class="bubble">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="convo-content">
+            <div class="small-logo-section">
+                <img class="dot-logo" src="assests/dotLogo.svg" alt="three-dots-logo">
+                <h3>How does Empowered Conversation work?</h3>
             </div>
-            <div class="message me">
-                <span>Hi there!</span>
-            </div>
-            <div class="message you">
-                <span>Hi!</span>
-            </div>
-            <div class="message you">
-                <span>How does Empowered Conversation work?</span>
-            </div>
-            <div class="message me">
-                <span>When a survivor is ready to disclose about their assault, they go onto our website and input the cell phone number of the person they will disclose to.</span>
+            <div class="conversation">
+                <div class="bubble">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="message me msg">
+                    <span>Hi there!</span>
+                </div>
+                <div class="message you msg">
+                    <span>Hi!</span>
+                </div>
+                <div class="message you msg">
+                    <span>How does Empowered Conversation work?</span>
+                </div>
+                <div class="message me msg">
+                    <span>When a survivor is ready to disclose about their assault, they go onto our website and input the cell phone number of the person they will disclose to.</span>
+                </div>
             </div>
         </div>
 
         <div class="bg-content">
-            <h3>Why is our approach different?</h3>
-            <div>For the survivor</div>
-            <div>For the family member/friend</div>
+            <div class="small-logo-section">
+                <img class="dot-logo" src="assests/dotLogo.svg" alt="three-dots-logo">
+                <h3>Why is our approach different? </h3>
+            </div>
+            <div class="diffrent-approach">
+                <div class="survivor-approach">
+                    <h3>For the survivor</h3>
+                    <p><img class="float-left" src="assests/illust-approach-sur.svg">Our tool takes the burden off of the survivor for having to educate their loved ones about assault during disclosure because we provide that training ahead of time. <br><br> It allows the survivor to feel more empowered in the conversation, knowing their loved one already has an understanding of assault and best practices for how to support them.</p>
+                    
+                </div>
+                <div class="ff-approach">
+                    <h3>For the family member/friend</h3>
+                    <p><img class="float-right" src="assests/illust-approach-ff.svg">Our tool allows time for the family member/friend to integrate the information and process their own emotions such as their own shock, pain and denial, the pain and grief of the survivor. <br><br> When they respond to the survivor they are better able to empower and support in a sensitive and empathetic way.</p>
+                    
+                </div>
+            
+            </div>
         </div>
 
         <div class="newsletter">
-             Subscribe to Empowered Conversation
+            <div class="small-logo-section">
+                <img class="dot-logo" src="assests/dotLogo.svg" alt="three-dots-logo">
+                <h3>Subscribe to Empowered Conversation</h3>
+                <p>Subscription goes here</p>
+            </div>
         </div>
         <footer>
             <nav>
@@ -75,12 +134,13 @@
                 <a href="#" class="contact-bar">Contact Us</a>
             </nav>
             <div class="social-media">
-                <a href="#">twitter</a>
-                <a href="#">facebook</a>
-                <a href="#">instagram</a>
+                <p>follow our social media</p>
+                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                <a href="#"><i class="fa fa-facebook-official"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
             </div>
             <div>
-                <span>© Empowered Conversations 2019. All rights reserved.</span>
+                <p>© Empowered Conversations 2019. All rights reserved.</p>
             </div>
         </footer>
     </div>
