@@ -17,14 +17,14 @@
   margin: auto;
 }
 nav {
-  width: 100vw;
+  width: 100%;
   background: linear-gradient(145deg, #24b4a5 0%, #8fedc2 100%);
 }
 nav .menu {
-  width: 100rem;
+  width: 90%;
   margin: auto;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 nav .menu a {
   text-decoration: none;
@@ -38,7 +38,7 @@ nav .menu a:hover {
 }
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 90vh;
   width: 90vw;
 }
@@ -47,14 +47,14 @@ header h1 {
   text-align: center;
 }
 header .header-img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
   margin: auto;
   padding: 2rem;
   border-radius: 1rem;
-  width: 45%;
+  max-width: 50%;
 }
 header .header-img img {
-  max-width: 80%;
+  max-width: 90%;
   height: auto;
   margin: auto;
   padding: 3rem;
@@ -67,18 +67,20 @@ header .CTA {
   flex-direction: column;
   align-items: center;
   margin: auto;
+  width: 50%;
 }
 header .CTA .logo {
   height: 7rem;
 }
 header .CTA p {
   text-align: center;
-  width: 80%;
+  max-width: 70%;
   margin: 0 3rem;
 }
 header .CTA button {
   font-size: 3rem;
   color: #24b4a5;
+  font-family: 'Nunito', sans-serif;
   background-color: white;
   padding: 2rem;
   margin: 2rem;
@@ -88,6 +90,7 @@ header .CTA button {
 header .CTA button:hover {
   background-color: #24b4a5;
   color: white;
+  cursor: pointer;
 }
 header .CTA button:focus {
   outline: 0;
