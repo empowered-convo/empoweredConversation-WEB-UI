@@ -243,12 +243,17 @@ aside {
     padding: 3rem;
   }
 }
+.shadow {
+  -webkit-box-shadow: 4px 4px 6px 0px rgba(2, 43, 58, 0.2);
+  -moz-box-shadow: 4px 4px 6px 0px rgba(2, 43, 58, 0.2);
+  box-shadow: 4px 4px 6px 0px rgba(2, 43, 58, 0.2);
+}
 .nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
   background-color: #8fedc2;
   border: none;
   height: 8rem;
@@ -319,6 +324,9 @@ aside {
   .cta .cta-right {
     width: 100%;
   }
+}
+.cta .cta-content a {
+  border: none;
 }
 @media (max-width: 800px), (max-width: 500px) {
   .cta .cta-content button {
@@ -677,7 +685,7 @@ footer {
   flex-direction: column;
   align-items: center;
   z-index: 10;
-  background-color: rgba(143, 237, 194, 0.9);
+  background-color: #8fedc2;
 }
 .dropdown .dropdown-link {
   text-align: center;
@@ -714,9 +722,11 @@ footer {
     padding: 3rem;
   }
 }
-.ui h3,
-.ui p {
-  color: #d3f0ed;
+.ui .ui-title h2 {
+  margin-bottom: 2rem;
+}
+.ui .ui-title p {
+  margin-bottom: 6rem;
 }
 .ui .ui-content {
   width: 100%;
@@ -730,39 +740,55 @@ footer {
     flex-direction: column;
   }
 }
-.ui .ui-content .dot {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #d3f0ed;
-  margin-bottom: 1.6rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.ui .ui-content h3,
+.ui .ui-content p {
+  color: #d3f0ed;
 }
-.ui .ui-content .dot .step {
+.ui .ui-content p {
+  margin-bottom: 3rem;
+}
+.ui .ui-content .step {
   width: 30%;
 }
 @media (max-width: 800px) {
-  .ui .ui-content .dot .step {
+  .ui .ui-content .step {
     min-width: 50%;
     padding: 3rem;
   }
 }
 @media (max-width: 500px) {
-  .ui .ui-content .dot .step {
+  .ui .ui-content .step {
     width: 100%;
     padding: 3rem;
   }
 }
+.ui .ui-content .dot {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d3f0ed;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #teamvid {
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.5;
 }
 .team-overlay {
   position: absolute;
-  right: 15rem;
-  bottom: 10rem;
+  right: 10%;
+  bottom: 40%;
+  z-index: 3;
+}
+.team-overlay-img {
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
+}
+.team-overlay-img img {
+  border-radius: 50%;
 }
 .roster {
   display: flex;
@@ -770,6 +796,11 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+.roster .roster-title {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 3rem;
 }
 @media (max-width: 500px) {
   .roster {

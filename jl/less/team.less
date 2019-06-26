@@ -13,9 +13,17 @@
   @media @mobile {
     padding: 3rem;
     }
-    h3, p {
-      color: @light-blue;
+    
+
+    .ui-title {
+      h2 {
+        margin-bottom: 2rem;
+      }
+      p {
+        margin-bottom: 6rem;
+      }
     }
+
     .ui-content {
       width: 100%;
       display: flex;
@@ -26,16 +34,15 @@
       @media @mobile {
         flex-direction: column;
       }
-      .dot {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: @light-blue;
-        margin-bottom: 1.6rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
+
+      h3, p {
+        color: @light-blue;
+      }
+
+      p {
+        margin-bottom: 3rem;
+      }
+
       .step {
         width: 30%;
     
@@ -49,27 +56,57 @@
           padding: 3rem;
           }
         }
+
+      .dot {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: @light-blue;
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-    }
+
+      
+      }
 }
+
 
 #teamvid {
   object-fit: cover;
-  opacity: .8;
+  opacity: .5;
 }
 
 .team-overlay {
   position: absolute;
-  right: 15rem;
-  bottom: 10rem;
+  right: 10%;
+  bottom: 40%;
+  z-index: 3;
 }
 
+.team-overlay-img {
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
+
+  img {
+    border-radius: 50%;
+  }
+  
+}
 .roster {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   align-items: center;
+
+  .roster-title {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 3rem;
+  }
 
   @media @mobile {
     flex-direction: column;
