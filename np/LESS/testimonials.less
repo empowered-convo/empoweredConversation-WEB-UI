@@ -3,6 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;  
+  @media @phone {
+    align-items: center;
+    height: auto;
+  }
   
   .next-button {
     .background-color;
@@ -30,6 +34,9 @@
   align-items: center;
   .box-shadow(); 
   .border-radius();
+  @media @phone {
+    flex-direction: column-reverse;
+  }
   div {
     display: flex;
     flex-direction: column;
@@ -38,14 +45,16 @@
     .gradient();
     .box-shadow();
     .border-radius();
-
-    
     .user-avatar {
       border-radius: 3rem;
       margin: 2rem auto;
       height: 50%;
       border: 5px solid fade(white, 50%);
-    
+     
+    }
+    @media @phone {
+      height: auto;
+      width: 100%;
     }
     h3 {
       color: @darkerColor;

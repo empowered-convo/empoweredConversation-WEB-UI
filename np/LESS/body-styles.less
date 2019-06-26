@@ -10,6 +10,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   .font-family('Nunito');
   color: @darkTeal;
+
+  @media @phone {
+    text-align: center;
+  }
 }
 h2 {
   .style-text(3rem, @darkTeal)
@@ -17,11 +21,18 @@ h2 {
 .container {
   max-width: @container-width;
   margin: 2rem auto;
+  @media @phone {
+    width: 87%;
+  }
 }
 section {
   padding: 3rem;
   margin:auto;
   height: 80vh;
+
+  @media @phone {
+    height: auto;
+  }
 }
 .full-banner {
   .full-banner();

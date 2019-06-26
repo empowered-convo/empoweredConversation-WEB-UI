@@ -4410,6 +4410,16 @@ h6 {
   font-family: 'Nunito', sans-serif;
   color: #24b4a5;
 }
+@media (max-width: 500px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+}
 h2 {
   font-size: 3rem;
   color: #24b4a5;
@@ -4418,10 +4428,20 @@ h2 {
   max-width: 110rem;
   margin: 2rem auto;
 }
+@media (max-width: 500px) {
+  .container {
+    width: 87%;
+  }
+}
 section {
   padding: 3rem;
   margin: auto;
   height: 80vh;
+}
+@media (max-width: 500px) {
+  section {
+    height: auto;
+  }
 }
 .full-banner {
   text-align: center;
@@ -4505,6 +4525,7 @@ header .header-container {
     flex-direction: column;
     height: auto;
     margin: 2rem auto;
+    width: 85%;
   }
 }
 header .header-container .CTA {
@@ -4589,6 +4610,12 @@ header .header-container .header-img h2 {
   flex-direction: column;
   align-items: flex-end;
 }
+@media (max-width: 500px) {
+  .testimonials {
+    align-items: center;
+    height: auto;
+  }
+}
 .testimonials .next-button {
   background-color: white;
   border-radius: 1rem;
@@ -4615,6 +4642,11 @@ header .header-container .header-img h2 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
   border-radius: 1rem;
 }
+@media (max-width: 500px) {
+  .testimonial {
+    flex-direction: column-reverse;
+  }
+}
 .testimonial div {
   display: flex;
   flex-direction: column;
@@ -4629,6 +4661,12 @@ header .header-container .header-img h2 {
   margin: 2rem auto;
   height: 50%;
   border: 5px solid rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 500px) {
+  .testimonial div {
+    height: auto;
+    width: 100%;
+  }
 }
 .testimonial div h3 {
   color: #135f57;
@@ -4667,8 +4705,19 @@ header .header-container .header-img h2 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .cards {
+    flex-direction: column;
+  }
+}
 .cards .card {
   width: 28%;
+}
+@media (max-width: 500px) {
+  .cards .card {
+    width: 87%;
+    margin: 1rem auto;
+  }
 }
 .cards .card .steps {
   display: flex;

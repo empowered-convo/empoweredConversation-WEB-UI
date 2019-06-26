@@ -1,8 +1,17 @@
 .cards {
   display: flex;
   justify-content: space-between;
+  @media @phone {
+    flex-direction: column;
+
+    
+  }
   .card {
     width: 28%;
+    @media @phone {
+      width: 87%;
+      margin: 1rem auto;
+    }
     .steps {
       display: flex;
       justify-content: center;
