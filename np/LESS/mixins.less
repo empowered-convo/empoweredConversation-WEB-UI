@@ -21,12 +21,12 @@
 .border-radius(@radius: 1rem;) {
   border-radius: @radius;
 }
-.full-banner() {
+.full-banner(@padding: 2rem) {
   text-align: center;
   .gradient();
   margin: 0;
   width: 100%;
-  padding: 2rem 0;
+  padding: @padding 0;
 }
 
 .font-awesome(@icon-var) {
@@ -37,3 +37,12 @@
     content: @icon-var;
   }
 }
+.makeCard(@padding: 2rem, @width:30rem, @height:auto) {
+  .box-shadow();
+  .border-radius();
+  padding: @padding;
+  width: width;
+  height: auto;
+}
+
+
