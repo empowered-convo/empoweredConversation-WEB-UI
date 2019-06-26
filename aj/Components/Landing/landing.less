@@ -8,6 +8,10 @@
             .flex(space-evenly, center);
             margin: 50px 0;
         }
+        @media @phone {
+            display: inline-flex;
+            margin: 30px 10px;
+        }
         
         img {
             max-width: 600px;
@@ -17,6 +21,12 @@
                 max-width: 400px;
                 width: 50%;
             }
+            @media @phone {
+                width: 100%;
+                display: block;
+                margin: 0 0 0 10px;
+                position: relative;
+            }
         }
         .landing-text {
             .flex(center, center, column);
@@ -25,13 +35,32 @@
             @media @tablet {
                 width: 250px;
             }
+            
             h1 {
                 font-size: 1.8rem;
                 font-weight: normal;
+                @media @phone {
+                    position: absolute;
+                    background-color: #f4f4f4;
+                    font-size: 1.6rem;
+                    top: 230px;
+                    right: 45px;
+                    padding: 4px;
+                    border-radius: 2px;
+                }
+                
             }
             h3 {
                 margin: 0;
                 font-weight: normal;
+                @media @phone {
+                    position: absolute;
+                    background-color: #f4f4f4;
+                    top: 330px;
+                    right: 40px;
+                    padding: 4px;
+                    border-radius: 2px;
+                }
             }
             p {
                 max-width: 400px;
@@ -80,9 +109,9 @@
                 color: @darkest-teal;
             }
             button {
-                font-size: 1rem;
-                padding: 8px 25px;
-                border-radius: 6px;
+                font-size: 1.2rem;
+                padding: 10px 35px;
+                border-radius: 8px;
                 font-family: "HelveticaNeue-Light";
                 background-color: @orange;
                 color: white;
@@ -101,92 +130,8 @@
             text-align: center;
             @media @tablet {
                 display: block;
-            }
-        }
-        
-    }
-
-    .middle-content {
-        .background-teal();
-        padding: 50px 50px;
-        margin: 50px 0;
-
-        .small-logo-section{
-            .flex(center, center, row);
-            padding: 20px 0;
-            
-            .dot-logo {
-                max-width: 50px;
-                padding-right: 10px;
-            }
-            
-            h3 {
-                text-align: center;
-                font-weight: normal;
                 
             }
-        }
-
-        .testi {
-            .flex(center, center, row);
-            padding-bottom: 20px;
-            @media @tablet {
-                .flex(center, center, column);
-            }
-            .testimonial {
-                .flex(none, center, column);
-                margin: 10px 30px;
-                border: solid 1px @gray;
-                border-radius: 10px;
-                display: flex;
-                padding: 20px;
-                background-color: white;
-                max-width: 300px;
-                height: 270px;
-                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
-                // shadow for testimonial card and hover
-                // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                // transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-                  
-                &:hover {
-                    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-                }
-                .top-testimonial{
-                    .flex(none, center, column);
-                    border-bottom: 1px solid @gray;
-                    .dot-logo {
-                        max-width: 50px;
-                        margin-top: 20px;
-                        @media @tablet {
-                            max-width: 40px;
-                        }
-                    }
-                    h3 {
-                        font-weight: normal;
-                        margin: 10px 0;
-                    }
-                    @media @tablet {
-                        padding-right: 20px;
-                        border-bottom: none;
-                        border-right: 1px solid @gray;
-                    }
-                }
-                p {
-                    line-height: 1.25;
-                    @media @tablet {
-                        padding-left: 20px;
-                    }
-                }
-                @media screen and (max-width: 1000px) {
-                    margin: 10px 10px;
-                }
-                @media @tablet {
-                    .flex(flex-start, none, row);
-                    max-width: 580px;
-                    height: 100px;
-                }          
-            }
-        }
+        } 
     }
 }

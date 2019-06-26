@@ -51,6 +51,11 @@ body {
   text-decoration: none;
   color: black;
 }
+@media (max-width: 580px) {
+  .container .header nav a {
+    padding: 0 15px;
+  }
+}
 .container {
   border: 1px red solid;
 }
@@ -71,6 +76,12 @@ body {
     margin: 50px 0;
   }
 }
+@media (max-width: 580px) {
+  .container .landing-content {
+    display: inline-flex;
+    margin: 30px 10px;
+  }
+}
 .container .landing-content img {
   max-width: 600px;
   width: 50%;
@@ -80,6 +91,14 @@ body {
   .container .landing-content img {
     max-width: 400px;
     width: 50%;
+  }
+}
+@media (max-width: 580px) {
+  .container .landing-content img {
+    width: 100%;
+    display: block;
+    margin: 0 0 0 10px;
+    position: relative;
   }
 }
 .container .landing-content .landing-text {
@@ -99,9 +118,30 @@ body {
   font-size: 1.8rem;
   font-weight: normal;
 }
+@media (max-width: 580px) {
+  .container .landing-content .landing-text h1 {
+    position: absolute;
+    background-color: #f4f4f4;
+    font-size: 1.6rem;
+    top: 230px;
+    right: 45px;
+    padding: 4px;
+    border-radius: 2px;
+  }
+}
 .container .landing-content .landing-text h3 {
   margin: 0;
   font-weight: normal;
+}
+@media (max-width: 580px) {
+  .container .landing-content .landing-text h3 {
+    position: absolute;
+    background-color: #f4f4f4;
+    top: 330px;
+    right: 40px;
+    padding: 4px;
+    border-radius: 2px;
+  }
 }
 .container .landing-content .landing-text p {
   max-width: 400px;
@@ -163,9 +203,9 @@ body {
   color: #455159;
 }
 .container .sm-form .sm-form-top button {
-  font-size: 1rem;
-  padding: 8px 25px;
-  border-radius: 6px;
+  font-size: 1.2rem;
+  padding: 10px 35px;
+  border-radius: 8px;
   font-family: "HelveticaNeue-Light";
   background-color: #dc6153;
   color: white;
@@ -185,27 +225,27 @@ body {
     display: block;
   }
 }
-.container .middle-content {
+.middle-content {
   background-color: #d3f0ed;
   padding: 50px 50px;
   margin: 50px 0;
 }
-.container .middle-content .small-logo-section {
+.middle-content .small-logo-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   padding: 20px 0;
 }
-.container .middle-content .small-logo-section .dot-logo {
+.middle-content .small-logo-section .dot-logo {
   max-width: 50px;
   padding-right: 10px;
 }
-.container .middle-content .small-logo-section h3 {
+.middle-content .small-logo-section h3 {
   text-align: center;
   font-weight: normal;
 }
-.container .middle-content .testi {
+.middle-content .testi {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,14 +253,14 @@ body {
   padding-bottom: 20px;
 }
 @media (max-width: 880px) {
-  .container .middle-content .testi {
+  .middle-content .testi {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 }
-.container .middle-content .testi .testimonial {
+.middle-content .testi .testimonial {
   justify-content: none;
   align-items: center;
   flex-direction: column;
@@ -234,51 +274,51 @@ body {
   height: 270px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-.container .middle-content .testi .testimonial:hover {
+.middle-content .testi .testimonial:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.container .middle-content .testi .testimonial .top-testimonial {
+.middle-content .testi .testimonial .top-testimonial {
   display: flex;
   justify-content: none;
   align-items: center;
   flex-direction: column;
   border-bottom: 1px solid #AAAEBD;
 }
-.container .middle-content .testi .testimonial .top-testimonial .dot-logo {
+.middle-content .testi .testimonial .top-testimonial .dot-logo {
   max-width: 50px;
   margin-top: 20px;
 }
 @media (max-width: 880px) {
-  .container .middle-content .testi .testimonial .top-testimonial .dot-logo {
+  .middle-content .testi .testimonial .top-testimonial .dot-logo {
     max-width: 40px;
   }
 }
-.container .middle-content .testi .testimonial .top-testimonial h3 {
+.middle-content .testi .testimonial .top-testimonial h3 {
   font-weight: normal;
   margin: 10px 0;
 }
 @media (max-width: 880px) {
-  .container .middle-content .testi .testimonial .top-testimonial {
+  .middle-content .testi .testimonial .top-testimonial {
     padding-right: 20px;
     border-bottom: none;
     border-right: 1px solid #AAAEBD;
   }
 }
-.container .middle-content .testi .testimonial p {
+.middle-content .testi .testimonial p {
   line-height: 1.25;
 }
 @media (max-width: 880px) {
-  .container .middle-content .testi .testimonial p {
+  .middle-content .testi .testimonial p {
     padding-left: 20px;
   }
 }
 @media screen and (max-width: 1000px) {
-  .container .middle-content .testi .testimonial {
+  .middle-content .testi .testimonial {
     margin: 10px 10px;
   }
 }
 @media (max-width: 880px) {
-  .container .middle-content .testi .testimonial {
+  .middle-content .testi .testimonial {
     display: flex;
     justify-content: flex-start;
     align-items: none;
