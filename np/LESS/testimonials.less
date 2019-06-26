@@ -1,0 +1,50 @@
+.testimonials {
+  margin:auto;
+  height: 100vh;
+  // width: @container-width;
+  display: flex;
+  justify-content: center;
+}
+.testimonial {
+  margin: auto;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  .box-shadow(); 
+  .border-radius();
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    background-color: @lightTeal;
+    .box-shadow();
+    .border-radius();
+
+    
+    .user-avatar {
+      border-radius: 3rem;
+      margin: 2rem auto;
+      height: 50%;
+      border: 5px solid white;
+    
+    }
+
+  }
+  h3 {
+    margin: 2rem;
+    text-align: center;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+
+
+blockquote {
+  margin: 2rem;
+  .style-text(2.5rem);
+  width: 70%;
+}
