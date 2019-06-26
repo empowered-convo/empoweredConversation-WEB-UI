@@ -281,6 +281,7 @@ aside {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow: hidden;
 }
 @media (max-width: 800px) {
   .cta {
@@ -694,4 +695,115 @@ footer {
 }
 .dropdown .dropdown-hidden {
   display: none;
+}
+.wrap-team {
+  background-color: transparent;
+}
+.ui {
+  background-color: #24b4a5;
+  padding: 9rem;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .ui {
+    padding: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .ui {
+    padding: 3rem;
+  }
+}
+.ui h3,
+.ui p {
+  color: #d3f0ed;
+}
+.ui .ui-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .ui .ui-content {
+    flex-direction: column;
+  }
+}
+.ui .ui-content .dot {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d3f0ed;
+  margin-bottom: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ui .ui-content .dot .step {
+  width: 30%;
+}
+@media (max-width: 800px) {
+  .ui .ui-content .dot .step {
+    min-width: 50%;
+    padding: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .ui .ui-content .dot .step {
+    width: 100%;
+    padding: 3rem;
+  }
+}
+#teamvid {
+  object-fit: cover;
+  opacity: 0.8;
+}
+.team-overlay {
+  position: absolute;
+  right: 15rem;
+  bottom: 10rem;
+}
+.roster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+@media (max-width: 500px) {
+  .roster {
+    flex-direction: column;
+  }
+}
+.roster img {
+  width: 100%;
+  height: auto;
+}
+.roster .roster-left {
+  padding-right: 1.5rem;
+  text-align: right;
+}
+.roster .roster-right {
+  padding-left: 1.5rem;
+}
+.roster .roster-left,
+.roster .roster-right {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .roster .roster-left,
+  .roster .roster-right {
+    width: 100%;
+    margin: 0;
+    padding: 3rem 0;
+  }
+}
+@media (max-width: 500px) {
+  .roster .approach-img-left {
+    order: 99;
+  }
+}
+.roster {
+  border: 1px solid red;
 }
