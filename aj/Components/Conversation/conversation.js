@@ -1,3 +1,4 @@
+/*
 var $animation_elements = $('.animation-element');
 var $window = $(window);
 
@@ -28,4 +29,25 @@ function check_if_in_view() {
 
 $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
+*/
+
+
+
+$(document).ready(function() {
+
+    console.log('he')
+    ScrollReveal().reveal('.msg', {
+        delay: 500,
+        duration: 1500,
+        reset: true,
+    });
+});
+
+//ScrollReveal().destory()
+
+
+
+
+
+console.log(ScrollReveal);
 
