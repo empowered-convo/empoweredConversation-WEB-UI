@@ -4410,8 +4410,11 @@ h6 {
   font-family: 'Nunito', sans-serif;
 }
 .container {
-  width: 100rem;
-  margin: auto;
+  width: 110rem;
+  margin: 2rem auto;
+}
+section {
+  padding: 3rem;
 }
 .full-banner {
   text-align: center;
@@ -4427,8 +4430,20 @@ h6 {
   width: width;
   height: auto;
 }
-.hide {
-  display: none;
+.jump-to-top {
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: red;
 }
 nav {
   width: 100%;
@@ -4452,48 +4467,41 @@ nav .menu a:hover {
 }
 header {
   display: flex;
-  justify-content: space-between;
   margin: auto;
   height: 90vh;
-  width: 90vw;
+  width: 100%;
+  background: linear-gradient(145deg, #24b4a5 0%, #8fedc2 100%);
 }
-header h1 {
-  font-size: 4rem;
-  text-align: center;
-}
-header .header-img {
+header .header-container {
+  display: flex;
+  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
-  margin: auto;
-  padding: 2rem;
   border-radius: 1rem;
-  max-width: 45%;
-}
-header .header-img img {
-  max-width: 90%;
-  height: auto;
+  width: 80%;
+  height: 70%;
   margin: auto;
-  padding: 3rem;
-  object-fit: cover;
 }
-header .header-img h2 {
-  text-align: center;
-}
-header .CTA {
+header .header-container .CTA {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: auto;
-  width: 55%;
+  padding: 3rem 0 1.5rem;
+  width: 50%;
 }
-header .CTA .logo {
+header .header-container .CTA h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+header .header-container .CTA .logo {
   height: 7rem;
 }
-header .CTA p {
+header .header-container .CTA p {
   text-align: center;
   margin: 0 1rem;
   width: 75%;
 }
-header .CTA button {
+header .header-container .CTA button {
   font-size: 3rem;
   color: #24b4a5;
   font-family: "Nunito", sans-serif;
@@ -4503,18 +4511,34 @@ header .CTA button {
   border: 1px solid #8fedc2;
   border-radius: 2rem;
 }
-header .CTA button:hover {
+header .header-container .CTA button:hover {
   background-color: #24b4a5;
   color: white;
   cursor: pointer;
 }
-header .CTA button:focus {
+header .header-container .CTA button:focus {
   outline: 0;
+}
+header .header-container .header-img {
+  background-color: white;
+  margin: auto;
+  border-radius: 1rem;
+  max-width: 45%;
+}
+header .header-container .header-img img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  object-fit: cover;
+}
+header .header-container .header-img h2 {
+  text-align: center;
+  margin: 0;
+  background-color: #eee;
 }
 .testimonials {
   margin: auto;
   height: 80vh;
-  display: flex;
   justify-content: center;
 }
 .testimonial {
@@ -4543,6 +4567,9 @@ header .CTA button:focus {
 .testimonial h3 {
   margin: 2rem;
   text-align: center;
+}
+.hide {
+  display: none;
 }
 blockquote {
   margin: 2rem;
