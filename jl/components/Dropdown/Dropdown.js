@@ -16,18 +16,20 @@ class Dropdown {
     this.content.addEventListener('mouseleave', () => {
       this.toggleContent();
     })
-    this.button.addEventListener('mouseleave', () => {
-     // this.toggleCheck() ? this.toggleContent() : console.log("I got it working!")
+    /* this.button.addEventListener('mouseleave', () => {
+     this.toggleCheck() ? this.toggleContent() : console.log("I got it working!")
      this.toggleContent();
     })
-    
+    */
   }
   toggleContent() {
     this.content.classList.toggle("dropdown-hidden");
   }
+  /*
   toggleCheck() {
     return this.content.classList.contains("dropdown-hidden");
   }
+  */
 }
 
 let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
