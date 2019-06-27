@@ -3,6 +3,10 @@
     .flex(center, center, column);
     padding: 50px 50px 70px 50px;
     margin: 50px 0;
+    @media @tablet {
+        padding: 10px 20px 50px 20px;
+        margin: 20px 0;
+    }
 
     .small-logo-section{
         .flex(space-between, center, row);
@@ -22,12 +26,19 @@
 
     .diffrent-approach {
         .flex(center, none, row);
+        @media @tablet {
+            .flex(center, none, column);
+            max-width: 600px;
+        }  
+        
         .survivor-approach {
             background-color: white;
             border: 1px solid @gray;
             padding: 20px;
             margin: 0 20px;
             max-width: 550px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
             h3 {
                 font-weight: normal;
                 text-align: center;
@@ -36,6 +47,14 @@
                 max-width: 200px;
                 float: left;
                 padding: 0 10px 10px 0; 
+                @media screen and (max-width: 950px) {
+                    float: none;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            &:hover {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
             }
             @media @tablet {
                 margin-bottom: 20px;
@@ -47,7 +66,9 @@
             border: 1px solid @gray;
             padding: 20px;
             margin: 0 20px;
-            max-width: 500px;
+            max-width: 550px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
             h3 {
                 font-weight: normal;
@@ -57,12 +78,22 @@
                 max-width: 200px;
                 float: right;
                 padding: 0 0 10px 10px;
+                @media screen and (max-width: 950px) {
+                    float: none;
+                    display: block;
+                    margin: 0 auto;
+                }
             }
+            &:hover {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }  
         }
-        @media @tablet {
-            .flex(center, none, column);
-            max-width: 580px;
-        }  
-        
+    }
+    .divider {
+        padding: 60px 0 0 0;
+        h1 {
+            text-align: center;
+            font-weight: normal;
+        }
     }
 }

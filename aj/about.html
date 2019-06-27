@@ -5,63 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--  add card.js later -->
+    <script src="./Components/Card/card.js" async></script>
     <title>About us</title>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <img class="header-logo" src="assests/logo.png" alt="logo">
+            <a target="_blank" href="index.html"><img class="header-logo" src="assests/logo.png" alt="logo"></a>
 
             <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Subscribe</a>
-                <a href="#" class="contact-bar">Contact Us</a>
+                <a target="_blank" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a target="_blank" href="index.html#convo-content">How it works</a>
+                <a target="_blank" href="index.html#newsletter">Subscribe</a>
             </nav>
+        </div>
+
+        <div class="introduce-team">
+            <h1>Meet our team</h1>
+            <div class="intro-container">
+                <img src="assests/lambda-logo.png" class="lambda-logo" alt="lambda school logo">
+                <div class="intro-text">
+                    <h3>Hi, we are from <a href="https://lambdaschool.com/" target="_blank">Lambda School</a></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit dolores aut, commodi ullam ratione quibusdam aperiam harum laborum asperiores ab a, quod, unde corporis ipsam incidunt. Optio, porro! Voluptatum.</p>
+                </div>
+                
+            </div>
+            
         </div>
 
         <div class="team-tabs">
             <div class="topics">
-                <span class="title">Roles:</span>
-                <div data-tab="all" class="tab active-tab">ALL</div>
-                <div data-tab="teamLead" class="tab">Team Lead</div>
-                <div data-tab="frontEnd" class="tab">Front End</div>
-                <div data-tab="backEnd" class="tab">Back End</div>
-                <div data-tab="ui" class="tab">UI</div>
+                <p class="title">Our roles:</p>
+                <div class="role-tabs">
+                    <div data-tab="all" class="tab active-tab">ALL</div>
+                    <div data-tab="teamLead" class="tab">Team Lead</div>
+                    <div data-tab="frontEnd" class="tab">Front End</div>
+                    <div data-tab="backEnd" class="tab">Back End</div>
+                    <div data-tab="ui" class="tab">UI</div>
+                </div>
             </div>
         </div>
 
         <div class="team-card">
             <div class="team-member" data-tab="teamLead">
-                <h3>Team Lead</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque distinctio porro facilis vel. Repellat veniam laudantium sapiente, alias quam ducimus nihil impedit doloribus tempore earum quasi, maxime nesciunt voluptate.</p>
+                <div class="img-container">
+                    <img src="assests/tyroneCartwright.png" alt="tyrone-TL"/>
+                </div>
+                <div class="member-container">
+                    <span>Team Lead</span>
+                    <p class="name">Tyrone Cartwright</p>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque distinctio porro facilis vel.</span>
+                    <div class="icon-row">
+                        <a href="#"><i class="fa fa-envelope-square"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
+                
             </div>
-            <div class="team-member" data-tab="teamLead">
-                <h3>Front-End</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque distinctio porro facilis vel. Repellat veniam laudantium sapiente, alias quam ducimus nihil impedit doloribus tempore earum quasi, maxime nesciunt voluptate.</p>
+            <div class="team-member" data-tab="frontEnd">
+                <div class="img-container">
+                    <img src="assests/chineduOrie.png" alt="chinedu-FE"/>
+                </div> 
+                <div class="member-container">
+                    <span>Front-End</span>
+                    <p class="name">Chinedu Orie</p>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque distinctio porro facilis vel. </span>
+                    <div class="icon-row">
+                        <a href="#"><i class="fa fa-envelope-square"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
             </div>
+            <div class="team-member" data-tab="backEnd">
+                <div class="img-container">
+                    <img src="assests/jacobRyans.png" alt="jacob-BE"/>
+                </div> 
+                <div class="member-container">
+                    <span>Back-End</span>
+                    <p class="name">Jacob Ryans</p>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque distinctio porro facilis vel.</span>
+                    <div class="icon-row">
+                        <a href="#"><i class="fa fa-envelope-square"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member" data-tab="ui">
+                <div class="img-container">
+                    <img src="assests/AreumJo.png" alt="areum-ui"/>
+                </div> 
+                <div class="member-container">
+                    <span>UI</span>
+                    <p class="name">Areum Jo</p>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque distinctio porro facilis vel.</span>
+                    <div class="icon-row">
+                        <a href="#"><i class="fa fa-envelope-square"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member" data-tab="ui">
+                <div class="img-container">
+                    <img src="assests/justineLai.png" alt="justine-ui"/>
+                </div>                 
+                <div class="member-container">
+                    <span>UI</span>
+                    <p class="name">Justine Lai</p>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque distinctio porro facilis vel.</span>
+                    <div class="icon-row">
+                        <a href="#"><i class="fa fa-envelope-square"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-member" data-tab="ui">
+                <div class="img-container">
+                    <img src="assests/nikemaProphet.png" alt="nikema-ui"/>
+                </div>          
+                <div class="member-container">
+                    <span>UI</span>
+                    <p class="name">Nikema Prophet</p>
+                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia atque distinctio porro facilis vel.</span>
+                    <div class="icon-row">
+                        <a href="#"><i class="fa fa-envelope-square"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-divider">
+            <h1>Together, we heal better.</h1>
         </div>
 
         <div class="newsletter">
             <div class="small-logo-section">
                 <img class="dot-logo" src="assests/dotLogo.svg" alt="three-dots-logo">
-                <h3>Subscribe to Empowered Conversation</h3>
-                <p>Subscription goes here</p>
+                <h3>Empowered Conversation newsletter</h3>
+                <div class="icon"><input type="text" id="your-input" placeholder="First name" name="first name" /><i class="fa fa-user"></i></div>
+                <div class="icon"><input type="text" id="your-input" placeholder="Email" name="email" /><i class="fa fa-envelope"></i></div>
+                    
+                <button>Subscribe to our newsletter</button>
             </div>
         </div>
+
         <footer>
             <nav>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Subscribe</a>
-                <a href="#" class="contact-bar">Contact Us</a>
+                <a target="_blank" href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a target="_blank" href="index.html#convo-content">How it works</a>
+                <a target="_blank" href="index.html#newsletter">Subscribe</a>
             </nav>
             <div class="social-media">
-                <p>follow our social media</p>
-                <a href="#"><i class="fa fa-twitter-square"></i></a>
-                <a href="#"><i class="fa fa-facebook-official"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
+                <p>Follow our social media</p>
+                <a target="_blank" href="https://twitter.com/empoweredconvo/"><i class="fa fa-twitter-square"></i></a>
+                <a target="_blank" href="https://www.facebook.com/empoweredconvo/"><i class="fa fa-facebook-official"></i></a>
+                <a target="_blank" href="https://www.instagram.com/empoweredconvo/"><i class="fa fa-instagram"></i></a>
             </div>
             <div>
                 <p>© Empowered Conversations 2019. All rights reserved.</p>

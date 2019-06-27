@@ -4,14 +4,23 @@
         padding: 50px;
         .flex(space-around, center, column);
         .background-teal();
-    
+        @media @tablet {
+            padding: 50px 25px;
+        }
         nav {
             padding: 20px 0;
+            @media @tablet {
+                padding-left: 0;
+                padding-top: 30px;
+            }
             
             a {
                 padding: 10px 30px;
                 text-decoration: none;
                 color: black;
+                @media @phone {
+                    padding: 0 15px;
+                }
             }
 
         }
