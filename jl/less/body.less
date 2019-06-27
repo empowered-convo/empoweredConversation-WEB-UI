@@ -1,20 +1,14 @@
-
-
 .how {
   background-color: @accent2;
-  padding: 9rem;
+  margin-top: 9rem;
   width: 100%;
+  .mediaWidth();
+  .mediaPad();
 
-  @media @tablet {
-    padding: 5rem;
-    }
-  @media @mobile {
-    padding: 3rem;
-    }
-
-  h2, p {
-      color: @light-blue;
-    }
+  h2,
+  p {
+    color: @light-blue;
+  }
 
   .how-content {
     width: 100%;
@@ -22,10 +16,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-
-    @media @mobile {
-      flex-direction: column;
-    }
+    .mobileFlex();
 
     .step {
       width: 30%;
@@ -33,7 +24,7 @@
       @media @tablet {
         min-width: 50%;
         padding: 3rem;
-      } 
+      }
 
       @media @mobile {
         width: 100%;
@@ -44,8 +35,8 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        background-color: @light-blue;
         margin-bottom: 1.6rem;
+        background-color: @light-blue;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -56,47 +47,23 @@
         opacity: 0.5;
       }
     }
-    
-    .step1 {
-      transition-delay: 0s;
-    }
-    .step2 {
-      transition-delay: 0s;
-    }
-    .step3 {
-      transition-delay: 0s;
-    }
   }
-  
-  
-
 }
 
 .zig-zag {
-  padding: 9rem;
+  .mediaPad();
 
-  @media @tablet {
-    padding: 5rem;
-    }
-  @media @mobile {
-    padding: 3rem;
-    }
-  
   .approach {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-start;
     align-items: flex-start;
+    .mobileFlex();
 
-    @media @mobile {
-      flex-direction: column;
-    }
-    
     p {
       margin-bottom: 3rem;
     }
-
     p:last-of-type {
       margin-bottom: 0;
     }
@@ -105,81 +72,73 @@
       width: 100%;
       height: auto;
     }
-
-    .approach-img-right,.for-recipient {
-      padding-left: 1.5rem;
-    }
-
-    .approach-img-left, .for-survivor {
-      padding-right: 1.5rem;
-    }
-
-    .for-survivor {
-      margin-bottom: 5rem;
-    }
-
-    .approach-img-right, .approach-img-left, .for-survivor, .for-recipient {
-      width: 50%;
-      
-      @media @mobile {
-        width: 100%;
-        margin: 0;
-        padding: 3rem 0;
-      }
-    }
-
-    .approach-img-left {
-      @media @mobile {
-        order: 99;
-      }
-    }
   }
-    
 }
 
+.zig-left {
+  padding-right: 1.5rem;
+}
+.zig-right {
+  padding-left: 1.5rem;
+}
+
+.zig-left,
+.zig-right {
+  width: 50%;
+  margin: 3rem 0;
+  @media @mobile {
+    width: 100%;
+    margin: 0;
+    padding: 3rem 0;
+  }
+}
+
+.testimonials-title {
+  text-align: center;
+}
 .testimonials {
-  background: @light-teal;
-  padding-top: 3rem;
-  border: 1px solid red;
+  margin: 0 9rem;
+
+  @media @tablet {
+    margin: 0 5rem;
+  }
+  @media @mobile {
+    margin: 0 3rem;
+  }
 }
 
 .pullquote {
   img {
-    width:100%;
+    width: 50%;
     height: auto;
   }
 }
 
 .contact {
-
   background-color: @dark-teal;
-  padding: 9rem;
-
-  @media @tablet {
-    padding: 5rem;
-    }
-  @media @mobile {
-    padding: 3rem;
-    }
+  .mediaPad();
 
   .contact-content {
-
     p {
-      margin-bottom: 3rem;
+      margin-bottom: 5rem;
+    }
+
+    a {
+      border-bottom: 1px solid @accent1;
     }
 
     button {
       border: 2px solid @light-blue;
       margin-bottom: 3rem;
       width: 16rem;
-      
+
       @media @mobile, @tablet {
         width: 100%;
-        }
+      }
     }
 
     input {
-      padding: 9px; 
+      padding: 9px;
       width: 16rem;
       color: @accent2;
       border: none;
@@ -189,25 +148,16 @@
       margin-right: 2rem;
       margin-bottom: 2rem;
       border-radius: 5px;
+      outline: none;
+      .mediaWidth();
+    }
 
-      @media @tablet {
-        width: 100%;
-        }
-
-      @media @mobile {
-        width: 100%;
-        }
-   }
-
-   input[type=email] {
-     width: 35rem;
+    input[type="email"] {
+      width: 35rem;
 
       @media @tablet, @mobile {
         width: 100%;
       }
-   }
-
-   
-   
+    }
   }
 }

@@ -7,35 +7,40 @@
   <meta name="description" content="Empowered Conversation is a survivor-activated tool that educates and prepares the person they will disclose to before the conversation takes place.">
   <title>Empowered Conversation - When words matter most</title>
   <link rel="stylesheet" type="text/css" href="css/index.css" />
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,400i,800|Libre+Baskerville:400,400i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400,400i,800|Libre+Baskerville:400&display=swap" rel="stylesheet">
+  <script src="js/index.js" async></script>
   <script src="components/Carousel/Carousel.js" async></script>
   <script src="components/Dropdown/Dropdown.js" async></script>
+
 </head>
 
 <body>
 
 <header>
-<div class="nav">
+<div class="nav shadow">
   <a href="#"><img src="assets/EmpoweredConversation-Logo-Md.png" alt="Empowered Conversation logo"></a>
     <div class="dropdown">
-      <div class="dropdown-button"><span>Menu</span></div>
-      <div class="dropdown-content dropdown-hidden"><ul>
+      <div class="dropdown-button btn"><span>Menu</span></div>
+      <div class="dropdown-content dropdown-hidden shadow"><ul>
           <li class="dropdown-link"><a href="#">Home</a></li>
           <li class="dropdown-link"><a href="#how">About</a></li>
-          <li class="dropdown-link"><a href="resources.html">Resources</a></li>
+          <li class="dropdown-link"><a href="team.html">Our Team</a></li>
           <li class="dropdown-link"><a href="#contact">Contact</a></li>
         </ul></div></div>
 </div>
-
 <div class="cta">
-<div class="cta-left">
-    <h1>Empowered</h1>
-    <p>When words matter most</p>
-    <h4>Empowered Conversation is a survivor-activated tool that educates and prepares the person they will disclose to before the conversation takes place.</h4>
-    <button>Use Our Tool</button>
-    <button>Learn More</button>
+  <video autoplay muted loop>
+      <source src="assets/Pexels Videos 2413994.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="cta-flex">
+  <div class="cta-heading"><h1>Empowered</h1><h1>Conversation</h1></div>
+  <div class="cta-content shadow">
+      <h4>Empowered Conversation is a survivor-activated tool that educates and prepares the person they will disclose to before the conversation takes place.</h4>
+      <a href="https://empowered-conversation.netlify.com/conversation/new"><button class="primary btn">Use Our Tool</button></a>
+      <a href="#how"><button class="secondary btn" href="#how">Learn More ↓</button></a>
   </div>
-  <div class="cta-right"></div>
 </div>
 </header>
 
@@ -52,17 +57,17 @@
   <section class="zig-zag">
     <div class="approach">
     <div class="approach-title"><h2>Why is our approach different?</h2></div>
-    <div class="for-survivor">
+    <div class="zig-left">
         <h3>For the survivor</h3>
         <p>Our tool takes the burden off of the survivor for having to educate their loved ones about assault during disclosure because we provide that training ahead of time.</p>
         <p>This allows the survivor to feel more empowered in the conversation, knowing their loved one already has a foundational understanding of assault and best practices for how to support them.</p>
       </div>
-      <div class="approach-img-right">
+      <div class="zig-right">
         <img src="assets/undraw_mobile_user_7oqo.svg" alt="Our Approach"> 
       </div>
-      <div class="approach-img-left">
+      <div class="zig-left">
         <img src="assets/undraw_problem_solving_ft81.svg" alt="Our Approach"></div>
-    <div class="for-recipient">
+    <div class="zig-right">
       <h3>For the family member/friend</h3>
       <p>Presently in a disclosure, the family member/friend may be hearing about the assault for the first time as the survivor is in front of them. They feel their own shock, pain and denial, the pain and grief of the survivor, and need to respond in a sensitive and empathetic way.</p>
       <p>These three elements of the disclosure happen in a short amount of time and can lead to negative reactions on the part of the family member/friend, even if they are well-meaning. </p>
@@ -71,17 +76,17 @@
     
   </section>
 </div>
-<div class="wrapper testimonials">
+<div class="wrapper-xl">
   <section class="testimonials">
       <div class="testimonials-title"><h2>What are people saying about Empowered Conversation?</h2>
       </div>
   </section>
-  </div>
-<div class="carousel">
-  <div class="left-button"></div>
-  <div class="right-button"></div>
   
-  <div class="card">
+<div class="carousel">
+  <div class="left-button btn shadow">❮</div>
+  <div class="right-button btn shadow">❯</div>
+
+  <div class="card shadow">
       <div class="speaker">
         <h3>University Student</h3>
       </div>
@@ -90,25 +95,25 @@
       </div>
   </div>
 
-  <div class="card">
+  <div class="card shadow">
       <div class="speaker">
         <h3>Survivor of Sexual Assault</h3>
       </div>
       <div class="quote">
-        <p>"I love the way the tool acts as a mediator between the involved parties. It takes so much pressure off of the survivor."</p>
+        <p>"I love the way the tool acts as a <strong>mediator</strong> between the involved parties. It takes so much pressure off of the survivor."</p>
       </div>
   </div>
 
-  <div class="card">
+  <div class="card shadow">
       <div class="speaker">
         <h3>Friend of a Survivor</h3>
       </div>
       <div class="quote">
-        <p>"There is probably nothing more powerful than this moment of initial disclosure and more ripe for change in shifting the conversation around sexual assault more broadly."</p>
+        <p>"There is probably nothing more powerful than this moment of initial disclosure and more <strong>ripe for change</strong> in shifting the conversation around sexual assault more broadly."</p>
       </div>
     </div>
   </div>
-
+</div>
 <div class="wrapper">
 
 <aside class="pullquote">
@@ -117,14 +122,15 @@
 </aside>
 
 <section class="contact" id="contact">
-  <div class="contact-title"><h2>Subscribe to our newsletter</h2></div>
+  <div class="contact-title">
+    <h2>Subscribe to our newsletter</h2></div>
   <div class="contact-content">
   <p>Sign up for the latest updates. You can also find us on <a href="">Instagram</a>, <a href="">Facebook</a>, and <a>Twitter</a>.</p>
     <input type="text" name="MERGE1" id="MERGE1" autocapitalize="off" autocorrect="off" placeholder="First name" required="">
     <input type="email" name="MERGE0" id="MERGE0" autocapitalize="off" autocorrect="off" placeholder="Email address" required="">
-    <button type="submit">Sign me up!</button></div>  
-  </div>
+    <button type="submit" class="btn">Sign me up!</button></div>  
 </div>
+</section>
 </div>
 
 <footer>
