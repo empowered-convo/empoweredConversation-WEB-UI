@@ -10,7 +10,7 @@
         }
         @media @phone {
             display: inline-flex;
-            margin: 210px 10px 50px 10px;
+            margin: 250px 10px 30px 10px;
         }
         
         img {
@@ -22,10 +22,14 @@
                 width: 50%;
             }
             @media @phone {
-                max-width: 100%;
+                max-width: 400px;
                 display: block;
                 margin: 0 0 0 10px;
                 position: relative;
+            }
+            @media @mobile {
+                max-width: 280px;
+                width: 100%;
             }
         }
         .landing-text {
@@ -40,16 +44,13 @@
             h1 {
                 font-size: 1.8rem;
                 font-weight: normal;
-                @media @phone {
-                    position: absolute;
-                    background-color: #f4f4f4;
-                    top: 230px;
-                    right: 40px;
-                    padding: 4px;
-                    border-radius: 2px;
-                }
                 @media @mobile {
-                    font-size: 1.6rem;
+                    border-radius: 2px;
+                    font-size: 1.5rem;
+                    background-color: #f4f4f4;
+                    padding: 4px;
+                    position: absolute;
+                    top: 260px;
                     right: 30px;
                 }
                 
@@ -58,17 +59,16 @@
                 margin: 0;
                 font-weight: normal;
                 @media @phone {
-                    position: absolute;
-                    background-color: #f4f4f4;
-                    top: 330px;
-                    right: 40px;
-                    padding: 4px;
-                    border-radius: 2px;
+                    font-size: 1.1rem;
                 }
                 @media @mobile {
-                    font-size: 1.1rem;
+                    border-radius: 2px;
+                    font-size: .9rem;
+                    background-color: #f4f4f4;
+                    padding: 4px;
+                    position: absolute;
                     right: 30px;
-                    top: 320px;
+                    top: 345px;
                 }
             }
             p {

@@ -115,7 +115,7 @@ body {
 @media (max-width: 580px) {
   .landing-content {
     display: inline-flex;
-    margin: 210px 10px 50px 10px;
+    margin: 250px 10px 30px 10px;
   }
 }
 .landing-content img {
@@ -131,10 +131,16 @@ body {
 }
 @media (max-width: 580px) {
   .landing-content img {
-    max-width: 100%;
+    max-width: 400px;
     display: block;
     margin: 0 0 0 10px;
     position: relative;
+  }
+}
+@media (max-width: 440px) {
+  .landing-content img {
+    max-width: 280px;
+    width: 100%;
   }
 }
 .landing-content .landing-text {
@@ -154,19 +160,14 @@ body {
   font-size: 1.8rem;
   font-weight: normal;
 }
-@media (max-width: 580px) {
-  .landing-content .landing-text h1 {
-    position: absolute;
-    background-color: #f4f4f4;
-    top: 230px;
-    right: 40px;
-    padding: 4px;
-    border-radius: 2px;
-  }
-}
 @media (max-width: 440px) {
   .landing-content .landing-text h1 {
-    font-size: 1.6rem;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    background-color: #f4f4f4;
+    padding: 4px;
+    position: absolute;
+    top: 260px;
     right: 30px;
   }
 }
@@ -176,19 +177,18 @@ body {
 }
 @media (max-width: 580px) {
   .landing-content .landing-text h3 {
-    position: absolute;
-    background-color: #f4f4f4;
-    top: 330px;
-    right: 40px;
-    padding: 4px;
-    border-radius: 2px;
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 440px) {
   .landing-content .landing-text h3 {
-    font-size: 1.1rem;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    background-color: #f4f4f4;
+    padding: 4px;
+    position: absolute;
     right: 30px;
-    top: 320px;
+    top: 345px;
   }
 }
 .landing-content .landing-text p {
