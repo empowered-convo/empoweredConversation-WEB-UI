@@ -1,12 +1,5 @@
 $(document).ready(function() {   
 
-    // ScrollReveal().reveal('.bubble', {
-    //     delay: 10,
-    //     duration: 900,
-    //     reset: true,
-    // });
-    // ScrollReveal().destroy('.bubble');
-
     ScrollReveal().reveal('#msg-0', {
         delay: 400,
         duration: 900,
