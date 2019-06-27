@@ -11,46 +11,54 @@
       media="screen"
       href="./CSS/index.css"
     />
+    <script src="./js/main.js" async></script>
+    <script src="./Card/Card.js" async></script>
   </head>
   <body>
     <nav>
       <div class="menu">
         <a href="#testimonials-top">Testimonials</a>
-        <a href="#">How it Works</a>
+        <a href="#how-it-works-top">How it Works</a>
         <a href="about.html">About Us</a>
       </div>
     </nav>
     <header>
-      <div class="CTA">
-        <img
-          class="logo"
-          src="./assets/EmpoweredConversation-Logo-Md.png"
-          alt="Empowered Conversation logo"
-        />
-        <h1>Empowered Conversation</h1>
-
-        <p>
-          A survivor-activated tool that educates and prepares the person they
-          will disclose to before the conversation takes place.
-        </p>
-        <button>Start a Conversation</button>
-      </div>
-      <div class="header-img">
-        <img
-          src="./assets/header-img.png"
-          alt="scene
-          with two people, one seated with mobile phones in the background"
-        />
-        <h2>When Words Matter Most</h2>
-      </div>
+      <div class="header-container">
+        <div class="CTA">
+          <a href="https://empoweredconversation.com/">
+            <img
+              class="logo"
+              src="./assets/EmpoweredConversation-Logo-Md.png"
+              alt="Empowered Conversation logo"
+            />
+          </a>
+          <h1>Empowered Conversation</h1>
+  
+          <p>
+            A survivor-activated tool that educates and prepares the person they
+            will disclose to before the conversation takes place.
+          </p>
+          <a href="https://empowered-conversation.netlify.com/conversation/new"><button>Start a Conversation</button></a>
+        </div>
+        <div class="header-img">
+            <img
+              src="./assets/header-img.png"
+              alt="scene
+              with two people, one seated with mobile phones in the background"
+            />
+          </div>
+      </div class="header-container">
     </header>
     <div class="full-banner" id="testimonials-top">
       <h2>
         When words matter most, we are here to help, one conversation at a time.
       </h2>
     </div>
-    <div class="container">
-      <section class="testimonials">
+      
+        <a href="#"><button class="jump-to-top">Jump to top</button></a>
+      
+      <section class="testimonials container">
+        <h2>Testimonials</h2>
         <div class="testimonial">
           <div>
             <img
@@ -60,68 +68,84 @@
             />
             <h3>University Student</h3>
           </div>
-
           <blockquote>
             "The person being disclosed to not only will have time processing
             before talking with the survivor, but they will have tools to better
             facilitate a comfortable conversation."
           </blockquote>
         </div>
-        <div class="testimonial hide">
-          <div>
-            <img
-              class="user-avatar"
-              src="https://api.adorable.io/avatars/200/2.png"
-              alt="user avatar"
-            />
-            <h3>Survivor of Sexual Assault</h3>
-          </div>
-
-          <blockquote>
-            "I love the way the tool acts as a mediator between the involved
-            parties. It takes so much pressure off of the survivor."
-          </blockquote>
-        </div>
-        <div class="testimonial hide">
+        <div class="testimonial">
           <div>
             <img
               class="user-avatar"
               src="https://api.adorable.io/avatars/200/3.png"
               alt="user avatar"
             />
+            <h3>Survivor of Sexual Assault</h3>
+          </div>
+          <blockquote>
+            "I love the way the tool acts as a mediator between the involved
+            parties. It takes so much pressure off of the survivor."
+          </blockquote>
+        </div>
+        <div class="testimonial">
+          <div>
+            <img
+              class="user-avatar"
+              src="https://api.adorable.io/avatars/200/0.png"
+              alt="user avatar"
+            />
             <h3>Friend of a Survivor</h3>
           </div>
-
-          "There is probably nothing more powerful than this moment of initial
-          disclosure and more ripe for change in shifting the conversation
-          around sexual assault more broadly."
+          <blockquote>
+            "There is probably nothing more powerful than this moment of initial
+            disclosure and more ripe for change in shifting the conversation
+            around sexual assault more broadly."
+          </blockquote>
         </div>
+        <button class="next-button">Next review <i class="fas fa-arrow-right"></i></button>
       </section>
-      <main>
-        <section class="how-it-works">
-          <h3>How does Empowered Conversation work?</h3>
-          <p>
-            When a survivor is ready to disclose about their assault, they go
-            onto our website and input the cell phone number of the person they
-            will disclose to.
-          </p>
-          <p>
-            That person then receives a text message from our site that says
-            someone they love wants to have a conversation with them about
-            sexual assault and are provided with a link to a short,
-            trauma-informed module on assault, how best to respond, and what to
-            avoid so as not to re-trigger the survivor.
-          </p>
-          <p>
-            Once the module is completed, a text is generated back to the
-            survivor, letting them know the person they want to disclose to is
-            ready to listen.
-          </p>
+      <div class="slogan full-banner" id="how-it-works-top"><h2>Together, we heal better</h2></div>
+        <section class="how-it-works container">
+          <h2>How does Empowered Conversation work?</h2>
+          <div class='cards'>
+            <div class="card">
+                <div class="steps">1</div>
+              <p>
+                When a survivor is ready to disclose about their assault, they go
+                onto our website and input the cell phone number of the person they
+                will disclose to.
+              </p>
+            </div>
+            <div class='card'>
+                <div class="steps">2</div>
+              <p>
+                That person then receives a text message from our site that says
+                someone they love wants to have a conversation with them about
+                sexual assault and are provided with a link to a short,
+                trauma-informed module on assault, how best to respond, and what to
+                avoid so as not to re-trigger the survivor.
+              </p>
+            </div>
+            <div class='card'>
+              <div class="steps">3</div>
+              <p>
+                Once the module is completed, a text is generated back to the
+                survivor, letting them know the person they want to disclose to is
+                ready to listen.
+              </p>
+            </div>
+          </div>
         </section>
-        <section class="our-approach">
+        <div class='full-banner' id="our-approach-top">
+          <h2>
+              When words matter most, we are here to help, one conversation at a time.
+            </h2>
+        </div>
+        <section class="our-approach container">
           <div>
-            <h3>Why is our approach different?</h3>
-            <h4>For the survivor</h4>
+            <h2>Why is our approach different?</h2>
+            <h3>For the survivor</h3>
             <p>
               Our tool takes the burden off of the survivor for having to
               educate their loved ones about assault during disclosure because
@@ -132,15 +156,17 @@
             </p>
           </div>
           <div>
-            <h4>For the family member/friend</h4>
+            <h3>For the family member/friend</h3>
             <p>
               Presently in a disclosure, the family member/friend may be hearing
               about the assault for the first time as the survivor is in front
               of them. They feel their own shock, pain and denial, the pain and
               grief of the survivor, and need to respond in a sensitive and
-              empathetic way. These three elements of the disclosure happen in a
+              empathetic way.</p> 
+              <p> These three elements of the disclosure happen in a
               short amount of time and can lead to negative reactions on the
-              part of the family member/friend, even if they are well-meaning.
+              part of the family member/friend, even if they are well-meaning.</p>
+              <p>
               Our tool allows time for the family member/friend to integrate the
               information and process their own emotions, so that when they
               respond to the survivor they are better able to empower and
@@ -148,16 +174,10 @@
             </p>
           </div>
         </section>
-        <span class="slogan">Together, we heal better.</span>
-      </main>
-      <section class="subscribe">
-        <h2>Subscribe to Empowered Conversation</h2>
-      </section>
+
       <footer>
-        <div class="twitter">
-          <div class="fa-icon fab"></div>
-        </div>
+
       </footer>
-    </div>
+
   </body>
 </html>

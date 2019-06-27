@@ -1,4 +1,6 @@
 # empoweredConversation-WEB-UI
+https://empowered-conversation-np.netlify.com/np/index.html
+https://github.com/empowered-convo/empoweredConversation-WEB-UI/
 
 ## **Your primary role User Interface Developer:**
 

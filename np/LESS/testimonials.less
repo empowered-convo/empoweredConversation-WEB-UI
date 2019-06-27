@@ -1,50 +1,67 @@
 .testimonials {
-  margin:auto;
-  height: 80vh;
-  // width: @container-width;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  @media @phone {
+    align-items: center;
+    height: auto;
+  }
+
+  .next-button {
+    .background-color;
+    .border-radius;
+    .style-text(1.8rem);
+    margin: 2rem 0;
+    padding: 1rem;
+
+    i {
+      padding-left: 0.5rem;
+    }
+    &:hover {
+      .background-color(@darkTeal);
+      color: white;
+    }
+  }
+  .show {
+    display: flex;
+  }
 }
 .testimonial {
-  margin: auto;
-  display: flex;
-  justify-content:center;
+  margin: 2rem auto;
+  display: none;
+  justify-content: center;
   align-items: center;
-  .box-shadow(); 
+  .box-shadow();
   .border-radius();
+  @media @phone {
+    flex-direction: column-reverse;
+  }
   div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 30%;
-    background-color: @lightTeal;
+    .gradient();
     .box-shadow();
     .border-radius();
-
-    
     .user-avatar {
       border-radius: 3rem;
       margin: 2rem auto;
       height: 50%;
-      border: 5px solid white;
-    
+      border: 5px solid fade(white, 50%);
     }
-
+    @media @phone {
+      display: none;
+    }
+    h3 {
+      color: @darkerColor;
+      margin: 2rem;
+      text-align: center;
+    }
   }
-  h3 {
-    margin: 2rem;
-    text-align: center;
+  blockquote {
+    margin: 3rem;
+    .style-text(2.5rem);
+    width: 70%;
   }
-}
-
-.hide {
-  display: none;
-}
-
-
-
-blockquote {
-  margin: 2rem;
-  .style-text(2.5rem);
-  width: 70%;
 }
