@@ -13,13 +13,19 @@ class Dropdown {
     this.button.addEventListener('click', () => {
       this.toggleContent();
     });
-
     this.content.addEventListener('mouseleave', () => {
       this.toggleContent();
-  })
+    })
+    this.button.addEventListener('mouseleave', () => {
+      this.toggleCheck() ? this.toggleContent() : console.log("I got it working!")
+    })
+    
   }
   toggleContent() {
     this.content.classList.toggle("dropdown-hidden");
+  }
+  toggleCheck() {
+    return this.content.classList.contains("dropdown-hidden");
   }
 }
 

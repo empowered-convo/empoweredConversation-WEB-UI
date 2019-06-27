@@ -1,13 +1,13 @@
-let buttons = document.getElementsByTagName("button")
+let buttons = document.querySelectorAll(".btn");
+let buttonsArray = Array.from(buttons);
 
-buttons.forEach(button => {
-    button.addEventListener("click", event => {
-        button.style.transform = "translate(4px,4px)"
-        button.style.transition = ".5s easein"
-        button.style.boxShadow = "2px 5px"
-        event.stopPropagation()
-    })
-    button.addEventListener("mouseout", event => {
+console.log(buttonsArray)
+
+buttonsArray.forEach(button => {
+    button.addEventListener("mousedown", event => {
+        button.style.transform = "translate(2px,2px)"
+    });
+    button.addEventListener("mouseup", event => {
         button.style.transform = "translate(0px,0px)"
-    })
+    });
 })

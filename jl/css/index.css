@@ -169,10 +169,10 @@ h2,
 h3,
 h4,
 p {
+  font-family: "Work Sans", sans-serif;
   color: #0D0221;
 }
 h1 {
-  font-family: "Work Sans", sans-serif;
   font-size: 8rem;
   font-weight: 800;
 }
@@ -193,12 +193,10 @@ h2 {
   }
 }
 h3 {
-  font-family: "Work Sans", sans-serif;
   font-size: 2.8rem;
   margin-bottom: 3rem;
 }
 h4 {
-  font-family: "Work Sans", sans-serif;
   font-style: italic;
   margin-bottom: 3rem;
   font-size: 2.5rem;
@@ -535,7 +533,7 @@ video {
   }
 }
 .pullquote img {
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 .contact {
