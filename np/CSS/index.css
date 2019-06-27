@@ -4430,7 +4430,7 @@ h2 {
 }
 @media (max-width: 500px) {
   .container {
-    width: 87%;
+    width: 85%;
   }
 }
 section {
@@ -4679,6 +4679,12 @@ header .header-container .header-img h2 {
   font-size: 2.5rem;
   color: #135f57;
   width: 70%;
+}
+@media (max-width: 500px) {
+  .testimonial blockquote {
+    font-size: 1.8rem;
+    color: #135f57;
+  }
 }
 .twitter {
   font-size: 2em;
