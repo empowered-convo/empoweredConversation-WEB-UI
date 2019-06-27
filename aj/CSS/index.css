@@ -19,6 +19,15 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: white;
+  -webkit-box-shadow: 0 12px 12px -15px #999;
+  -moz-box-shadow: 0 12px 12px -15px #999;
+  box-shadow: 0 12px 12px -15px #999;
 }
 @media (max-width: 880px) {
   .container .header {
@@ -62,7 +71,7 @@ body {
   align-items: center;
   flex-direction: row;
   padding: 0 20px;
-  margin: 50px 50px;
+  margin: 150px 50px 50px 50px;
 }
 @media (max-width: 880px) {
   .container .landing-content {
@@ -70,13 +79,13 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    margin: 50px 0;
+    margin: 180px 0 30px 0;
   }
 }
 @media (max-width: 580px) {
   .container .landing-content {
     display: inline-flex;
-    margin: 30px 10px;
+    margin: 200px 10px 50px 10px;
   }
 }
 .container .landing-content img {
@@ -579,7 +588,8 @@ body {
   padding: 20px;
   margin: 0 20px;
   max-width: 550px;
-  border-radius: 6px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .bg-content .diffrent-approach .survivor-approach h3 {
   font-weight: normal;
@@ -611,7 +621,8 @@ body {
   padding: 20px;
   margin: 0 20px;
   max-width: 550px;
-  border-radius: 6px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .bg-content .diffrent-approach .ff-approach h3 {
   font-weight: normal;
@@ -724,12 +735,17 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 30px 0 70px 0;
+  margin: 130px 0 70px 0;
   padding: 20px;
+}
+@media (max-width: 880px) {
+  .introduce-team {
+    margin: 150px 0 70px 0;
+  }
 }
 @media (max-width: 580px) {
   .introduce-team {
-    margin: 30px 0 30px 0;
+    margin: 150px 0 30px 0;
   }
 }
 .introduce-team h1 {
@@ -891,7 +907,7 @@ body {
   flex-direction: row;
 }
 .team-card .team-member .member-container .icon-row .fa {
-  color: #455159;
+  color: #2c2d2c;
   padding: 5px 10px;
   font-size: 30px;
 }
