@@ -110,7 +110,12 @@ button {
   border: 2px solid @dark-teal;
   border-radius: 5px;
   margin-right: 1rem;
+  margin-bottom: 3rem;
   cursor: pointer;
+
+  @media @mobile, @tablet {
+    width: 100%;
+  }
 }
 
 button:focus {
@@ -123,6 +128,7 @@ aside {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  flex-direction: column;
   .mediaPad();
 }
 
