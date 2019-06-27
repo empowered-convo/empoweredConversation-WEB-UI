@@ -134,60 +134,48 @@
       
         .you {
             justify-content: flex-start;
-            margin-right: 55%;
             position: relative;
-        }
-      
-        .you :before {
-            content: "";
-            position: absolute;
-            z-index: 0;
-            bottom: 0;
-            left: -7px;
-            height: 20px;
-            width: 20px;
-            background: #24b4a5;
-            border-bottom-right-radius: 15px;
-        }
-        .you :after {
-            content: "";
-            position: absolute;
-            z-index: 1;
-            bottom: 0;
-            left: -10px;
-            width: 10px;
-            height: 20px;
-            background: @light-gray;
-            border-bottom-right-radius: 10px;
         }
       
         .me {
             justify-content: flex-end;
             color: black;
             background-color: #d3f0ed;
-            margin-left: 55%;
         }
-        // .me :before {
-        //     content: "";
-        //     position: absolute;
-        //     right: -8px;
-        //     height: 20px;
-        //     width: 20px;
-        //     background: #d3f0ed;
-        //     border-bottom-left-radius: 15px;
-        // }
-        
-        // .me :after {
-        //     content: "";
-        //     position: absolute;
-        //     z-index: 1;
-        //     bottom: 0;
-        //     right: -10px;
-        //     width: 10px;
-        //     height: 20px;
-        //     background: white;
-        //     border-bottom-left-radius: 10px;
-        // }
+
+        #msg-0 {
+            width: 60px;
+            margin-left: 450px;
+            @media @tablet {
+                margin-left: 300px;
+            }
+            @media @phone {
+                margin-left: 250px;
+            }
+        }
+        #msg-1 {
+            width: 20px;
+        }
+        #msg-3 {
+            width: 250px;
+            margin-left: 260px;
+            @media @tablet {
+                margin-left: 165px;
+            }
+            @media @phone {
+                margin-left: 140px;
+            }
+        }
+        #msg-4 {
+            width: 250px;
+            margin-left: 260px;
+            @media @tablet {
+                margin-left: 165px;
+            }
+            @media @phone {
+                margin-left: 140px;
+            }
+        }
     }
       
     .bottom-bar {
