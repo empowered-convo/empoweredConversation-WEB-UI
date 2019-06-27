@@ -643,6 +643,10 @@ body {
 .bg-content .diffrent-approach .ff-approach:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+.newsletter {
+  padding: 30px;
+  margin: 50px;
+}
 .small-logo-section {
   display: flex;
   justify-content: space-between;
@@ -652,16 +656,16 @@ body {
 }
 .small-logo-section .dot-logo {
   width: 50px;
-  padding-right: 10px;
+  padding-bottom: 10px;
 }
 .small-logo-section h3 {
-  padding: 0;
+  padding: 10px 0;
   text-align: center;
   font-weight: normal;
 }
 .small-logo-section input {
   vertical-align: middle;
-  margin: 5px 10px 5px 0;
+  margin: 8px 10px 8px 0;
   padding: 8px;
   width: 300px;
   font-size: 0.8rem;
@@ -795,7 +799,6 @@ body {
   font-weight: normal;
 }
 .introduce-team .intro-container .intro-text a {
-  text-decoration: none;
   color: black;
 }
 .team-tabs {
