@@ -15,12 +15,18 @@
         .dot-logo {
             width: 50px;
             padding-right: 10px;
+            @media @mobile {
+                padding-right: 0;
+            }
         }
         
         h3 {
             padding: 0;
             text-align: center;
             font-weight: normal;
+            @media @mobile {
+                width: 180px;
+            }
         }
     }
 
@@ -52,6 +58,9 @@
                     display: block;
                     margin: 0 auto;
                 }
+                @media @mobile {
+                    display: none;
+                }
             }
             &:hover {
                 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -59,7 +68,6 @@
             @media @tablet {
                 margin-bottom: 20px;
             }    
-
         }
         .ff-approach {
             background-color: white;
@@ -83,6 +91,9 @@
                     display: block;
                     margin: 0 auto;
                 }
+                @media @mobile {
+                    display: none;
+                }
             }
             &:hover {
                 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -95,5 +106,6 @@
             text-align: center;
             font-weight: normal;
         }
+        
     }
 }

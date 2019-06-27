@@ -1,17 +1,16 @@
-.container {
-    //border: 1px red solid;
+
     .landing-content {
         .flex(space-around, center);
         padding: 0 20px;
-        margin: 150px 50px 50px 50px;
+        margin: 180px 50px 50px 50px;
         
         @media @tablet {
             .flex(space-evenly, center);
-            margin: 180px 0 30px 0;
+            margin: 210px 0 30px 0;
         }
         @media @phone {
             display: inline-flex;
-            margin: 200px 10px 50px 10px;
+            margin: 210px 10px 50px 10px;
         }
         
         img {
@@ -23,7 +22,7 @@
                 width: 50%;
             }
             @media @phone {
-                width: 100%;
+                max-width: 100%;
                 display: block;
                 margin: 0 0 0 10px;
                 position: relative;
@@ -49,6 +48,10 @@
                     padding: 4px;
                     border-radius: 2px;
                 }
+                @media @mobile {
+                    font-size: 1.6rem;
+                    right: 30px;
+                }
                 
             }
             h3 {
@@ -61,6 +64,11 @@
                     right: 40px;
                     padding: 4px;
                     border-radius: 2px;
+                }
+                @media @mobile {
+                    font-size: 1.1rem;
+                    right: 30px;
+                    top: 320px;
                 }
             }
             p {
@@ -119,8 +127,9 @@
             text-align: center;
             @media @tablet {
                 display: block;
-                
+            }
+            @media @mobile {
+                width: 250px;
             }
         } 
     }
-}

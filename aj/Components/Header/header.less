@@ -17,12 +17,19 @@
         @media @tablet {
             .flex(space-around, center, column);
         }
+        @media @mobile {
+            .flex(space-around, none, row);
+        }
 
         img{
             width: 100px;
             padding-left: 50px;
             @media @tablet {
                 padding-left: 0;
+            }
+            @media @phone {
+                margin-left: 40px;
+                width: 120px;
             }
         }
     
@@ -32,6 +39,10 @@
                 padding-left: 0;
                 padding-top: 30px;
             }
+            @media @mobile {
+                .flex(none, flex-end, column);
+                padding-top: 0px;
+            }
             
             a {
                 padding: 0 30px;
@@ -40,14 +51,11 @@
                 @media @phone {
                     padding: 0 15px;
                 }
+                @media @mobile {
+                    padding: 7px 0;
+                }
 
             }
-            // .contact-bar {
-            //     color: white;
-            //     background-color: rgb(213, 62, 35);
-            // }
-            
         }
     }
-
 }
