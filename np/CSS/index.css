@@ -4508,6 +4508,7 @@ header {
 }
 @media (max-width: 500px) {
   header {
+    background: none;
     height: auto;
   }
 }
@@ -4526,6 +4527,7 @@ header .header-container {
     height: auto;
     margin: 2rem auto;
     width: 85%;
+    box-shadow: none;
   }
 }
 header .header-container .CTA {
