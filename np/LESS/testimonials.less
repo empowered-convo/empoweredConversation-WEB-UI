@@ -1,13 +1,12 @@
 .testimonials {
-
   display: flex;
   flex-direction: column;
-  align-items: flex-end;  
+  align-items: flex-end;
   @media @phone {
     align-items: center;
     height: auto;
   }
-  
+
   .next-button {
     .background-color;
     .border-radius;
@@ -30,9 +29,9 @@
 .testimonial {
   margin: 2rem auto;
   display: none;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  .box-shadow(); 
+  .box-shadow();
   .border-radius();
   @media @phone {
     flex-direction: column-reverse;
@@ -50,11 +49,9 @@
       margin: 2rem auto;
       height: 50%;
       border: 5px solid fade(white, 50%);
-     
     }
     @media @phone {
-      height: auto;
-      width: 100%;
+      display: none;
     }
     h3 {
       color: @darkerColor;
@@ -67,11 +64,4 @@
     .style-text(2.5rem);
     width: 70%;
   }
-
 }
-
-
-
-
-
-

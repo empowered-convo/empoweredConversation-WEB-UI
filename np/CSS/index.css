@@ -4664,8 +4664,7 @@ header .header-container .header-img h2 {
 }
 @media (max-width: 500px) {
   .testimonial div {
-    height: auto;
-    width: 100%;
+    display: none;
   }
 }
 .testimonial div h3 {
