@@ -17,7 +17,8 @@ class Dropdown {
       this.toggleContent();
     })
     this.button.addEventListener('mouseleave', () => {
-      this.toggleCheck() ? this.toggleContent() : console.log("I got it working!")
+     // this.toggleCheck() ? this.toggleContent() : console.log("I got it working!")
+     this.toggleContent();
     })
     
   }
