@@ -51,5 +51,15 @@
 .background-color(@color: white) {
   background-color: @color;
 }
-
+.icon-container(@bg-color:@darkTeal, @font-color:white, @width:6rem, @height:6rem, @border-radius:50%) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: @width;
+  height: @height;
+  .background-color(@bg-color);
+  .style-text(2rem, @font-color);
+  .border-radius(@border-radius);
+}
 
