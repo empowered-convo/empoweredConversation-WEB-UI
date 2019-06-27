@@ -1,6 +1,6 @@
 .introduce-team {
     .flex(center, center, column);
-    margin: 130px 0 70px 0;
+    margin: 150px 0 70px 0;
     padding: 20px;
     @media @tablet {
         margin: 180px 0 70px 0;
@@ -34,16 +34,28 @@
             max-width: 100px;
             margin: 0 20px;
             @media @phone {
-                padding-top: 20px;
+                padding-top: 20px 0;
             }
         }
+        .empowered-logo{
+            max-width: 150px;
+        }
+        
         .intro-text {
-            padding-left: 10px;
+            padding: 0 10px 0 10px;
             h3 {
                 font-weight: normal;
+                @media @mobile {
+                    width: 180px;
+                }
             }
             a {
                 color: black;
+            }
+            p {
+                @media @mobile {
+                    display: none;
+                }
             }
         }
     }
@@ -59,6 +71,9 @@
         @media @phone {
             .flex(center, center, column);
         }
+        @media @mobile {
+            .flex(center, center, row);
+        }
 
         .title {
             padding-right: 20px;
@@ -66,7 +81,9 @@
 
         .role-tabs {
             .flex(center, center, row);
-            
+            @media @mobile {
+                .flex(center, center, column);
+            }
         }
 
         .tab {
@@ -119,11 +136,15 @@
             .flex(center, none, column);
             border-left: 1px solid @dark-gray;
             padding-left: 20px;
+            width: 260px;
 
             @media @phone {
                 border-left: none;
                 border-top: 1px solid @dark-gray;
                 padding-top: 20px;
+            }
+            @media @mobile {
+                width: 210px;
             }
             .name {
                 font-size: 1.5rem;
