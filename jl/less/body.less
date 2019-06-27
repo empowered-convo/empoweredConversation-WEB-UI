@@ -5,9 +5,10 @@
   .mediaWidth();
   .mediaPad();
 
-  h2, p {
-      color: @light-blue;
-    }
+  h2,
+  p {
+    color: @light-blue;
+  }
 
   .how-content {
     width: 100%;
@@ -23,7 +24,7 @@
       @media @tablet {
         min-width: 50%;
         padding: 3rem;
-      } 
+      }
 
       @media @mobile {
         width: 100%;
@@ -51,7 +52,7 @@
 
 .zig-zag {
   .mediaPad();
-  
+
   .approach {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +60,7 @@
     align-content: flex-start;
     align-items: flex-start;
     .mobileFlex();
-    
+
     p {
       margin-bottom: 3rem;
     }
@@ -71,30 +72,25 @@
       width: 100%;
       height: auto;
     }
-    
-    .zig-left {
-      padding-right: 1.5rem;
-    }
-    .zig-right {
-      padding-left: 1.5rem;
-    }
-
-    .zig-left, .zig-right {
-      width: 50%;
-      @media @mobile {
-        width: 100%;
-        margin: 0;
-        padding: 3rem 0;
-      }
-    }
-
-    .zig-left:last-of-type {
-      @media @mobile {
-        order: 99;
-      }
-    }
   }
-    
+}
+
+.zig-left {
+  padding-right: 1.5rem;
+}
+.zig-right {
+  padding-left: 1.5rem;
+}
+
+.zig-left,
+.zig-right {
+  width: 50%;
+  margin: 3rem 0;
+  @media @mobile {
+    width: 100%;
+    margin: 0;
+    padding: 3rem 0;
+  }
 }
 
 .testimonials-title {
@@ -102,7 +98,7 @@
 }
 .testimonials {
   margin: 0 9rem;
-  
+
   @media @tablet {
     margin: 0 5rem;
   }
@@ -113,7 +109,7 @@
 
 .pullquote {
   img {
-    width:100%;
+    width: 100%;
     height: auto;
   }
 }
@@ -123,7 +119,6 @@
   .mediaPad();
 
   .contact-content {
-
     p {
       margin-bottom: 5rem;
     }
@@ -136,14 +131,14 @@
       border: 2px solid @light-blue;
       margin-bottom: 3rem;
       width: 16rem;
-      
+
       @media @mobile, @tablet {
         width: 100%;
-        }
+      }
     }
 
     input {
-      padding: 9px; 
+      padding: 9px;
       width: 16rem;
       color: @accent2;
       border: none;
@@ -155,17 +150,14 @@
       border-radius: 5px;
       outline: none;
       .mediaWidth();
-   }
+    }
 
-   input[type=email] {
-     width: 35rem;
+    input[type="email"] {
+      width: 35rem;
 
       @media @tablet, @mobile {
         width: 100%;
       }
-   }
-
-   
-   
+    }
   }
 }

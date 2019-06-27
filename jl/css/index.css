@@ -172,12 +172,17 @@ p {
   color: #0D0221;
 }
 h1 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 8rem;
   font-weight: 800;
 }
+@media (max-width: 800px), (max-width: 500px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
 h2 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 4rem;
   color: #022B3A;
   margin-bottom: 5rem;
@@ -188,12 +193,12 @@ h2 {
   }
 }
 h3 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 2.8rem;
   margin-bottom: 3rem;
 }
 h4 {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-style: italic;
   margin-bottom: 3rem;
   font-size: 2.5rem;
@@ -203,7 +208,7 @@ h4 {
 p,
 input,
 span {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -247,7 +252,7 @@ a:hover {
   color: #5603AD;
 }
 button {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1.6rem;
   color: #d3f0ed;
   background-color: #24b4a5;
@@ -340,7 +345,6 @@ video {
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
-  overflow: hidden;
 }
 @media (max-width: 800px), (max-width: 500px) {
   .cta-flex {
@@ -356,11 +360,6 @@ video {
     padding-top: 9rem;
     width: 100%;
     text-align: center;
-  }
-}
-@media (max-width: 800px), (max-width: 500px) {
-  .cta-flex .cta-heading h1 {
-    font-size: 6rem;
   }
 }
 .cta-flex .cta-content {
@@ -392,11 +391,6 @@ video {
     padding-top: 9rem;
     width: 100%;
     text-align: center;
-  }
-}
-@media (max-width: 800px), (max-width: 500px) {
-  .cta-flex .team-text h1 {
-    font-size: 6rem;
   }
 }
 .how {
@@ -505,27 +499,23 @@ video {
   width: 100%;
   height: auto;
 }
-.zig-zag .approach .zig-left {
+.zig-left {
   padding-right: 1.5rem;
 }
-.zig-zag .approach .zig-right {
+.zig-right {
   padding-left: 1.5rem;
 }
-.zig-zag .approach .zig-left,
-.zig-zag .approach .zig-right {
+.zig-left,
+.zig-right {
   width: 50%;
+  margin: 3rem 0;
 }
 @media (max-width: 500px) {
-  .zig-zag .approach .zig-left,
-  .zig-zag .approach .zig-right {
+  .zig-left,
+  .zig-right {
     width: 100%;
     margin: 0;
     padding: 3rem 0;
-  }
-}
-@media (max-width: 500px) {
-  .zig-zag .approach .zig-left:last-of-type {
-    order: 99;
   }
 }
 .testimonials-title {
@@ -601,11 +591,11 @@ video {
     width: 100%;
   }
 }
-.contact .contact-content input[type=email] {
+.contact .contact-content input[type="email"] {
   width: 35rem;
 }
 @media (max-width: 800px), (max-width: 500px) {
-  .contact .contact-content input[type=email] {
+  .contact .contact-content input[type="email"] {
     width: 100%;
   }
 }
@@ -762,9 +752,6 @@ footer {
 .dropdown .dropdown-hidden {
   display: none;
 }
-.wrap-team {
-  background-color: transparent;
-}
 .roster {
   display: flex;
   flex-wrap: wrap;
@@ -786,29 +773,10 @@ footer {
   width: 100%;
   height: auto;
 }
-.roster .roster-left {
-  padding-right: 1.5rem;
-}
-.roster .roster-right {
-  padding-left: 1.5rem;
-}
-.roster .roster-left,
-.roster .roster-right {
-  width: 50%;
-  text-align: center;
-}
-@media (max-width: 500px) {
-  .roster .roster-left,
-  .roster .roster-right {
-    width: 100%;
-    margin: 0;
-    padding: 3rem 0;
-  }
-}
 .ui {
   background-color: #24b4a5;
-  padding: 9rem;
   width: 100%;
+  padding: 9rem;
 }
 @media (max-width: 800px) {
   .ui {
