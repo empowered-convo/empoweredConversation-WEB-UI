@@ -1,0 +1,1 @@
+const teamMemberCard = document.querySelectorAll('.card')
