@@ -56,9 +56,6 @@ body {
     padding: 0 15px;
   }
 }
-.container {
-  border: 1px red solid;
-}
 .container .landing-content {
   display: flex;
   justify-content: space-around;
