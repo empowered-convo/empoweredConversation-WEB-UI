@@ -3,6 +3,9 @@
     margin: 30px 0 70px 0;
     padding: 20px;
 
+    @media @phone {
+        margin: 30px 0 30px 0;
+    }
     h1 {
         font-weight: normal;
         font-size: 1.8rem;
@@ -16,9 +19,21 @@
         background-color: white;
         border-radius: 10px;
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        @media screen and (max-width: 660px) {
+            padding: 20px;
+        }
+        @media @phone {
+            padding: 30px;
+            .flex(center, center, column);
+            text-align: center;
+        }
+        
         img {
             max-width: 100px;
             margin: 0 20px;
+            @media @phone {
+                padding-top: 20px;
+            }
         }
         .intro-text {
             padding-left: 10px;
@@ -40,8 +55,17 @@
         max-width: 800px;
         padding: 50px;
         margin: 0 auto; 
+        @media @phone {
+            .flex(center, center, column);
+        }
+
         .title {
             padding-right: 20px;
+        }
+
+        .role-tabs {
+            .flex(center, center, row);
+            
         }
 
         .tab {
@@ -75,9 +99,16 @@
         border-radius: 10px;
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         
+        @media @phone {
+            .flex(center, center, column);
+        }
+
         .img-container {
-            padding-right: 10px;
+            padding-right: 20px;
             height: 40px;
+            @media @phone {
+                padding-bottom: 75px;
+            }
             img {
               width: 100px;
               border-radius: 50%;
@@ -86,16 +117,23 @@
         .member-container {
             .flex(center, none, column);
             border-left: 1px solid @dark-gray;
-            padding-left: 10px;
+            padding-left: 20px;
+
+            @media @phone {
+                border-left: none;
+                border-top: 1px solid @dark-gray;
+                padding-top: 20px;
+            }
             .name {
                 font-size: 1.5rem;
             }
             .icon-row {
+                padding-top: 20px;
                 .flex(flex-start, none, row);
                 .fa {
+                    color: @darkest-teal;
                     padding: 5px 10px;
                     font-size: 30px;
-                    color: black;
                 }
             }
             
