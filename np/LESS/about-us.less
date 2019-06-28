@@ -1,0 +1,32 @@
+#meet-the-team {
+  h1 {
+    color: @darkerColor;
+  }
+}
+.about-us {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .card {
+      margin: 2rem;
+      .makeCard(2rem, 26%, auto);
+      .icons {
+        display: flex;
+        justify-content: center;
+        i {
+          .style-text(5rem);
+          margin: 1rem;
+        }
+      }
+      .card-photo {
+        img {
+          width: 100%;
+          height: 27rem;
+          overflow: hidden;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
