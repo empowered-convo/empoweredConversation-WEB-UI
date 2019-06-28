@@ -57,6 +57,11 @@ section {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
+
+  @media @phone {
+    .icon-container(fade(@darkTeal, 50%), white, 5rem, 5rem, 0);
+    right: 0;
+  }
 }
 .showMenu {
   display: block;

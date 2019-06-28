@@ -4499,6 +4499,21 @@ section {
   outline: none;
   /* Remove outline */
 }
+@media (max-width: 500px) {
+  .showMenuButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 5rem;
+    height: 5rem;
+    background-color: rgba(36, 180, 165, 0.5);
+    font-size: 2rem;
+    color: white;
+    border-radius: 0;
+    right: 0;
+  }
+}
 .showMenu {
   display: block;
 }
@@ -4781,6 +4796,8 @@ header .header-container .header-img h2 {
 }
 .github-link {
   margin: 2rem;
+  font-size: 2rem;
+  color: black;
 }
 .about-us .cards {
   display: flex;
