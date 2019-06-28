@@ -11,9 +11,16 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    @media @phone {
+      flex-direction: column;
+    }
     .card {
       margin: 2rem;
       .makeCard(2rem, 26%, auto);
+      @media @phone {
+        margin: 2rem auto;
+        .makeCard(2rem, 85%, auto);
+      }
       .icons {
         display: flex;
         justify-content: center;

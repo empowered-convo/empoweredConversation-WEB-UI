@@ -4787,6 +4787,11 @@ header .header-container .header-img h2 {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+@media (max-width: 500px) {
+  .about-us .cards {
+    flex-direction: column;
+  }
+}
 .about-us .cards .card {
   margin: 2rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
@@ -4794,6 +4799,16 @@ header .header-container .header-img h2 {
   padding: 2rem;
   width: 26%;
   height: auto;
+}
+@media (max-width: 500px) {
+  .about-us .cards .card {
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 85%;
+    height: auto;
+  }
 }
 .about-us .cards .card .icons {
   display: flex;
