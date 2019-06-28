@@ -1,0 +1,43 @@
+#meet-the-team {
+  h1 {
+    color: @darkerColor;
+  }
+}
+.github-link {
+  margin: 2rem;
+}
+.about-us {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @media @phone {
+      flex-direction: column;
+    }
+    .card {
+      margin: 2rem;
+      .makeCard(2rem, 26%, auto);
+      @media @phone {
+        margin: 2rem auto;
+        .makeCard(2rem, 85%, auto);
+      }
+      .icons {
+        display: flex;
+        justify-content: center;
+        i {
+          .style-text(5rem);
+          margin: 1rem;
+        }
+      }
+      .card-photo {
+        img {
+          .border-radius(0.5rem);
+          width: 100%;
+          height: 27rem;
+          overflow: hidden;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

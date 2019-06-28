@@ -22,7 +22,7 @@ h2 {
   max-width: @container-width;
   margin: 2rem auto;
   @media @phone {
-    width: 87%;
+    width: 85%;
   }
 }
 section {
@@ -40,16 +40,41 @@ section {
 .card {
   .makeCard();
 }
-.jump-to-top {
+.sticky-menu {
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  bottom: 3rem; /* Place the button at the bottom of the page */
+  right: 0; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red;
+  display: none;
+}
+.showMenuButton {
+  .icon-container();
+  position: fixed; /* Fixed/sticky position */
+  bottom: 3rem; /* Place the button at the bottom of the page */
+  right: 3rem; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+}
+.showMenu {
+  display: block;
 }
 button {
   outline: none;
   cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  .gradient;
+  a {
+    color: @darkerColor;
+    &:hover {
+      color: white;
+    }
+  }
 }

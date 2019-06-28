@@ -1,22 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/index.css"
-      />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Empowered Conversation</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./CSS/index.css"
+    />
+    <script src="./js/Testimonial.js" async></script>
+    <script src="./js/Card.js" async></script>
+    <script src="./js/Nav.js" async></script>
   </head>
   <body>
-    <nav>
-      <div class="menu">
-        <a href="#">Testimonials</a>
-        <a href="#">How it Works</a>
-        <a href="about.html">About Us</a>
-        <button><a href="#">Sign Up</a></button>
+    <button class="showMenuButton"><i class="fas fa-bars"></i></button>
+    <header>
+      <div class="header-container">
+        <div class="CTA">
+          <a href="https://empoweredconversation.com/">
+            <img
+              class="logo"
+              src="./assets/EmpoweredConversation-Logo-Md.png"
+              alt="Empowered Conversation logo"
+            />
+          </a>
+          <h1>Empowered Conversation</h1>
+          <p>
+            Lambda School Build Week Project
+          </p>
+          <p>June 21, 2019 - June 28th, 2019</p>
+          
+            <a class="github-link" href="https://github.com/empowered-convo" target="_blank"
+              >Check Out Our Repo! <i class="fab fa-github-alt"></i
+            ></a>
+          
+          <a href="#meet-the-team"><button>Meet the Team</button></a>
+        </div>
+        <div class="header-img">
+          <img
+            src="./assets/header-img.png"
+            alt="scene
+                    with two people, one seated with mobile phones in the background"
+          />
+        </div>
       </div>
-
+    </header>
+    <nav class="sticky-menu">
+      <div class="menu">
+        <a href="#meet-the-team">Meet the Team</a>
+        <a href="https://empowered-conversation.netlify.com/conversation/new"
+          >Start a Conversation</a
+        >
+        <a href="index.html">Home</a>
+        <a href="#">Back to Top</a>
+      </div>
     </nav>
+    <div class="full-banner" id="meet-the-team"><h1>Meet the Team</h1></div>
+    <main>
+      <div class="about-us container">
+        <div class="cards">
+          <div class="card">
+            <div class="card-photo">
+              <img
+                src="./assets/team/AreumJo.png"
+                alt="Areum Jo - UI Developer"
+              />
+            </div>
+            <h3>Areum Jo</h3>
+            <p>UI Developer</p>
+            <span class="icons"
+              ><i class="fab fa-twitter-square"></i>
+              <i class="fas fa-envelope-square"></i>
+              <i class="fab fa-github-square"></i
+            ></span>
+          </div>
+          <div class="card">
+            <div class="card-photo">
+              <img
+                src="./assets/team/justineLai.png"
+                alt="Justine Lai - UI Developer"
+              />
+            </div>
+            <h3>Justine Lai</h3>
+            <p>UI Developer</p>
+            <span class="icons"
+              ><i class="fab fa-twitter-square"></i>
+              <i class="fas fa-envelope-square"></i>
+              <i class="fab fa-github-square"></i
+            ></span>
+          </div>
+          <div class="card">
+            <div class="card-photo">
+              <img
+                src="./assets/team/nikemaProphet.png"
+                alt="Nikema Prophet - UI Developer"
+              />
+            </div>
+            <h3>Nikema Prophet</h3>
+            <p>UI Developer</p>
+            <span class="icons"
+              ><i class="fab fa-twitter-square"></i>
+              <i class="fas fa-envelope-square"></i>
+              <i class="fab fa-github-square"></i
+            ></span>
+          </div>
+          <div class="card">
+            <div class="card-photo">
+              <img
+                src="./assets/team/chineduOrie.png"
+                alt="Chinedu Orie - Front End Developer"
+              />
+            </div>
+            <h3>Chinedu Orie</h3>
+            <p>Front End Developer</p>
+            <span class="icons"
+              ><i class="fab fa-twitter-square"></i>
+              <i class="fas fa-envelope-square"></i>
+              <i class="fab fa-github-square"></i
+            ></span>
+          </div>
+          <div class="card">
+            <div class="card-photo">
+              <img
+                src="./assets/team/jacobRyans.png"
+                alt="Jacob Ryans - Back End Developer"
+              />
+            </div>
+            <h3>Jacob Ryans</h3>
+            <p>Back End Developer</p>
+            <span class="icons"
+              ><i class="fab fa-twitter-square"></i>
+              <i class="fas fa-envelope-square"></i>
+              <i class="fab fa-github-square"></i
+            ></span>
+          </div>
+          <div class="card">
+            <div class="card-photo">
+              <img
+                src="./assets/team/tyroneCartwright.png"
+                alt="Tyrone Cartwright - Team Lead"
+              />
+            </div>
+            <h3>Tyrone Cartwright</h3>
+            <p>Team Lead</p>
+            <span class="icons"
+              ><i class="fab fa-twitter-square"></i>
+              <i class="fas fa-envelope-square"></i>
+              <i class="fab fa-github-square"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Empowered Conversation - designed by Nikema Prophet</p>
+      <a href="index.html">Back to Landing Page</a>
+    </footer>
   </body>
 </html>

@@ -4430,7 +4430,7 @@ h2 {
 }
 @media (max-width: 500px) {
   .container {
-    width: 87%;
+    width: 85%;
   }
 }
 section {
@@ -4457,15 +4457,15 @@ section {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
   border-radius: 1rem;
   padding: 2rem;
-  width: width;
+  width: 30rem;
   height: auto;
 }
-.jump-to-top {
+.sticky-menu {
   position: fixed;
   /* Fixed/sticky position */
-  bottom: 20px;
+  bottom: 3rem;
   /* Place the button at the bottom of the page */
-  right: 30px;
+  right: 0;
   /* Place the button 30px from the right */
   z-index: 99;
   /* Make sure it does not overlap */
@@ -4473,20 +4473,58 @@ section {
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: red;
+  display: none;
+}
+.showMenuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 6rem;
+  height: 6rem;
+  background-color: #24b4a5;
+  font-size: 2rem;
+  color: white;
+  border-radius: 50%;
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 3rem;
+  /* Place the button at the bottom of the page */
+  right: 3rem;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+}
+.showMenu {
+  display: block;
 }
 button {
   outline: none;
   cursor: pointer;
 }
-nav {
+footer {
   width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  background: linear-gradient(145deg, #24b4a5 0%, #8fedc2 100%);
+}
+footer a {
+  color: #135f57;
+}
+footer a:hover {
+  color: white;
+}
+nav {
   background: linear-gradient(145deg, #24b4a5 0%, #8fedc2 100%);
 }
 nav .menu {
-  width: 90%;
   margin: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 nav .menu a {
@@ -4502,7 +4540,7 @@ nav .menu a:hover {
 header {
   display: flex;
   margin: auto;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   background: linear-gradient(145deg, #24b4a5 0%, #8fedc2 100%);
 }
@@ -4562,14 +4600,14 @@ header .header-container .CTA p {
   }
 }
 header .header-container .CTA button {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #24b4a5;
   font-family: "Nunito", sans-serif;
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   margin: 2rem;
   border: 1px solid #8fedc2;
-  border-radius: 2rem;
+  border-radius: 1rem;
 }
 header .header-container .CTA button:hover {
   background-color: #24b4a5;
@@ -4680,6 +4718,12 @@ header .header-container .header-img h2 {
   color: #135f57;
   width: 70%;
 }
+@media (max-width: 500px) {
+  .testimonial blockquote {
+    font-size: 1.8rem;
+    color: #135f57;
+  }
+}
 .twitter {
   font-size: 2em;
   color: #24b4a5;
@@ -4731,4 +4775,54 @@ header .header-container .header-img h2 {
   font-size: 2rem;
   color: white;
   border-radius: 50%;
+}
+#meet-the-team h1 {
+  color: #135f57;
+}
+.github-link {
+  margin: 2rem;
+}
+.about-us .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .about-us .cards {
+    flex-direction: column;
+  }
+}
+.about-us .cards .card {
+  margin: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 26%;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .about-us .cards .card {
+    margin: 2rem auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.11);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 85%;
+    height: auto;
+  }
+}
+.about-us .cards .card .icons {
+  display: flex;
+  justify-content: center;
+}
+.about-us .cards .card .icons i {
+  font-size: 5rem;
+  color: #135f57;
+  margin: 1rem;
+}
+.about-us .cards .card .card-photo img {
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 27rem;
+  overflow: hidden;
+  object-fit: cover;
 }
