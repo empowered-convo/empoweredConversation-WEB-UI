@@ -1,9 +1,6 @@
 const navMenu  = document.querySelector('nav')
 const menuButton = document.querySelector('.showMenuButton')
 
-// window.addEventListener('scroll', ()=> {
-//   console.log('scrolling');
-// })
 menuButton.addEventListener('mouseover', () => {
   navMenu.classList.add('showMenu')
 }) 
